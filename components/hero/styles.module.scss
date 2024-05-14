@@ -1,0 +1,143 @@
+@import "/app/variables.scss";
+
+.grid{
+display: grid;
+grid-template-columns: 60% 40%;
+max-width: 1280px;
+margin-left: auto;
+margin-right: auto;
+}
+@media screen and (max-width: 768px){
+    .grid{
+        grid-template-columns: 100%;
+    }
+}
+
+
+
+.redCard{
+position: relative;
+background-color: $main-red;
+padding-top: 1rem;
+padding-bottom: 1.3rem;
+padding-left: 1rem;
+padding-right: 1rem;
+box-shadow: 0 0 20px 1px rgba(240, 0, 101, 0.2); 
+}
+
+
+
+@media screen and (max-width: 768px){
+    .redCard{
+        position: relative;
+        background-color: $main-red;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        box-shadow: 0 0 20px 1px rgba(240, 0, 101, 0.2); 
+        }
+}
+
+
+.redItem1 {
+    width: 20px;
+    height: 50px;
+    background-color: #F763A1;
+    position: absolute;
+    top: 65px;
+    right: 25px;
+}
+.redItem2 {
+    width: 180px;
+    height: 15px;
+    background-color: #F763A1;
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+}
+.blackItem {
+    width: 60px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+.blackItemMobile {
+    width: 60px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+.greenCard{
+    display: block;
+position: relative;
+background-color: $main-green;
+padding: 0 20px;
+padding-top: 40px;
+padding-bottom: 10px;
+.mainText{
+    font-size: 89px;
+    line-height: 1.1;
+    color: black;
+    font-weight: 800;
+}
+.offText{
+color: black;
+font-weight: 700;
+}
+}
+
+
+@media screen and (max-width: 768px){
+    .greenCard2{
+    display: block;
+    position: relative;
+    background-color: $main-green;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    .mainText2{
+    font-size: 24px;
+    line-height: 1.1;
+    color: black;
+    font-weight: 800;
+    }
+    .offText2{
+        color: black;
+        font-weight: 800;
+        
+        }
+    }
+}
+
+.greenItem1 {
+    width: 20px;
+    height: 50px;
+    background-color: #34AF83;
+    position: absolute;
+    top: 65px;
+    right: 25px;
+}
+.greenItem2 {
+    width: 140px;
+    height: 20px;
+    background-color: #34AF83;
+    position: absolute;
+    bottom: 40px;
+    right: 25px;
+}
+
+.greenItem2Mobile {
+    width: 120px;
+    height: 10px;
+    background-color: #34AF83;
+    position: absolute;
+    bottom: 5px;
+    right: 35px;
+}

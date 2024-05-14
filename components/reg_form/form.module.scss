@@ -1,0 +1,68 @@
+$main-green: #22FFAF;
+$main-red: #F00065;
+$fomrText: #4936367c;
+$mangolia: #F7F5FF;
+$silver: #C4C4C4;
+
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1.9rem 1.7rem;
+    max-width: 500px;
+    color: black;
+    background-color: $main-green;
+    box-shadow: 0 0 20px 1px rgba(34, 255, 175, 0.5); 
+
+    p{
+    color: black;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 15px;
+    padding-bottom: 5px;
+    letter-spacing: 4px;
+       }
+}
+.input,
+.textArea {
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px black;
+    color: $fomrText;
+    padding: 6px 10px;
+}
+
+
+.input::selection{
+    background-color: $main-red;
+}
+.input::placeholder {
+    font-size: 14px;
+    color: $fomrText;
+}
+.error {
+    color: $main-red;
+    font-size: 10px;
+}
+.textArea {
+    border: solid 1px black;
+    background-color: transparent;
+    color: $fomrText;
+    min-height: 100px;
+    padding: 6px 10px;
+}
+.textArea::selection {
+    background-color: $main-red;
+}
+.textArea::placeholder {
+    font-size: 14px;
+    color: $fomrText;
+}
+.input:focus,
+.textArea:focus {
+    outline: none; /* Remove outline when input is focused */
+}
+.link{
+color: $main-red;
+}

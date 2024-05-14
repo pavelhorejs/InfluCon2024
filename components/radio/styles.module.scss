@@ -1,0 +1,74 @@
+@import "/app/variables.scss";
+
+.radioContainer {
+    display: flex;
+    gap: 15px;
+    padding-top: 8px;
+    padding-bottom: 50px;
+  }
+  
+  .radioOption {
+    display: flex;
+
+  }
+  
+  .radioInput {
+    display: none;
+  }
+  
+  .radioLabel {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid $main-green;
+    transition: background-color 0.3s ease;
+  }
+  
+  .radioInput:checked + .radioLabel {
+    background-color: $main-green;
+    border: none;
+  }
+  .radioLabel:hover{
+  background-color: #34AF83;
+  color: black;
+  }
+  
+  .radioLabel:not(:last-child) {
+    border-right: none;
+  }
+  
+  .active {
+    background-color: $main-green; 
+    color: black; 
+    border: none;
+  }
+  
+  .vstupenka{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 550px;
+    border: 1px solid $main-green;
+    padding-left: 24px;
+}
+@media screen and (max-width: 768px){
+  .vstupenka{
+  font-size: 14px;
+  padding-left: 8px;
+line-height: 1;}
+}
+    .ticketsContainer{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 15px;
+    }
+    .box{
+    display: flex;
+    gap: 8px;
+    width: 300px;
+    height: 450px;
+    border: 1px solid $main-green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(201, 201, 201);
+    }

@@ -1,0 +1,23 @@
+@import "/app/variables.scss";
+
+.box{
+border: 1px solid $main-red;
+padding: 15px 15px;
+p{
+max-width: 250px;
+}
+}
+.boxFull{
+    background-color: $main-red;
+border: 1px solid $main-red;
+padding: 15px 15px;
+p{
+max-width: 250px;
+}
+}
+.hdl{
+font-weight: 700;
+}
+.popisek{
+font-weight: 400;
+}

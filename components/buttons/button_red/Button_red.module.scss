@@ -1,0 +1,19 @@
+$mainRed: #F00065;
+$mangolia: #F7F5FF;
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8px 20px;
+    gap: 10px;
+    color: white;
+    background-color: $mainRed;
+    font-weight: 1000;
+    font-size: 20px;
+}
+.button:hover{
+background-color: #D6005A;
+}

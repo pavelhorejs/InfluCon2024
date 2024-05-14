@@ -1,0 +1,107 @@
+"use client";
+import styles from "/components/subscriber/Subscriber.module.scss";
+import { motion } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { databases } from "/app/appwrite";
+import { Permission, Role } from "appwrite";
+import { useForm } from "react-hook-form";
+
+const validationSchema = yup.object({
+  Email: yup
+    .string()
+    .email("Zadejte email ve správném formátu")
+    .required("Prosím zadejte váš email"),
+});
+
+const Subscriber = () => {
+  const notify = () => toast("Úspěšně odebíráno.");
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isValid },
+  } = useForm({
+    resolver: yupResolver(validationSchema),
+
+    mode: "onSubmit", //
+    defaultValues: {
+      Email: "",
+    },
+  });
+
+  const onSubmit = async (data) => {
+    try {
+      const response = await databases.createDocument(
+        "66392c30001b34fefa14",
+        "663bcd6c003e4b981a09",
+        "unique()",
+        data,
+        [Permission.read(Role.any()), Permission.write(Role.any())]
+      );
+      console.log("Document created:", response);
+      notify();
+    } catch (error) {
+      console.error("Error creating document:", error);
+    }
+  };
+
+  return (
+    <div className={styles.sub}>
+      <div className="flex flex-col px-3 md:px-10 py-5">
+        <h3 className="max-w-[600px] text-center md:text-left text-2xl">
+          Přihlaste se k odběru našeho newsletteru
+        </h3>
+        <p className="text-center md:text-left">
+          Všechny novinky a zajímavosti dostanete začerstva rovnou do inboxu.
+        </p>
+
+        <form onSubmit={handleSubmit(onSubmit)} noValidate>
+          {" "}
+          {errors.Email && (
+            <p className="error text-xs text-red-600 ml-4 mt-1 mb-2 absolute">
+              {errors.Email.message}
+            </p>
+          )}
+          <div className="flex flex-wrap w-full items-center justify-center gap-[16px] mt-4">
+            <div className="">
+              <input
+                {...register("Email")}
+                type="Email"
+                placeholder="Váš e-mail"
+                className={styles.input}
+              />
+            </div>
+            <motion.button
+              whileHover={{ scale: 0.98 }}
+              className={styles.button}
+              type="submit"
+            >
+              Chci newsletter
+            </motion.button>
+
+            <Toaster
+              containerStyle={{
+                position: "fixed",
+                top: "20px",
+                right: "15px",
+              }}
+              toastOptions={{
+                className: "",
+                style: {
+                  backgroundColor: "#22FFAF",
+                  border: "1px solid #002554",
+                  borderRadius: "16px 0.4px 16px  0.4px ",
+                  padding: "16px",
+                  color: "black",
+                },
+              }}
+            />
+          </div>
+        </form>
+      </div>
+      <div className={styles.subscribe}></div>
+    </div>
+  );
+};
+export default Subscriber;

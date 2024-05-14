@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$main-green: #22FFAF;
+$main-red: #F00065;
+$mangolia: #F7F5FF;
+$silver: #C4C4C4;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1.6;
+  color: white;
+  background-color: #131313;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  background-color: $main-green;
+  color: black;
+}
+h1{
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px){
+  h1{
+      font-size: 25px ;
+  }
+}
+h2{
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+@media screen and (max-width: 768px){
+  h2{
+      font-size: 2rem ;
+  }
+}
+
+p, ul, ol {
+  text-wrap: pretty;
+}
+// OVERFLOW HIDDEN //
+.noOverflow {
+  overflow-x: hidden;
+}
+// SECTION DIVIDER //
+section{
+margin-top: 210px;
+margin-bottom: 210px;
+}
+@media screen and (max-width: 768px) {
+  section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+// HIGH INDEX //
+.maxIndex{
+  z-index: 1000;
+}
+// COOKIE BAR //
+.cookieBar{
+background-color: $main-green;
+color: $silver;
+position: fixed;
+left: 0px;
+bottom: 0px;
+z-index: 1000;
+width: 100%;
+}
+.custom-ol {
+  list-style-type: decimal; /* standardní čísla, lze změnit na např. lower-roman pro římské číslice */
+  padding-left: 20px; /* nastavení odsazení pro čísla */
+}
+.reviewCard{
+display: flex;
+flex-direction: column;
+gap: 40px;
+padding: 30px 30px;
+width: 300px ;
+height: 350px ;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+img{
+width: 80px;}
+p{
+max-width: 210px;
+text-wrap: wrap;}
+}
+
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  max-height: 250px;
+  height: auto; /* Ensure the container height adjusts to the image */
+}
+
+.image-box img {
+  transition: transform 0.3s; /* Only transition the transform property */
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: center center; /* Set the transform origin to the center */
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+.bgWrap{
+background-image: url('/hero_bg.webp');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 90vh;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 20px;
+  gap: 10px;
+  color: white;
+  background-color: $main-red;
+  font-weight: 1000;
+  font-size: 24px;
+}
+.button:hover{
+background-color: #D6005A;
+}
+
+.redGlow{
+  box-shadow: 0 0 20px 1px rgba(240, 0, 101, 0.2); 
+}
+
+.link:hover{
+  color: #34AF83;
+
+}
+
+.inputSearch{
+border: 1px solid $main-green;
+background: transparent;
+padding: 5px 10px;
+font-size: 14px;
+}

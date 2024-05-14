@@ -1,0 +1,26 @@
+import Form from "/components/form/Form";
+import Socials from "/components/socials/socials_white/Socials";
+
+const Page = () => {
+  return (
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-y-10 max-w-7xl mx-auto">
+      <div className="mx-2">
+        <h2 className="pb-[24px] mt-10 lg:mt-0">Ozvěte se</h2>
+        <p className="max-w-md pb-[16px]">
+          Na všechny otázky, připomínky, pochybnosti nebo ujeté memes (ty bereme
+          taky) slouží formulář vpravo. Neváhejte ho využít.
+        </p>
+        <p className="text-lg font-bold pb-1">Email</p>
+        <p className="pb-[16px]">info@woo.cz</p>
+        <p className="text-lg font-bold pb-2">Sledujte nás online</p>
+        <div className="">
+          <Socials />
+        </div>
+      </div>
+      <div className="mx-2 max-w-[500px]">
+        <Form />
+      </div>
+    </section>
+  );
+};
+export default Page;

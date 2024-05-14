@@ -1,0 +1,43 @@
+$main-green: #22FFAF;
+$mangolia: #F7F5FF;
+
+.button {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+    background-color: $main-green;
+    box-shadow: 0 0 20px 1px rgba(34, 255, 175, 0.2); 
+    font-weight: 800;
+}
+.button:hover{
+    background-color: #34AF83;
+
+}
+
+
+@media (max-width: 768px) {
+    .button {
+        padding: 4px 10px;
+        font-size: 18px;
+    }
+}
+
+.buttonOutline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    border: 1.5px solid;
+    color: Black;
+    border: 0.1rem $main-green solid;
+}
+@media (max-width: 900px) {
+    .buttonOutline {
+        padding: 4px 10px;
+    }
+}

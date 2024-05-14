@@ -1,0 +1,46 @@
+@import "/app/variables.scss";
+
+.container{
+background-color: $main-green;
+position: relative;
+padding: 48px;
+max-width: 1290px;
+margin-left: auto;
+margin-right: auto;
+color: black;
+box-shadow: 0 0 20px 1px rgba(34, 255, 175, 0.5); 
+h2{
+text-align: center;
+font-weight: 800;
+padding-bottom: 48px;
+}
+p{
+max-width: 520px;
+padding-bottom: 16px;
+}
+}
+
+.greenItem1 {
+    width: 150px;
+    height: 16px;
+    background-color: #34AF83;
+    position: absolute;
+    top: 110px;
+    right: 160px;
+}
+.blackItem1 {
+    width: 20px;
+    height: 150px;
+    background-color: #131313;
+    position: absolute;
+    top: 55px;
+    right: 0px;
+}
+.blackItem2 {
+    width: 20px;
+    height: 150px;
+    background-color: #131313;
+    position: absolute;
+    top: 340px;
+    left: 0px;
+}
