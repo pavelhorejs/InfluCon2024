@@ -79,7 +79,8 @@ const Page = () => {
           Protože tyto soubory cookies jsou označeny jako sledovací, žádáme vás
           o jejich povolení. <br /> <br />
           <span className={styles.bold}>6. Umístěné cookies </span>
-          <br /> Google Analytics (Statistické) <br /> Stripe (Funkční)
+          <br /> Google Analytics (Statistické) <br /> Stripe_mid (Funkční){" "}
+          <br /> Stripe_sid (Funkční)
           <br /> <br />
           <span className={styles.bold}>
             7. Souhlas <br />
