@@ -171,3 +171,47 @@ background: transparent;
 padding: 5px 10px;
 font-size: 14px;
 }
+
+
+
+.redCard{
+  position: relative;
+  }
+.redCard2{
+  position: relative;
+  }
+
+
+
+.redItem1 {
+width: 20px;
+height: 100px;
+background-color: #131313;
+position: absolute;
+top: 15px;
+right: 0px;
+}
+.redItem2 {
+width: 15px;
+height: 80px;
+background-color: #131313;
+position: absolute;
+bottom: 10px;
+left: 0px;
+}
+.redItem3 {
+width: 15px;
+height: 100px;
+background-color: #131313;
+position: absolute;
+top: 15px;
+left: 0px;
+}
+.redItem4 {
+width: 20px;
+height: 80px;
+background-color: #131313;
+position: absolute;
+bottom: 10px;
+right: 0px;
+}
