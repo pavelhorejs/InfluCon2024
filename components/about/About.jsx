@@ -7,11 +7,13 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto px-2">
         <div className="flex flex-col">
           <Revealx delay={0.2}>
-            <h2 className="pb-[24px] ">Co je IMCP?</h2>
+            <h2 className="pb-[24px] text-center lg:text-start ">
+              Co je IMCP?
+            </h2>
           </Revealx>
           <Revealx delay={0.4}>
             {" "}
-            <p className="max-w-lg">
+            <p className="max-w-lg text-center lg:text-start">
               Největší konference o influencer marketingu v Česku. Proč? Protože
               influenceři mají sílu pozvednout téměř jakoukoli značku – a jak to
               s nimi funguje, zajímá nejen vás. O svoje zkušenosti s rolí
@@ -24,9 +26,9 @@ const About = () => {
             </p>
           </Revealx>
         </div>
-        <div className="flex justify-start lg:justify-center mt-10 md:mt-0">
+        <div className="flex flex-col  items-center mt-10 md:mt-0">
           {" "}
-          <div className="flex flex-col gap-[24px] items-start">
+          <div className="flex flex-col gap-[24px] items-center lg:items-start">
             <Revealx delay={0.2}>
               {" "}
               <div className={Styles.redButton}>Brands</div>

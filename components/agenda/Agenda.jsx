@@ -5,7 +5,7 @@ const Agenda = () => {
     <section className="max-w-7xl mx-auto px-2" id="agenda">
       <Revealx delay={0.2}>
         {" "}
-        <h2 className="mb-[32px]">Program</h2>
+        <h2 className="mb-[32px] text-center lg:text-left">Program</h2>
       </Revealx>
       <Revealx delay={0.2}>
         {" "}
