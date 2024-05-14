@@ -129,7 +129,7 @@ export default function Example() {
             <div className="w-[350px] mx-auto mt-10">
               {" "}
               <button onClick={handleShowMore} className="buttonGreen">
-                Zobrazit další otázky
+                Zobrazit další dotazy
               </button>
             </div>
           )}

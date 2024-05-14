@@ -100,7 +100,7 @@ const Navbar = () => {
                   Kontakt
                 </Link>
               </div>
-              <p>CZ | EN</p>
+              {/* <p>CZ | EN</p> */}
               <Link href="/dashboard">
                 <motion.img
                   whileHover={{ scale: 0.95 }}
