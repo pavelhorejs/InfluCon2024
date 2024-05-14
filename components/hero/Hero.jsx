@@ -41,7 +41,7 @@ const Hero = () => {
             </Revealx>
             <Revealx delay={0.4}>
               {" "}
-              <a href="#partnership">
+              <a href="/contact">
                 <Button text="Chci být partner" />
               </a>
             </Revealx>

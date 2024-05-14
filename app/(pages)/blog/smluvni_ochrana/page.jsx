@@ -75,7 +75,7 @@ const Page = () => {
           <br /> <br />
           <span className={styles.greenText}>
             {" "}
-            5.5. Influencer není oprávněn ez předchozího písemného souhlasu
+            5.5. Influencer není oprávněn bez předchozího písemného souhlasu
             Zadavatele žádným způsobem změnit zveřejněné nebo odsouhlasené
             Příspěvky. Influencer je oprávněn vymazat nebo změnit zvěřejněné
             Příspěvky pouze na výslovný pokyn Zadavatele. Tato povinnost
