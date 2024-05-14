@@ -3,6 +3,7 @@ import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Revealx from "../reveals/Revealx";
 import { useState } from "react";
+import Button from "../buttons/button/Button";
 const faqs = [
   {
     question: "Pro koho konference vlastně je? ",
@@ -127,7 +128,7 @@ export default function Example() {
           {!showAll && (
             <div className="w-[350px] mx-auto mt-10">
               {" "}
-              <button onClick={handleShowMore} className="button">
+              <button onClick={handleShowMore} className="buttonGreen">
                 Zobrazit další otázky
               </button>
             </div>
