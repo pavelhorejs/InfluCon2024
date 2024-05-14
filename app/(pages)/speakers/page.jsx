@@ -52,7 +52,7 @@ const Page = () => {
             <motion.button
               whileHover={{ scale: 0.99 }}
               transition={{ type: "spring" }}
-              className="button h-[64px]"
+              className="button h-[64px] max-w-[300px] md:max-w-full mx-auto"
             >
               Zpět
             </motion.button>
