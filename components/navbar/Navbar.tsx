@@ -85,7 +85,7 @@ const Navbar = () => {
                 className={`flex gap-5 ${isMobile ? Styles.mobileMenu : ""}`}
               >
                 <Link className={Styles.navigaceText} href="/speakers">
-                  Speakři
+                  Speakeři
                 </Link>
                 <a className={Styles.navigaceText} href="/#agenda">
                   Program
@@ -94,7 +94,7 @@ const Navbar = () => {
                   Vstupenky
                 </Link>
                 <Link className={Styles.navigaceText} href="/dashboard">
-                  Online stream
+                  Live stream
                 </Link>
                 <Link className={Styles.navigaceText} href="/contact">
                   Kontakt
@@ -130,7 +130,7 @@ const Navbar = () => {
               exit="closed"
             >
               <motion.li variants={listItemVariants}>
-                <a href="/speakers">Speakři</a>
+                <a href="/speakers">Speakeři</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
                 <Link href="/#agenda">Program</Link>

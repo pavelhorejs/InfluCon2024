@@ -8,7 +8,7 @@ const About = () => {
         <div className="flex flex-col">
           <Revealx delay={0.2}>
             <h2 className="pb-[24px] text-center lg:text-start ">
-              Co je IMCP?
+              Co je InfluCon?
             </h2>
           </Revealx>
           <Revealx delay={0.4}>

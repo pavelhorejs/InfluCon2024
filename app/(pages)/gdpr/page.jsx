@@ -12,11 +12,11 @@ const Page = () => {
           zpracovávané na tomto webu jsou přísně důvěrné a nakládá s nimi v
           souladu s vnitrostátními právními předpisy i předpisy Evropské unie
           platnými v oblasti ochrany osobních údajů. <br /> <br /> Web
-          shromažďuje, uchovává a využívá Vaše osobní zadané do kontaktní
-          formuláře a pole pro odběr novinek v souladu s nařízením Evropského
-          parlamentu a Rady (EU) 2016/679 ze dne 27. dubna 2016, o ochraně
-          fyzických osob v souvislosti se zpracováním osobních údajů a o volném
-          pohybu těchto údajů a o zrušení směrnice 95/46/ES.
+          shromažďuje, uchovává a využívá Vaše osobní zadané do kontaktní a
+          registračního formuláře a pole pro odběr novinek v souladu s nařízením
+          Evropského parlamentu a Rady (EU) 2016/679 ze dne 27. dubna 2016, o
+          ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o
+          volném pohybu těchto údajů a o zrušení směrnice 95/46/ES.
           <br /> <br />
           1.2. Tyto zásady informují, jaké Vaše osobní údaje zpracováváme, za
           jakým účelem, po jakou dobu, kdo k Vašim osobním údajům bude mít
@@ -26,7 +26,7 @@ const Page = () => {
             2. Zpracovávané údaje <br />
           </span>
           2.1. Výše uvedené údaje primárně zpracováváme za účelem zajištění
-          funkcionality webových stránek a konikace s klienty. <br /> <br />
+          funkcionality webových stránek a komunikace s klienty. <br /> <br />
           <span className={styles.bold}>
             3. Práva subjektu <br />
           </span>
@@ -47,7 +47,7 @@ const Page = () => {
             info@woo.cz.
           </a>{" "}
           <br /> <br />
-          5.3. Tyto podmínky jsou účinné od 1.05.2024
+          5. Tyto podmínky jsou účinné od 14.05.2024
         </p>
       </div>
     </>

@@ -6,9 +6,7 @@ const Blog = () => {
     <section className="max-w-7xl mx-auto px-2" id="blog">
       <Revealx delay={0.2}>
         {" "}
-        <h2 className="pb-[32px] lg:pb-[48px] text-center">
-          Mohlo by vás <br className="md:hidden"></br> zajímat
-        </h2>
+        <h2 className="pb-[32px] lg:pb-[48px] text-center">Blog</h2>
       </Revealx>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
         {" "}

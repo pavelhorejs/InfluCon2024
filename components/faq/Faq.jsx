@@ -83,7 +83,7 @@ export default function Example() {
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-[#34AF83] ">
+                      <Disclosure.Button className="flex w-full items-start font-bold justify-between text-left text-[#34AF83] ">
                         <span className=" leading-7  text-white ">
                           {faq.question}
                         </span>
@@ -103,7 +103,7 @@ export default function Example() {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-gray-500">
+                      <p className="text-base leading-7 text-gray-300">
                         {faq.answer}
                       </p>
                     </Disclosure.Panel>

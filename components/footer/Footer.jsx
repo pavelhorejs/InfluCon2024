@@ -28,7 +28,7 @@ const Footer = () => {
         <nav className={styles.menuSection}>
           <h6>Obecné</h6>
           <Link href="/speakers">
-            <span className={styles.navigaceText}>Speakři</span>
+            <span className={styles.navigaceText}>Speakeři</span>
           </Link>
           <Link href="/#tickets">
             <span className={styles.navigaceText}>Vstupenky</span>
@@ -46,7 +46,7 @@ const Footer = () => {
         <nav className={styles.menuSection}>
           <h6>Live stream</h6>
           <a href="/#tickets">
-            <span className={styles.navigaceText}>Koupit stream</span>
+            <span className={styles.navigaceText}>Koupit</span>
           </a>
           <a href="/dashboard">
             <span className={styles.navigaceText}>Přihlášení</span>

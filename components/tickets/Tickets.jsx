@@ -20,9 +20,7 @@ const Tickets = () => {
 
               <div className="flex gap-3">
                 <img src="/check.svg" alt="" />
-                <p className={styles.featury}>
-                  x přednášek profesionálů z celého světa
-                </p>
+                <p className={styles.featury}>Přednášky z celého světa</p>
               </div>
               <div className="flex gap-3">
                 <img src="/check.svg" alt="" />
@@ -102,19 +100,13 @@ const Tickets = () => {
 
               <div className="flex gap-3">
                 <img src="/check.svg" alt="" />
-                <p className={styles.featury}>
-                  x přednášek profesionálů z celého světa
-                </p>
+                <p className={styles.featury}>přednášky z celého světa</p>
               </div>
               <div className="flex gap-3">
                 <img src="/check.svg" alt="" />
                 <p className={styles.featury}>
                   Videozáznamy všech přednášek ve vysoké kvalitě
                 </p>
-              </div>
-              <div className="flex gap-3">
-                <img src="/check.svg" alt="" />
-                <p className={styles.featury}>Vstup na after party</p>
               </div>
 
               <div className="mt-4">
