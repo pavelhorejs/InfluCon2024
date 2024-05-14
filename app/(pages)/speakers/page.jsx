@@ -10,11 +10,11 @@ import Revealx from "../../../components/reveals/Revealx";
 const Page = () => {
   return (
     <>
-      <div className="mt-32 lg:mt-40 ">
+      <div className="mt-28 lg:mt-40 ">
         <div className="bg-[#22FFAF] px-2">
           <div className="max-w-7xl mx-auto py-5 lg:py-14">
             <Revealx delay={0.2}>
-              <h2 className="text-black pb-[24px] text-center lg:text-left">
+              <h2 className="text-black pb-[24px] text-center lg:text-left mt-5 lg:mt-0">
                 Letošní speakeři
               </h2>
             </Revealx>
