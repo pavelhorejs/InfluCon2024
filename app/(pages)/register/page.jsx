@@ -1,8 +1,6 @@
 "use client";
 import { useState } from "react";
 import { account, ID, databases } from "/app/appwrite.js";
-import Foto from "/public/login-img.webp";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "/components/form/form.module.scss";
 import { useRouter } from "next/navigation";
@@ -45,11 +43,13 @@ const Page = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center min-h-[90vh]">
-        <div className="flex flex-col justify-center items-center mx-auto">
+      <div className="flex justify-center items-center min-h-[90vh] pb-6">
+        <div className="flex flex-col justify-center items-center mx-auto px-2">
           <div>
             <>
-              <h2 className="pb-[24px] text-center mt-10">Registrovat</h2>
+              <h2 className="pb-[24px] text-center mt-32 lg:mt-10">
+                Registrovat
+              </h2>
               <form className={styles.registrationForm} noValidate>
                 <div className={styles.wrapper}>
                   <div>
@@ -102,9 +102,8 @@ const Page = () => {
                     placeholder="Pražská 1, Praha, 100 00"
                     className={styles.input}
                     value={address}
-                    autoCcomplete="off"
+                    autoComplete="off"
                     onChange={(e) => setAddress(e.target.value)}
-                    autocomplete="off"
                   />
                 </div>
                 <div>

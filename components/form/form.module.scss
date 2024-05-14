@@ -4,6 +4,9 @@
 .registrationForm {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 350px;
     max-width: 600px;
     gap: 16px;
     padding: 32px;
@@ -14,6 +17,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    }
+    @media screen and (max-width: 600px) {
+        .wrapper{
+            display: block;
+       
+            }
+        
     }
     p{
     color: black;
@@ -60,11 +70,8 @@
     padding: 6px 10px;
 }
 
-@media (max-width: 768px){
-.input{
-width: 300px;
-}
-}
+
+
 
 .input::selection{
     background-color: $main-red;
