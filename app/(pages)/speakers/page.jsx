@@ -42,6 +42,9 @@ const Page = () => {
                 <Flipcard4 />
               </div>
             </div>
+            <h2 className="pt-14 pb-5 font-3xl text-black text-center">
+              Více speakerů již brzy
+            </h2>
           </div>
         </div>
       </div>

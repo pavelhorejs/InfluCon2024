@@ -41,6 +41,7 @@ const Subscriber = () => {
       );
       console.log("Document created:", response);
       notify();
+      form.current.reset();
     } catch (error) {
       console.error("Error creating document:", error);
     }

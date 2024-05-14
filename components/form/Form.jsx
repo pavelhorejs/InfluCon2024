@@ -49,6 +49,7 @@ export default function Page() {
       .then(
         (result) => {
           toast.success("Zpráva byla úspěšně odeslána!");
+          form.current.reset();
         },
         (error) => {
           toast.error("Error");

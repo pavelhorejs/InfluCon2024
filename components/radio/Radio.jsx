@@ -123,7 +123,7 @@ const RadioButtons = () => {
             <div>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | Offline ticket | 3990 Kč
+                  InfluCon 2024 | Vstupenka na konferenci | 3990 Kč
                 </div>
                 <Link onClick={buyOne} href="#">
                   <Button text="Zaplatit" />
@@ -131,7 +131,7 @@ const RadioButtons = () => {
               </div>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | Online ticket | 3990 Kč
+                  InfluCon 2024 | Live stream přístup | 2490 Kč
                 </div>
                 <Link onClick={buyTwo} href="#">
                   <Button text="Zaplatit" />

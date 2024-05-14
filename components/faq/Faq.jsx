@@ -64,6 +64,11 @@ const faqs = [
     answer:
       "Vstupenku je možné vrátit do 23.9.2024 a získat tak 80 % částky zpět. Po tomto datu je jedině možné převést vstupenku v systému na někoho jiného.",
   },
+  {
+    question: "Jak po zkončení akce mohu zhlénout záznam?",
+    answer:
+      "Záznam z celé akce bude po ukončení akce dostupný po přihlášení do uživatelského účetu. Záznam uvidí ti, kteří si zakoupili jak klasickou vstupenku tak live stream.",
+  },
 ];
 
 export default function Example() {

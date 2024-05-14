@@ -16,7 +16,7 @@ const Tickets = () => {
               <div className={styles.blackItem1}></div>
               <div className={styles.blackItem2}></div>
               <p className={styles.cena}> 3990 Kč</p>
-              <p className={styles.typ}>OFFLINE TICKET</p>
+              <p className={styles.typ}>VSTUPENKA NA KONFERENCI</p>
 
               <div className="flex gap-3">
                 <img src="/check.svg" alt="" />
@@ -95,8 +95,8 @@ const Tickets = () => {
             <div className={styles.ticket}>
               <div className={styles.blackItem3}></div>
               <div className={styles.blackItem4}></div>
-              <p className={styles.cena}> 3990 Kč</p>
-              <p className={styles.typ}>ONLINE TICKET</p>
+              <p className={styles.cena}> 2490 Kč</p>
+              <p className={styles.typ}>LIVE STREAM PŘÍSTUP</p>
 
               <div className="flex gap-3">
                 <img src="/check.svg" alt="" />
