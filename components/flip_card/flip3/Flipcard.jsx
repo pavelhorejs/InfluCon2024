@@ -47,7 +47,7 @@ const Flipcard = () => {
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
-        <p className={style.company}>TiKTok | Community Manager </p>
+        <p className={style.company}>TiKTok, Community Manager </p>
       </div>
     </div>
   );

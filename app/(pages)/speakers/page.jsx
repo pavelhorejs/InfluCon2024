@@ -25,10 +25,20 @@ const Page = () => {
               </p>
             </Revealx>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-[16px] gap-y-[32px]">
-              <Flipcard1 />
-              <Flipcard2 />
-              <Flipcard3 />
-              <Flipcard4 />
+              <div className="flex justify-center">
+                <Flipcard1 />
+              </div>
+              <div className="flex justify-center">
+                <Flipcard2 />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcard3 />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcard4 />
+              </div>
             </div>
           </div>
         </div>
