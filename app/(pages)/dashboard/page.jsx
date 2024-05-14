@@ -6,7 +6,7 @@ import RadioButtons from "/components/radio/Radio";
 import RadioButtons2 from "/components/radio2/Radio";
 import styles from "/components/form/form.module.scss";
 import Link from "next/link";
-
+import Revealx from "../../../components/reveals/Revealx";
 const Page = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
   const [email, setEmail] = useState("");
@@ -62,46 +62,55 @@ const Page = () => {
       <div className="flex justify-center items-center min-h-[90vh]  ">
         <div></div>
         <div className="flex flex-col justify-center items-center">
-          <h2 className="pb-[24px] text-center">Login</h2>
-          <form ref={form} className={styles.loginForm} noValidate>
-            <div>
-              <p>EMAIL</p>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="novak@woo.cz"
-                className={styles.input}
-              />
-            </div>
-            <div>
-              <p>HESLO</p>
-              <input
-                type="password"
-                placeholder="*****"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className={styles.input}
-              />
-            </div>
-            <div className={styles.gdprBorder}></div>
-            <motion.button
-              whileHover={{ scale: 0.99 }}
-              className={styles.buttonGreen}
-              type="button"
-              onClick={() => login(email, password)}
-            >
-              Login
-            </motion.button>
-          </form>
-          <p className="mt-5 text-sm">
-            Ještě nemáte účet?{" "}
-            <span>
-              <Link className={styles.link} href="/register">
-                Registrujte se.
-              </Link>
-            </span>
-          </p>
+          <Revealx delay={0.2}>
+            {" "}
+            <h2 className="pb-[24px] text-center">Login</h2>
+          </Revealx>
+          <Revealx delay={0.4}>
+            {" "}
+            <form ref={form} className={styles.loginForm} noValidate>
+              <div>
+                <p>EMAIL</p>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="novak@woo.cz"
+                  className={styles.input}
+                />
+              </div>
+              <div>
+                <p>HESLO</p>
+                <input
+                  type="password"
+                  placeholder="*****"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className={styles.input}
+                />
+              </div>
+              <div className={styles.gdprBorder}></div>
+              <motion.button
+                whileHover={{ scale: 0.99 }}
+                className={styles.buttonGreen}
+                type="button"
+                onClick={() => login(email, password)}
+              >
+                Login
+              </motion.button>
+            </form>
+          </Revealx>
+          <Revealx delay={0.6}>
+            {" "}
+            <p className="mt-5 text-sm">
+              Ještě nemáte účet?{" "}
+              <span>
+                <Link className={styles.link} href="/register">
+                  Registrujte se.
+                </Link>
+              </span>
+            </p>
+          </Revealx>
         </div>
       </div>
     </div>
