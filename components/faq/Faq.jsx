@@ -2,6 +2,7 @@
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 import Revealx from "../reveals/Revealx";
+import { useState } from "react";
 const faqs = [
   {
     question: "Pro koho konference vlastně je? ",
@@ -72,24 +73,30 @@ const faqs = [
 ];
 
 export default function Example() {
+  const [showAll, setShowAll] = useState(false);
+
+  const handleShowMore = () => {
+    setShowAll(true);
+  };
+
+  const displayedFaqs = showAll ? faqs : faqs.slice(0, 3);
   return (
     <section>
       <div className="mx-auto max-w-7xl px-2">
         <div className="mx-auto max-w-4xl divide-y divide-gray-200/10">
           <Revealx delay={0.2}>
-            {" "}
             <h2 className="pb-[32px] lg:pb-[48px] text-center">
               Často kladené <br className="md:hidden" /> dotazy
             </h2>
           </Revealx>
           <dl className="space-y-6 divide-y divide-gray-500/10">
-            {faqs.map((faq) => (
-              <Disclosure as="div" key={faq.question} className="pt-6">
+            {displayedFaqs.map((faq, index) => (
+              <Disclosure as="div" key={index} className="pt-6">
                 {({ open }) => (
                   <>
                     <dt>
                       <Disclosure.Button className="flex w-full items-start font-bold justify-between text-left text-[#34AF83] ">
-                        <span className=" leading-7  text-white ">
+                        <span className="leading-7 text-white">
                           {faq.question}
                         </span>
                         <span className="ml-6 flex h-7 items-center">
@@ -117,6 +124,14 @@ export default function Example() {
               </Disclosure>
             ))}
           </dl>
+          {!showAll && (
+            <div className="w-[350px] mx-auto mt-10">
+              {" "}
+              <button onClick={handleShowMore} className="button">
+                Zobrazit další otázky
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
