@@ -10,15 +10,17 @@ import Revealx from "../../../components/reveals/Revealx";
 const Page = () => {
   return (
     <>
-      <div className="mt-20 lg:mt-40 ">
+      <div className="mt-32 lg:mt-40 ">
         <div className="bg-[#22FFAF] px-2">
           <div className="max-w-7xl mx-auto py-5 lg:py-14">
             <Revealx delay={0.2}>
-              <h2 className="text-black pb-[24px]">Letošní speakeři</h2>
+              <h2 className="text-black pb-[24px] text-center lg:text-left">
+                Letošní speakeři
+              </h2>
             </Revealx>
             <Revealx delay={0.4}>
               {" "}
-              <p className="text-black max-w-xl pb-[48px]">
+              <p className="text-black max-w-xl pb-[48px] text-center lg:text-left">
                 Seznamte se s profíky, kteří jsou (nejen) v influencer
                 marketingu jako doma. Přijďte si poslechnout o všem, co už
                 zkusili za vás – a jak to fungovalo.
