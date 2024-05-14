@@ -3,6 +3,7 @@ import Flipcard1 from "/components/flip_card/flip1/Flipcard";
 import Flipcard2 from "/components/flip_card/flip2/Flipcard";
 import Flipcard3 from "/components/flip_card/flip3/Flipcard";
 import Flipcard4 from "/components/flip_card/flip4/Flipcard";
+import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Revealx from "../../../components/reveals/Revealx";
@@ -40,6 +41,22 @@ const Page = () => {
               <div className="flex justify-center">
                 {" "}
                 <Flipcard4 />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcardwho />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcardwho />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcardwho />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcardwho />
               </div>
             </div>
             <h2 className="pt-14 pb-5 font-3xl text-black text-center">
