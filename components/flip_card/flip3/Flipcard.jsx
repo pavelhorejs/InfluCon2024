@@ -33,7 +33,11 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">Bude doplněno</p>
+              <p className="">
+                Linda z TT vám ukáže, jak zapojit influencery do TikTok trendů z
+                pohledu značky a jak žádný neprošvihnout. Nabídky na moderování
+                dětských oslav a maturitních plesů prosí do zpráv, tak se těšte.
+              </p>
             </div>
           </div>
         }

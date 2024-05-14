@@ -27,13 +27,17 @@ const Flipcard = () => {
         backStyle={cardStyle}
         frontComponent={
           <div style={contentStyle}>
-            <img src="petr.png" alt="Front Image" style={contentStyle} />
+            <img src="petr.jpg" alt="Front Image" style={contentStyle} />
           </div>
         }
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">Bude doplněno</p>
+              <p className="">
+                Petr před sedmi lety založil WOO, pamatuje časy, kdy se honorář
+                za kampaň domlouval s influencery podle počtu vypitých piv. S
+                vámi nasdílí data, statistiky a porovnání do jiných kanálů.
+              </p>
             </div>
           </div>
         }

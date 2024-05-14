@@ -20,7 +20,10 @@ const Agenda = () => {
           <div className="">
             <h3 className="text-4xl font-bold">11:00-13:00</h3>
             <p>-</p>
-            <p className="">Blok I a II</p>
+            <p className="">
+              1. blok - Od dat po brand safety <br />
+              2. blok - Expanze pomocí influencer marketingu{" "}
+            </p>
           </div>
           <div className="">
             <h3 className="text-4xl font-bold">13:00-14:00</h3>
@@ -37,7 +40,10 @@ const Agenda = () => {
           <div className="">
             <h3 className="text-4xl font-bold">14:00-16:00</h3>
             <p>-</p>
-            <p className="">Blok III a IV</p>
+            <p className="">
+              3. blok - Platformy a influencer marketing <br /> 4. blok -
+              Influencers point of view
+            </p>
           </div>
           <div className="">
             <h3 className="text-4xl font-bold">16:00-18:00</h3>
@@ -46,7 +52,7 @@ const Agenda = () => {
           </div>
           <div className="">
             <h3 className="text-4xl font-bold">21:00</h3>
-            <p>-</p>
+
             <p className="">After party</p>
           </div>
         </div>

@@ -33,7 +33,11 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">Bude doplněno</p>
+              <p className="">
+                Victoria je Influencer Marketing Manager v C&A už téměř pět let.
+                Nasdílí s vámi know how, jak propojit influencer marketing do
+                dalších kanálů marketingové strategie.
+              </p>
             </div>
           </div>
         }

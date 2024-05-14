@@ -33,7 +33,11 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">Bude doplněno</p>
+              <p className="">
+                Adam Rajnoha, CEO studia Yord představí virtuální influencerku
+                Bejby Blue, virtualního avatara Václava Laurina nebo jeden
+                secret projekt, o kterém zatím nemůžeme mluvit!
+              </p>
             </div>
           </div>
         }
