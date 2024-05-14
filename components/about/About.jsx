@@ -2,12 +2,12 @@ import Styles from "/components/about/styles.module.scss";
 import Revealx from "../reveals/Revealx";
 const About = () => {
   return (
-    <section className="">
+    <div className="mt-28 lg:mt-[190px]">
       {" "}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto px-2">
         <div className="flex flex-col">
           <Revealx delay={0.2}>
-            <h2 className="pb-[24px]">Co je IMCP?</h2>
+            <h2 className="pb-[24px] ">Co je IMCP?</h2>
           </Revealx>
           <Revealx delay={0.4}>
             {" "}
@@ -46,7 +46,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 export default About;
