@@ -3,8 +3,8 @@ import Link from "next/link";
 const Page = () => {
   return (
     <>
-      <div className="max-w-6xl mx-auto mt-40 md:mt-480 pb-14 px-3">
-        <img src="/im_big.jpg" className="pb-[48px]" alt="" />
+      <div className="max-w-6xl mx-auto mt-32 lg:mt-40 pb-14 px-3">
+        <img src="/ochrana_big.jpg" className="pb-[24px] lg:pb-[48px]" alt="" />
         <h2 className="pb-[24px]">
           Ochrana je důležitá. I u influencer marketingu.
         </h2>

@@ -2,8 +2,8 @@ import styles from "./gdpr.module.scss";
 const Page = () => {
   return (
     <>
-      <div className="max-w-6xl mx-auto mt-40 md:mt-480 pb-14 px-3">
-        <h2 className="pb-10">ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ</h2>
+      <div className="max-w-6xl mx-auto mt-32 lg:mt-40 md:mt-480 pb-14 px-3">
+        <h2 className="pb-[24px]">ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ</h2>
         <p>
           <span className={styles.bold}>1. Správce osobních údajů </span>
           <br /> 1.1. World of Online, s.r.o., se sídlem Voršilská 139/5, Nové

@@ -5,19 +5,19 @@ import style from "/components/flip_card/flip1/Style.module.scss";
 
 const Flipcard = () => {
   const containerStyle = {
-    width: "100%",
-    height: "310px",
+    width: "300px",
+    height: "300px",
   };
 
   const cardStyle = {
     color: "white",
-    width: "100%",
-    height: "100%",
+    width: "300px",
+    height: "300px",
   };
 
   const contentStyle = {
-    width: "100%",
-    height: "100%",
+    width: "300px",
+    height: "300px",
   };
   return (
     <div>
@@ -39,7 +39,7 @@ const Flipcard = () => {
         }
       />
 
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between max-w-[300px]">
         <div className="flex justify-between items-center">
           {" "}
           <p className={style.name}>Petr Srna</p>
@@ -47,7 +47,7 @@ const Flipcard = () => {
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
-        <p className={style.company}>CEO | World of Online</p>
+        <p className={style.company}>World of Online</p>
       </div>
     </div>
   );

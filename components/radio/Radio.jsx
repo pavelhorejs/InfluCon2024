@@ -142,7 +142,10 @@ const RadioButtons = () => {
               {" "}
               {paymentRecord?.paid == "true" &&
               paymentRecord?.paid2 !== "true" ? (
-                <img src="/ticket_offline.jpg" alt="" />
+                <>
+                  {" "}
+                  <img src="/ticket_offline.jpg" alt="" />
+                </>
               ) : null}
               {paymentRecord?.paid2 == "true" &&
               paymentRecord?.paid !== "true" ? (
@@ -150,7 +153,10 @@ const RadioButtons = () => {
               ) : null}
               {paymentRecord?.paid2 == "true" &&
               paymentRecord?.paid == "true" ? (
-                <img src="/ticket_double.jpg" alt="" />
+                <>
+                  {" "}
+                  <img src="/ticket_double.jpg" alt="" />
+                </>
               ) : null}
               {paymentRecord?.paid !== "true" &&
               paymentRecord?.paid2 !== "true" ? (

@@ -2,8 +2,8 @@ import styles from "../gdpr/gdpr.module.scss";
 const Page = () => {
   return (
     <>
-      <div className="max-w-6xl mx-auto mt-40 md:mt-48 pb-14 px-3">
-        <h2 className="pb-10">Soubory Cookies</h2>
+      <div className="max-w-6xl mx-auto mt-32 lg:mt-48 pb-14 px-3">
+        <h2 className="pb-[24px]">Soubory Cookies</h2>
         <p>
           Tyto Zásady cookies se vztahují na občany a osoby s trvalým pobytem v
           Evropském hospodářském prostoru. <br /> <br />

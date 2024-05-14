@@ -35,13 +35,16 @@ const Page = () => {
       </div>
       <div className="py-[32px] max-w-[1280px] mx-auto px-2">
         <Link href="/">
-          <motion.button
-            whileHover={{ scale: 0.99 }}
-            transition={{ type: "spring" }}
-            className="button h-[64px]"
-          >
-            Zpět
-          </motion.button>
+          <Revealx delay={0.2}>
+            {" "}
+            <motion.button
+              whileHover={{ scale: 0.99 }}
+              transition={{ type: "spring" }}
+              className="button h-[64px]"
+            >
+              Zpět
+            </motion.button>
+          </Revealx>
         </Link>
       </div>
     </>

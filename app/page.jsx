@@ -20,7 +20,7 @@ export default function Home() {
       <Tickets />
       <Program />
       <Organizer />
-      <Partners />
+
       <Blog />
       <Faq />
       <Subscribe />

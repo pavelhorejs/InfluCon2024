@@ -24,7 +24,9 @@ const Blog = () => {
             </Revealx>
             <Revealx delay="0.4">
               {" "}
-              <p className="mt-[16px]">Trendy v influencer marketingu 2024</p>
+              <p className="mt-[8px] font-bold">
+                Trendy v influencer marketingu 2024
+              </p>
             </Revealx>
           </div>
         </Link>
@@ -40,7 +42,7 @@ const Blog = () => {
             </Revealx>
             <Revealx delay="0.4">
               {" "}
-              <p className="mt-[16px]">
+              <p className="mt-[8px] font-bold">
                 Ochrana je důležitá. I u influencer marketingu.
               </p>
             </Revealx>
@@ -58,7 +60,7 @@ const Blog = () => {
             </Revealx>
             <Revealx delay="0.4">
               {" "}
-              <p className="mt-[16px]">
+              <p className="mt-[8px] font-bold">
                 Analýza výkonu 140 influencerských kampaní, které prošly
                 agenturou WOO
               </p>
