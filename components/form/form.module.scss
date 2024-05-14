@@ -21,7 +21,7 @@
     @media screen and (max-width: 600px) {
         .wrapper{
             display: block;
-       
+            
             }
         
     }
@@ -35,6 +35,13 @@
        }
 
 }
+
+@media screen and (max-width: 600px) {
+    .registrationForm{
+   
+    }
+}
+
 .loginForm {
     min-width: 350px;
     display: flex;

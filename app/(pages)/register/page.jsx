@@ -53,7 +53,7 @@ const Page = () => {
               <form className={styles.registrationForm} noValidate>
                 <div className={styles.wrapper}>
                   <div>
-                    <p>NAME</p>
+                    <p className="mt-[16px] md:mt-0">JMÉNO</p>
                     <input
                       type="text"
                       placeholder="Jan Novák"
@@ -63,7 +63,7 @@ const Page = () => {
                     />
                   </div>
                   <div>
-                    <p>COMPANY</p>
+                    <p className="mt-[16px] md:mt-0">SPOLEČNOST</p>
                     <input
                       type="text"
                       placeholder="World of Online"
@@ -85,7 +85,7 @@ const Page = () => {
                     />
                   </div>
                   <div>
-                    <p>PHONE</p>
+                    <p className="mt-[16px] md:mt-0">TELEFON</p>
                     <input
                       type="text"
                       placeholder="+420 777 888 999"
@@ -96,7 +96,7 @@ const Page = () => {
                   </div>
                 </div>
                 <div>
-                  <p>ADDRESS</p>
+                  <p>ADRESA</p>
                   <input
                     type="text"
                     placeholder="Pražská 1, Praha, 100 00"
@@ -107,7 +107,7 @@ const Page = () => {
                   />
                 </div>
                 <div>
-                  <p>PASSWROD</p>
+                  <p>HESLO</p>
                   <input
                     type="password"
                     placeholder="*******"
