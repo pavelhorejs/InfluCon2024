@@ -13,21 +13,19 @@ const Agenda = () => {
           <div className="redItem1"></div>
           <div className="redItem2"></div>
           <div className="">
-            <h3 className="text-4xl font-bold">10:00-10:45</h3>
-            <p>-</p>
+            <h3 className="text-4xl font-bold pb-5">10:00-10:45</h3>
+
             <p className="">Registrace, káva & networking</p>
           </div>
           <div className="">
-            <h3 className="text-4xl font-bold">11:00-13:00</h3>
-            <p>-</p>
+            <h3 className="text-4xl font-bold pb-5">11:00-13:00</h3>
             <p className="">
               1. blok - Od dat po brand safety <br />
               2. blok - Expanze pomocí influencer marketingu{" "}
             </p>
           </div>
           <div className="">
-            <h3 className="text-4xl font-bold">13:00-14:00</h3>
-            <p>-</p>
+            <h3 className="text-4xl font-bold pb-5">13:00-14:00</h3>
             <p className="">Oběd</p>
           </div>
         </div>
@@ -38,20 +36,20 @@ const Agenda = () => {
           <div className="redItem3"></div>
           <div className="redItem4"></div>
           <div className="">
-            <h3 className="text-4xl font-bold">14:00-16:00</h3>
-            <p>-</p>
+            <h3 className="text-4xl font-bold pb-5">14:00-16:00</h3>
+
             <p className="">
               3. blok - Platformy a influencer marketing <br /> 4. blok -
               Influencers point of view
             </p>
           </div>
           <div className="">
-            <h3 className="text-4xl font-bold">16:00-18:00</h3>
-            <p>-</p>
+            <h3 className="text-4xl font-bold pb-5">16:00-18:00</h3>
+
             <p className="">Networking a setkání s influencery</p>
           </div>
           <div className="">
-            <h3 className="text-4xl font-bold">21:00</h3>
+            <h3 className="text-4xl font-bold">20:00</h3>
 
             <p className="">After party</p>
           </div>

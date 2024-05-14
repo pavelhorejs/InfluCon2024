@@ -34,7 +34,7 @@ const Page = () => {
           <span className={styles.greenText}>
             3.5. Influencer je povinen v každém Příspěvku řádně, jednoznačně a
             srozumitelně uvádět informaci o spolupráci s Klientem - označení
-            musí odpovídat podmínkám platoformy a musí být umístěno jako první v
+            musí odpovídat podmínkám platformy a musí být umístěno jako první v
             pořadí tak, aby byl kadždý adresát Příspěvku schopný rozpoznat, že
             se jedná o placenou spolupráci. Adresát příspěvku nesmí být uveden v
             omyl tím, že bude považovat Příspěvek Influencera za vyjádření jeho

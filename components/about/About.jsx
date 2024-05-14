@@ -21,7 +21,7 @@ const About = () => {
               profesionálové v oboru. <br /> <br /> Přihodí taky čísla,
               analytiky a výsledky, promluví o strategii a nevynecháme ani
               pohled největších mediálních platforem. <br /> <br /> Chcete víc?
-              Celý druhý panel dává prostor právě influencerům. Koneckonců, o
+              Celý čtvrtý blok dává prostor právě influencerům. Koneckonců, o
               nich to tady je. <br /> Tak co, uvidíme se?
             </p>
           </Revealx>

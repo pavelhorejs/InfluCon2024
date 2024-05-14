@@ -27,9 +27,9 @@ const faqs = [
       "Konference bude česko-anglicky. Čeští speakeři mluví ve svém jazyce a anglicky mluvící zase v angličtině. Je  nám jasné, že pro naší cílovou skupinu to není problém.",
   },
   {
-    question: "Občerstvení na konferenci bude? ",
+    question: "Občerstvení na konferenci bude?",
     answer:
-      "S tím můžete rozhodně počítat. Během coffee brakes i oběda vás bude čekat občerstvení včetně vege, vegan a bezlepkových variant.",
+      "S tím můžete rozhodně počítat. Během coffee breakes i oběda vás bude čekat občerstvení včetně vege, vegan a bezlepkových variant.",
   },
   {
     question: "Je možné se ubytovat v hotelu Clarion",
@@ -39,12 +39,12 @@ const faqs = [
   {
     question: "Co je v ceně vstupenky?",
     answer:
-      "x přednášek profesionálů z celého světa | Catering, káva i nealko během celého dne | Videozáznamy všech přednášek ve vysoké kvalitě | Vstup na afterparty | Networking se seniorními marketéry z firem i agentur, freelancery a influencery ",
+      "Přednášky profesionálů z celého světa | Catering, káva i nealko během celého dne | Videozáznamy všech přednášek ve vysoké kvalitě | Vstup na afterparty | Networking se seniorními marketéry z firem i agentur, freelancery a influencery.",
   },
   {
     question: "Jak si můžu pořídit vstupenku",
     answer:
-      "Doporučujeme si vstupenku zakoupit přímo na této stránce našeho webu. Je možné zaplatit bankovním převodem na zálohovou fakturu, nebo online platební kartou. Ve všech případech dostanete po úhradě daňový doklad.",
+      "Vstupenku si můžete zakoupit přímo na našem webu po přihlášení do uživatelské sekce. Je možné zaplatit online platební kartou, Apple Pay či Google Pay. Po úhradě dostanete daňový doklad.",
   },
   {
     question: "Nakupuji více lístků, mohu nakupovat na jednom účtě?",
@@ -61,15 +61,15 @@ const faqs = [
     answer:
       "Ano, vaši vstupenku může využít někdo jiný. Změnu účastníka je ale nutné nahlásit nejpozději do 23.9.2024. Můžete to udělat po přihlášení do svého účtu, nebo mailem na adrese info@woo.cz",
   },
+  // {
+  //   question: "Můžu svou vstupenku vrátit?",
+  //   answer:
+  //     "Vstupenku je možné vrátit do 23.9.2024 a získat tak 80 % částky zpět. Po tomto datu je jedině možné převést vstupenku v systému na někoho jiného.",
+  // },
   {
-    question: "Můžu svou vstupenku vrátit?",
+    question: "Jak po zkončení akce mohu zhlédnout záznam?",
     answer:
-      "Vstupenku je možné vrátit do 23.9.2024 a získat tak 80 % částky zpět. Po tomto datu je jedině možné převést vstupenku v systému na někoho jiného.",
-  },
-  {
-    question: "Jak po zkončení akce mohu zhlénout záznam?",
-    answer:
-      "Záznam z celé akce bude po ukončení akce dostupný po přihlášení do uživatelského účetu. Záznam uvidí ti, kteří si zakoupili jak klasickou vstupenku tak live stream.",
+      "Záznam z celé akce bude po ukončení akce dostupný po přihlášení do uživatelského účet. Záznam uvidí ti, kteří si zakoupili jak klasickou vstupenku tak live stream.",
   },
 ];
 
