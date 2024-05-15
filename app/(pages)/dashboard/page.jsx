@@ -46,7 +46,7 @@ const Page = () => {
               Odhlásit
             </button>
           </div>
-          {loggedInUser.$id === "663bd2fe000101e94747" ? (
+          {loggedInUser.$id === "664508a70034600e72a3" ? (
             <div>
               <RadioButtons2 />
             </div>
