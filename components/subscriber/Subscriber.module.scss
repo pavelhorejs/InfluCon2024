@@ -11,11 +11,9 @@
     box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.09), 0px 4px 4px 0px rgba(0, 0, 0, 0.09);
     max-width: 1100px;
     h3{
-    max-width: 380px;
     font-weight: 800;
     line-height: 33px;
     }
-    
 }
 @media (max-width: 950px) {
     .sub {
@@ -25,10 +23,24 @@
         max-width: 280px;
         margin-left: auto;
         margin-right: auto;
-
         }
     }
 
+}
+.wrapper{
+display: flex;
+flex-direction: column;
+padding: 15px;
+h3,p {
+text-align: center;
+}
+}
+@media screen and (min-width: 950px) {
+    .wrapper {
+        h3,p {
+            text-align: start;
+            }
+    }
 }
 
 .input {
@@ -50,7 +62,6 @@ height: 100%;
         background-image:none;
     }
 }
-
     .button {
         display: flex;
         flex-direction: row;
@@ -64,8 +75,19 @@ height: 100%;
       .button:hover {
         background-color: #D6005A;
       }
-
       .input:focus,
     .textArea:focus {
-        outline: none; /* Remove outline when input is focused */
+        outline: none; 
     }
+    .inputWrapper{
+    display: flex;
+    flex-wrap: wrap ;
+
+gap: 16px;
+margin-top: 10px;
+}
+@media screen and (max-width: 950px) {
+    .inputWrapper {
+        justify-content: center;
+    }
+}

@@ -5,9 +5,9 @@ const About = () => {
     <div className="mt-28 lg:mt-[190px]">
       {" "}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto px-2">
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center lg:items-start">
           <Revealx delay={0.2}>
-            <h2 className="pb-[24px] text-center lg:text-start ">
+            <h2 className="pb-[24px] text-center lg:text-start">
               Co je InfluCon?
             </h2>
           </Revealx>
@@ -26,7 +26,7 @@ const About = () => {
             </p>
           </Revealx>
         </div>
-        <div className="flex flex-col  items-center mt-10 md:mt-0">
+        <div className="flex flex-col items-center mt-10 md:mt-0">
           {" "}
           <div className="flex flex-col gap-[24px] items-center lg:items-start">
             <Revealx delay={0.2}>

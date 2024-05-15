@@ -49,30 +49,25 @@ const Subscriber = () => {
 
   return (
     <div className={styles.sub}>
-      <div className="flex flex-col px-3 md:px-10 py-5">
-        <h3 className="max-w-[600px] text-center md:text-left text-2xl">
-          Přihlaste se k odběru našeho newsletteru
-        </h3>
-        <p className="text-center md:text-left">
+      <div className={styles.wrapper}>
+        <h3 className="text-2xl">Přihlaste se k odběru našeho newsletteru</h3>
+        <p className="">
           Všechny novinky a zajímavosti dostanete začerstva rovnou do inboxu.
         </p>
 
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
-          {" "}
           {errors.Email && (
             <p className="error text-xs text-red-600 ml-4 mt-1 mb-2 absolute">
               {errors.Email.message}
             </p>
           )}
-          <div className="flex flex-wrap w-full items-center justify-center gap-[16px] mt-4">
-            <div className="">
-              <input
-                {...register("Email")}
-                type="Email"
-                placeholder="Váš e-mail"
-                className={styles.input}
-              />
-            </div>
+          <div className={styles.inputWrapper}>
+            <input
+              {...register("Email")}
+              type="Email"
+              placeholder="Váš e-mail"
+              className={styles.input}
+            />
             <motion.button
               whileHover={{ scale: 0.98 }}
               className={styles.button}
@@ -80,25 +75,24 @@ const Subscriber = () => {
             >
               Chci newsletter
             </motion.button>
-
-            <Toaster
-              containerStyle={{
-                position: "fixed",
-                top: "20px",
-                right: "15px",
-              }}
-              toastOptions={{
-                className: "",
-                style: {
-                  backgroundColor: "#22FFAF",
-                  border: "1px solid #002554",
-                  borderRadius: "16px 0.4px 16px  0.4px ",
-                  padding: "16px",
-                  color: "black",
-                },
-              }}
-            />
           </div>
+          <Toaster
+            containerStyle={{
+              position: "fixed",
+              top: "20px",
+              right: "15px",
+            }}
+            toastOptions={{
+              className: "",
+              style: {
+                backgroundColor: "#22FFAF",
+                border: "1px solid #002554",
+                borderRadius: "16px 0.4px 16px  0.4px ",
+                padding: "16px",
+                color: "black",
+              },
+            }}
+          />
         </form>
       </div>
       <div className={styles.subscribe}></div>
