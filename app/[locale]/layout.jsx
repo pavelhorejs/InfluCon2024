@@ -1,8 +1,8 @@
 import "./globals.scss";
 import GoogleAnalytics from "/components/GoogleAnalytics";
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "../../components/navbar/Navbar";
 import Footer from "/components/footer/Footer";
-import CookieBanner from "../components/CookieBanner";
+import CookieBanner from "../../components/CookieBanner";
 import { Montserrat } from "next/font/google";
 
 export const metadata = {

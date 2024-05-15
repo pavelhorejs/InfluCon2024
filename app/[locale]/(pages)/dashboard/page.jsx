@@ -6,7 +6,7 @@ import RadioButtons from "/components/radio/Radio";
 import RadioButtons2 from "/components/radio2/Radio";
 import styles from "/components/form/form.module.scss";
 import Link from "next/link";
-import Revealx from "../../../components/reveals/Revealx";
+import Revealx from "/components/reveals/Revealx";
 const Page = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
   const [email, setEmail] = useState("");

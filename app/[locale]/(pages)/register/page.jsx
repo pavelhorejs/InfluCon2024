@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "/components/form/form.module.scss";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import Revealx from "../../../components/reveals/Revealx";
+import Revealx from "/components/reveals/Revealx";
 
 const Page = () => {
   const [email, setEmail] = useState("");

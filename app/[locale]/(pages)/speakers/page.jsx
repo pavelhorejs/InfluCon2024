@@ -6,7 +6,7 @@ import Flipcard4 from "/components/flip_card/flip4/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Revealx from "../../../components/reveals/Revealx";
+import Revealx from "/components/reveals/Revealx";
 
 const Page = () => {
   return (
