@@ -33,8 +33,8 @@ const Subscriber = () => {
   const onSubmit = async (data) => {
     try {
       const response = await databases.createDocument(
-        process.env.NEXT_PUBLIC_APPWRITE_DATABSE_ID,
-        process.env.NEXT_PUBLIC_APPWRITE_SUBSCRIBER_COLLECTION_ID,
+        "66392c30001b34fefa14",
+        "663bcd6c003e4b981a09",
         "unique()",
         data,
         [Permission.read(Role.any()), Permission.write(Role.any())]
