@@ -3,6 +3,7 @@ import ReactFlipCard from "reactjs-flip-card";
 import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const Flipcard = () => {
   const { t, i18n } = useTranslation();
@@ -29,7 +30,13 @@ const Flipcard = () => {
         backStyle={cardStyle}
         frontComponent={
           <div style={contentStyle}>
-            <img src="petr.jpg" alt="Front Image" style={contentStyle} />
+            <Image
+              width={300}
+              height={300}
+              src="/petr.webp"
+              alt="Front Image"
+              style={contentStyle}
+            />
           </div>
         }
         backComponent={

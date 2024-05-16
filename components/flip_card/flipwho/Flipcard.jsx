@@ -2,6 +2,7 @@
 import ReactFlipCard from "reactjs-flip-card";
 import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
+import Image from "next/image";
 
 const Flipcard = () => {
   const containerStyle = {
@@ -27,7 +28,13 @@ const Flipcard = () => {
         backStyle={cardStyle}
         frontComponent={
           <div style={contentStyle}>
-            <img src="who.png" alt="Front Image" style={contentStyle} />
+            <Image
+              width={300}
+              height={300}
+              src="/who.webp"
+              alt="Front Image"
+              style={contentStyle}
+            />
           </div>
         }
         backComponent={
