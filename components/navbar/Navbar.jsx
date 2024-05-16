@@ -5,6 +5,7 @@ import { delay, motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "/components/LanguageChanger";
+
 const Navbar = () => {
   const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
