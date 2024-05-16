@@ -3,8 +3,10 @@ import React, { useState, useEffect } from "react";
 import Styles from "./navbar.module.scss";
 import { delay, motion } from "framer-motion";
 import Link from "next/link";
-
+import { useTranslation } from "react-i18next";
+import LanguageChanger from "/components/LanguageChanger";
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
 
@@ -71,11 +73,23 @@ const Navbar = () => {
         <div className={Styles.navigation}>
           {burgerMenuActive ? (
             <Link href="/">
-              <img src="/logo_2.svg" alt="logo" width={150} />
+              <motion.img
+                whileHover={{ scale: 0.97 }}
+                transition={{ type: "spring" }}
+                src="/logo_2.svg"
+                alt="logo"
+                width={150}
+              />
             </Link>
           ) : (
             <Link href="/">
-              <img src="/logo.svg" alt="logo" width={150} />
+              <motion.img
+                whileHover={{ scale: 0.97 }}
+                transition={{ type: "spring" }}
+                src="/logo.svg"
+                alt="logo"
+                width={150}
+              />
             </Link>
           )}
 
@@ -85,22 +99,22 @@ const Navbar = () => {
                 className={`flex gap-5 ${isMobile ? Styles.mobileMenu : ""}`}
               >
                 <Link className={Styles.navigaceText} href="/speakers">
-                  Speakeři
+                  {t("NavItem1")}
                 </Link>
                 <a className={Styles.navigaceText} href="/#agenda">
-                  Program
+                  {t("NavItem2")}
                 </a>
                 <Link className={Styles.navigaceText} href="/#tickets">
-                  Vstupenky
+                  {t("NavItem3")}
                 </Link>
                 <Link className={Styles.navigaceText} href="/dashboard">
-                  Live stream
+                  {t("NavItem4")}
                 </Link>
                 <Link className={Styles.navigaceText} href="/contact">
-                  Kontakt
+                  {t("NavItem5")}
                 </Link>
               </div>
-              {/* <p>CZ | EN</p> */}
+              <LanguageChanger />
               <Link href="/dashboard">
                 <motion.img
                   whileHover={{ scale: 0.95 }}
@@ -130,22 +144,22 @@ const Navbar = () => {
               exit="closed"
             >
               <motion.li variants={listItemVariants}>
-                <a href="/speakers">Speakeři</a>
+                <a href="/speakers"> {t("NavItem1")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <Link href="/#agenda">Program</Link>
+                <Link href="/#agenda"> {t("NavItem2")}</Link>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <a href="/#tickets">Vstupenky</a>
+                <a href="/#tickets"> {t("NavItem3")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
                 <a href="/dashboard">Login</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <a href="/dashboard">Live stream</a>
+                <a href="/dashboard"> {t("NavItem4")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <a href="/contact">Kontakt</a>
+                <a href="/contact"> {t("NavItem5")}</a>
               </motion.li>
             </motion.ul>
 

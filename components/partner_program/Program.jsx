@@ -1,8 +1,10 @@
-import Button_red from "/components/buttons/button_red/Button_red";
-import styles from "/components/partner_program/styles.module.scss";
+"use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Revealx from "../reveals/Revealx";
+import { useTranslation } from "react-i18next";
 const Program = () => {
+  const { t } = useTranslation();
   return (
     <section
       className="flex flex-col justify-center items-center max-w-6xl mx-auto px-2"
@@ -10,14 +12,12 @@ const Program = () => {
     >
       {" "}
       <Revealx delay={0.2}>
-        <h2 className="text-center pb-[24px]">Chcete s námi spolupracovat?</h2>
+        <h2 className="text-center pb-[24px]">{t("CooperationComponent")}</h2>
       </Revealx>
       <Revealx delay={0.4}>
         {" "}
         <p className="max-w-lg text-center pb-[24px]">
-          Rádi uvítáme další firmy a osobnosti, které se chtějí prezentovat jako
-          lídři influencer marketingu a mají k tomuto tématu co říct. Neváhejte
-          nás kontaktovat; ochotně s vámi probereme možnosti partnerství.
+          {t("CooperationComponent2")}
         </p>
       </Revealx>
       <div className="flex justify-center">
@@ -26,7 +26,13 @@ const Program = () => {
           {" "}
           <div className="">
             <Link href="/contact">
-              <Button_red text="Chci být partner" />
+              <motion.button
+                whileHover={{ scale: 0.97 }}
+                transition={{ type: "spring" }}
+                className="button"
+              >
+                {t("Button4")}
+              </motion.button>
             </Link>
           </div>
         </Revealx>

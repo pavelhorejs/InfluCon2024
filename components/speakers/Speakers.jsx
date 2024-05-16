@@ -6,7 +6,9 @@ import Flipcard4 from "/components/flip_card/flip4/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
+import { useTranslation } from "react-i18next";
 const Speakers = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-[#22FFAF] py-10">
       {" "}
@@ -14,7 +16,7 @@ const Speakers = () => {
         <Revealx delay={0.2}>
           {" "}
           <h2 className="text-black pb-[32px] text-center lg:text-left">
-            Letošní speakeři
+            {t("speakerComponent")}
           </h2>
         </Revealx>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-[16px] gap-y-[16px] pb-[32px] ">
@@ -40,7 +42,7 @@ const Speakers = () => {
               transition={{ type: "spring" }}
               className="button h-[64px] max-w-[300px] md:max-w-full mx-auto"
             >
-              Více
+              {t("viceButton")}
             </motion.button>
           </Revealx>
         </Link>

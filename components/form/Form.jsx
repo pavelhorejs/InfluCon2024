@@ -6,8 +6,8 @@ import styles from "/components/form/form.module.scss";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import Button_red from "/components/buttons/button_red/Button_red";
-
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 const validationSchema = yup
   .object({
     Jmeno: yup.string().required("Tento údaj je povinný"),
@@ -56,6 +56,7 @@ export default function Page() {
         }
       );
   };
+  const { t } = useTranslation();
   return (
     <>
       <form
@@ -65,7 +66,7 @@ export default function Page() {
         noValidate
       >
         <div>
-          <p>JMÉNO</p>
+          <p>{t("RegisterJmeno")}</p>
           <input
             {...register("Jmeno")}
             type="text"
@@ -78,7 +79,7 @@ export default function Page() {
           )}
         </div>
         <div>
-          <p>EMAIL</p>
+          <p>{t("RegisterEmail")}</p>
           <input
             {...register("Email")}
             type="email"
@@ -92,7 +93,7 @@ export default function Page() {
         </div>
 
         <div>
-          <p>ZPRÁVA</p>
+          <p>{t("Zprava")}</p>
           <textarea
             className={styles.textArea}
             placeholder="Dobrý den, ..."
@@ -102,9 +103,14 @@ export default function Page() {
             rows="4"
           ></textarea>
         </div>
-        <div className={styles.gdprBorder}></div>
-
-        <Button_red type="submit" text="Odeslat zprávu" />
+        <motion.button
+          type="submit"
+          className="button"
+          whileHover={{ scale: 0.97 }}
+          transition={{ type: "spring" }}
+        >
+          {t("OdeslatZpravu")}
+        </motion.button>
 
         <Toaster
           containerStyle={{

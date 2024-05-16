@@ -2,8 +2,9 @@
 import ReactFlipCard from "reactjs-flip-card";
 import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
-
+import { useTranslation } from "react-i18next";
 const Flipcard = () => {
+  const { t, i18n } = useTranslation();
   const containerStyle = {
     width: "300px",
     height: "300px",
@@ -33,11 +34,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">
-                Adam Rajnoha, CEO studia Yord představí virtuální influencerku
-                Bejby Blue, virtualního avatara Václava Laurina nebo jeden
-                secret projekt, o kterém zatím nemůžeme mluvit!
-              </p>
+              <p className="">{t("adam")}</p>
             </div>
           </div>
         }

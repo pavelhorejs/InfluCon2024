@@ -6,8 +6,10 @@ import RadioButtons from "/components/radio/Radio";
 import RadioButtons2 from "/components/radio2/Radio";
 import styles from "/components/form/form.module.scss";
 import Link from "next/link";
-import Revealx from "../../../components/reveals/Revealx";
+import Revealx from "/components/reveals/Revealx";
+import { useTranslation } from "react-i18next";
 const Page = () => {
+  const { t } = useTranslation();
   const [loggedInUser, setLoggedInUser] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -41,9 +43,11 @@ const Page = () => {
       <>
         <section className="max-w-7xl mx-auto px-2">
           <div className="flex justify-between bg-[#100D0D] py-3 px-3">
-            <p>Jste přihlášen jako uživatel: {loggedInUser.name}</p>
+            <p>
+              {t("Dashboard")} {loggedInUser.name}
+            </p>
             <button className="link" type="button" onClick={logout}>
-              Odhlásit
+              {t("DashboardLogOut")}
             </button>
           </div>
           {loggedInUser.$id === "664508a70034600e72a3" ? (
@@ -64,7 +68,7 @@ const Page = () => {
         <div className="flex flex-col justify-center items-center">
           <Revealx delay={0.2}>
             {" "}
-            <h2 className="pb-[24px] text-center">Login</h2>
+            <h2 className="pb-[24px] text-center"> {t("LoginHeadline")}</h2>
           </Revealx>
           <Revealx delay={0.4}>
             {" "}
@@ -80,7 +84,7 @@ const Page = () => {
                 />
               </div>
               <div>
-                <p>HESLO</p>
+                <p>{t("RegisterHeslo")}</p>
                 <input
                   type="password"
                   placeholder="*****"
@@ -96,17 +100,17 @@ const Page = () => {
                 type="button"
                 onClick={() => login(email, password)}
               >
-                Login
+                {t("LoginPrihlasit")}
               </motion.button>
             </form>
           </Revealx>
           <Revealx delay={0.6}>
             {" "}
             <p className="mt-5 text-sm">
-              Ještě nemáte účet?{" "}
+              {t("LoginNemate")}{" "}
               <span>
                 <Link className={styles.link} href="/register">
-                  Registrujte se.
+                  {t("LoginRegistruj")}
                 </Link>
               </span>
             </p>

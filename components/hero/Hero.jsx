@@ -1,10 +1,13 @@
-import Button from "/components/buttons/button/Button";
+"use client";
+import { motion } from "framer-motion";
 import Dayscounter from "/components/days_counter/Dayscounter";
 import Socials from "/components/socials/socials_green/Socials";
 import Styles from "/components/hero/styles.module.scss";
 import Revealx from "../reveals/Revealx";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div className="bgWrap pt-32 lg:pt-20 px-2">
       <div className="md:hidden justify-end mt-5 md:mt-10 lg:mt-28">
@@ -14,7 +17,7 @@ const Hero = () => {
             <div className={Styles.greenItem1Mobile}></div>
             <div className={Styles.greenItem2Mobile}></div>
             <p className={Styles.mainText2}>07.10.2024</p>
-            <p className={Styles.offText2}>Hotel Clarion, Praha</p>
+            <p className={Styles.offText2}>{t("heroHeadline")}</p>
           </div>
         </div>
       </div>
@@ -25,10 +28,7 @@ const Hero = () => {
             <div className={Styles.redCard}>
               <div className={Styles.redItem1}></div>
               <div className={Styles.redItem2}></div>
-              <h1>
-                Zjistěte, jak influencer marketing posouvá značky. <br /> Včetně
-                té vaší.{" "}
-              </h1>
+              <h1>{t("heroHeadline")}</h1>
             </div>
           </Revealx>
           <div className="flex gap-[8px] lg:gap-[24px] mt-[8px] lg:mt-[24px]">
@@ -36,20 +36,32 @@ const Hero = () => {
             <Revealx delay={0.2}>
               {" "}
               <a href="#tickets">
-                <Button text="Koupit lístky" />
+                <motion.button
+                  whileHover={{ scale: 0.97 }}
+                  transition={{ type: "spring" }}
+                  className="buttonGreen"
+                >
+                  {t("Button1")}
+                </motion.button>
               </a>
             </Revealx>
             <Revealx delay={0.4}>
               {" "}
               <a href="/contact">
-                <Button text="Chci být partner" />
+                <motion.button
+                  whileHover={{ scale: 0.97 }}
+                  transition={{ type: "spring" }}
+                  className="buttonGreen"
+                >
+                  {t("Button2")}
+                </motion.button>
               </a>
             </Revealx>
           </div>
           <div className="mt-[48px]">
             <Revealx delay={1}>
               {" "}
-              <p>Sledujte nás online</p>
+              <p>{t("socials")}</p>
             </Revealx>
             <div className="mt-2">
               <Socials />
@@ -73,8 +85,7 @@ const Hero = () => {
                   10 <br />
                   2024
                 </p>
-                <p className={Styles.offText}>Hotel Clarion, Praha</p>
-
+                <p className={Styles.offText}>{t("place")}</p>
                 <div className="mt-10">
                   <Dayscounter />
                 </div>

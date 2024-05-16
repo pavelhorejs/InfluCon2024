@@ -6,9 +6,10 @@ import Flipcard4 from "/components/flip_card/flip4/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Revealx from "../../../components/reveals/Revealx";
-
+import Revealx from "/components/reveals/Revealx";
+import { useTranslation } from "react-i18next";
 const Page = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="mt-28 lg:mt-40 ">
@@ -16,15 +17,13 @@ const Page = () => {
           <div className="max-w-7xl mx-auto py-5 lg:py-14">
             <Revealx delay={0.2}>
               <h2 className="text-black pb-[24px] text-center lg:text-left mt-5 lg:mt-0">
-                Letošní speakeři
+                {t("SpeakerPageHeadline")}
               </h2>
             </Revealx>
             <Revealx delay={0.4}>
               {" "}
               <p className="text-black max-w-xl pb-[48px] text-center lg:text-left">
-                Seznamte se s profíky, kteří jsou (nejen) v influencer
-                marketingu jako doma. Přijďte si poslechnout o všem, co už
-                zkusili za vás – a jak to fungovalo.
+                {t("SpeakerPageText")}
               </p>
             </Revealx>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-[16px] gap-y-[32px]">
@@ -60,7 +59,7 @@ const Page = () => {
               </div>
             </div>
             <h2 className="pt-14 pb-5 font-3xl text-black text-center">
-              Více speakerů již brzy
+              {t("moreSoon")}
             </h2>
           </div>
         </div>
@@ -74,7 +73,7 @@ const Page = () => {
               transition={{ type: "spring" }}
               className="button h-[64px] max-w-[300px] md:max-w-full mx-auto"
             >
-              Zpět
+              {t("Back")}
             </motion.button>
           </Revealx>
         </Link>

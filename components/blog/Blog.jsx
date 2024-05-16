@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
-
+import { useTranslation } from "react-i18next";
 const Blog = () => {
+  const { t } = useTranslation();
   return (
     <section className="max-w-7xl mx-auto px-2" id="blog">
       <Revealx delay={0.2}>
@@ -22,9 +24,7 @@ const Blog = () => {
             </Revealx>
             <Revealx delay="0.4">
               {" "}
-              <p className="mt-[8px] font-bold">
-                Trendy v influencer marketingu 2024
-              </p>
+              <p className="mt-[8px] font-bold">{t("Blog")}</p>
             </Revealx>
           </div>
         </Link>
@@ -40,9 +40,7 @@ const Blog = () => {
             </Revealx>
             <Revealx delay="0.4">
               {" "}
-              <p className="mt-[8px] font-bold">
-                Ochrana je důležitá. I u influencer marketingu.
-              </p>
+              <p className="mt-[8px] font-bold">{t("Blog2")}</p>
             </Revealx>
           </div>
         </Link>
@@ -58,10 +56,7 @@ const Blog = () => {
             </Revealx>
             <Revealx delay="0.4">
               {" "}
-              <p className="mt-[8px] font-bold">
-                Analýza výkonu 140 influencerských kampaní, které prošly
-                agenturou WOO
-              </p>
+              <p className="mt-[8px] font-bold">{t("Blog3")}</p>
             </Revealx>
           </div>
         </Link>

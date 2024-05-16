@@ -1,4 +1,4 @@
-import styles from "/app/(pages)/gdpr/gdpr.module.scss";
+import styles from "/app/[locale]/(pages)/gdpr/gdpr.module.scss";
 import Link from "next/link";
 const Page = () => {
   return (

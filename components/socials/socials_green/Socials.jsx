@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
-
 const Socials = () => {
   return (
     <>

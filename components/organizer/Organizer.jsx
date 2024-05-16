@@ -1,11 +1,14 @@
+"use client";
 import styles from "/components/organizer/styles.module.scss";
 import Revealx from "../reveals/Revealx";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 const Organizer = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.container}>
       <Revealx delay={0.1}>
-        <h2>Pořadatel</h2>
+        <h2> {t("Organizer")}</h2>
       </Revealx>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[16px]">
         <Revealx>
@@ -34,15 +37,7 @@ const Organizer = () => {
           </Revealx>
           <Revealx delay={0.6}>
             {" "}
-            <p className="text-center lg:text-left">
-              Jsme full service digitání agentura a rádi vás poznáváme. Na
-              influencer marketingu jsme vyrostli, a i když toho dnes pokrýváme
-              mnohem víc, zůstávají influenceři a všechno kolem nich je jádrem
-              našeho zájmu a byznysu. Baví nás tenhle fenomén zkoumat, sledovat,
-              jak se vyvíjí a samozřejmě ho zaměstnávat v praxi. Tak, aby to
-              dávalo smysl pro influencery i značky, které chtějí držet krok s
-              trendy. Patříte mezi ně? Pak jste tu rozhodně správně.
-            </p>
+            <p className="text-center lg:text-left">{t("OrganizerText")}</p>
           </Revealx>
           <div className="flex justify-center lg:justify-end w-full ">
             <Revealx delay={0.4}>

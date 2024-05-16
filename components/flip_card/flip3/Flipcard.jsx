@@ -2,8 +2,9 @@
 import ReactFlipCard from "reactjs-flip-card";
 import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
-
+import { useTranslation } from "react-i18next";
 const Flipcard = () => {
+  const { t, i18n } = useTranslation();
   const containerStyle = {
     width: "300px",
     height: "300px",
@@ -33,11 +34,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">
-                Linda z TT vám ukáže, jak zapojit influencery do TikTok trendů z
-                pohledu značky a jak žádný neprošvihnout. Nabídky na moderování
-                dětských oslav a maturitních plesů prosí do zpráv, tak se těšte.
-              </p>
+              <p className="">{t("linda")}</p>
             </div>
           </div>
         }

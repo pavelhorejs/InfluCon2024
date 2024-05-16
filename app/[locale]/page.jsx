@@ -5,7 +5,6 @@ import Agenda from "/components/agenda/Agenda";
 import Tickets from "/components/tickets/Tickets";
 import Program from "/components/partner_program/Program";
 import Organizer from "/components/organizer/Organizer";
-import Partners from "/components/partners/Partners";
 import Blog from "/components/blog/Blog";
 import Faq from "/components/faq/Faq";
 import Subscribe from "/components/subscribe/Subscribe";
@@ -20,7 +19,6 @@ export default function Home() {
       <Tickets />
       <Program />
       <Organizer />
-
       <Blog />
       <Faq />
       <Subscribe />

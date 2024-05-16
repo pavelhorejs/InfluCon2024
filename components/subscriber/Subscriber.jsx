@@ -7,6 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { databases } from "/app/appwrite";
 import { Permission, Role } from "appwrite";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 const validationSchema = yup.object({
   Email: yup
@@ -16,6 +17,7 @@ const validationSchema = yup.object({
 });
 
 const Subscriber = () => {
+  const { t } = useTranslation();
   const notify = () => toast("Úspěšně odebíráno.");
   const {
     register,
@@ -50,10 +52,8 @@ const Subscriber = () => {
   return (
     <div className={styles.sub}>
       <div className={styles.wrapper}>
-        <h3 className="text-2xl">Přihlaste se k odběru našeho newsletteru</h3>
-        <p className="">
-          Všechny novinky a zajímavosti dostanete začerstva rovnou do inboxu.
-        </p>
+        <h3 className="text-2xl">{t("SubsribeHDL")}</h3>
+        <p className="">{t("SubsribeHDL2")}</p>
 
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           {errors.Email && (
@@ -73,7 +73,7 @@ const Subscriber = () => {
               className={styles.button}
               type="submit"
             >
-              Chci newsletter
+              {t("SubscirberButton")}
             </motion.button>
           </div>
           <Toaster

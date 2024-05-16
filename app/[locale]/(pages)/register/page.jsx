@@ -5,9 +5,11 @@ import Link from "next/link";
 import styles from "/components/form/form.module.scss";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import Revealx from "../../../components/reveals/Revealx";
+import Revealx from "/components/reveals/Revealx";
+import { useTranslation } from "react-i18next";
 
 const Page = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -51,7 +53,7 @@ const Page = () => {
               <Revealx delay={0.2}>
                 {" "}
                 <h2 className="pb-[24px] text-center mt-32 lg:mt-10">
-                  Registrovat
+                  {t("RegisterHeadline")}
                 </h2>
               </Revealx>
               <Revealx delay={0.4}>
@@ -59,7 +61,7 @@ const Page = () => {
                 <form className={styles.registrationForm} noValidate>
                   <div className={styles.wrapper}>
                     <div>
-                      <p className="mt-[16px] md:mt-0">JMÉNO</p>
+                      <p className="mt-[16px] md:mt-0">{t("RegisterJmeno")}</p>
                       <input
                         type="text"
                         placeholder="Jan Novák"
@@ -69,7 +71,9 @@ const Page = () => {
                       />
                     </div>
                     <div>
-                      <p className="mt-[16px] md:mt-0">SPOLEČNOST</p>
+                      <p className="mt-[16px] md:mt-0">
+                        {t("RegisterSpolecnost")}
+                      </p>
                       <input
                         type="text"
                         placeholder="World of Online"
@@ -81,7 +85,7 @@ const Page = () => {
                   </div>
                   <div className={styles.wrapper}>
                     <div>
-                      <p>EMAIL</p>
+                      <p>{t("RegisterEmail")}</p>
                       <input
                         type="email"
                         placeholder="novak@woo.cz"
@@ -91,7 +95,7 @@ const Page = () => {
                       />
                     </div>
                     <div>
-                      <p className="mt-[16px] md:mt-0">TELEFON</p>
+                      <p className="mt-[16px] md:mt-0">{t("RegisterPhone")}</p>
                       <input
                         type="text"
                         placeholder="+420 777 888 999"
@@ -102,7 +106,7 @@ const Page = () => {
                     </div>
                   </div>
                   <div>
-                    <p>ADRESA</p>
+                    <p>{t("RegisterAdresa")}</p>
                     <input
                       type="text"
                       placeholder="Pražská 1, Praha, 100 00"
@@ -113,7 +117,7 @@ const Page = () => {
                     />
                   </div>
                   <div>
-                    <p>HESLO</p>
+                    <p>{t("RegisterHeslo")}</p>
                     <input
                       type="password"
                       placeholder="*******"
@@ -131,7 +135,7 @@ const Page = () => {
                     type="button"
                     onClick={register}
                   >
-                    Registrovat
+                    {t("Registrovat")}
                   </motion.button>
                 </form>
               </Revealx>
@@ -140,10 +144,10 @@ const Page = () => {
           <Revealx delay={0.6}>
             {" "}
             <p className="mt-[24px] text-sm">
-              Již máte účet?{" "}
+              {t("RegisterAlready")}{" "}
               <span>
                 <Link className={styles.link} href="dashboard">
-                  Přihlaste se.
+                  {t("RegisterLogin")}
                 </Link>
               </span>
             </p>

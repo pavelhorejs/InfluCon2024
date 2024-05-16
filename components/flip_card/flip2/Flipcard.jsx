@@ -2,8 +2,9 @@
 import ReactFlipCard from "reactjs-flip-card";
 import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
-
+import { useTranslation } from "react-i18next";
 const Flipcard = () => {
+  const { t, i18n } = useTranslation();
   const containerStyle = {
     width: "300px",
     height: "300px",
@@ -33,11 +34,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">
-                Victoria je Influencer Marketing Manager v C&A už téměř pět let.
-                Nasdílí s vámi know how, jak propojit influencer marketing do
-                dalších kanálů marketingové strategie.
-              </p>
+              <p className="">{t("victorie")}</p>
             </div>
           </div>
         }

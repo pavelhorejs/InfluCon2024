@@ -6,7 +6,7 @@ import styles from "/components/radio/styles.module.scss";
 import Button from "/components/buttons/button/Button";
 import Link from "next/link";
 import * as appwrite from "appwrite";
-
+import { useTranslation } from "react-i18next";
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_SECRET);
 
 import { Account, Client, Databases, ID, Query } from "appwrite";
@@ -75,7 +75,7 @@ const RadioButtons = () => {
     }
     getData();
   }, []);
-
+  const { t } = useTranslation();
   return (
     <div className={styles.container}>
       <div className={styles.radioContainer}>
@@ -94,7 +94,7 @@ const RadioButtons = () => {
               selectedOption === "option1" ? styles.active : ""
             }`}
           >
-            Vstupenky
+            {t("Tickets")}
           </div>
         </label>
 
@@ -123,7 +123,7 @@ const RadioButtons = () => {
             <div>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | Vstupenka na konferenci | 3990 Kč
+                  InfluCon 2024 | {t("TicketHeadline2")} | 3990 Kč
                 </div>
                 <Link onClick={buyOne} href="#">
                   <Button text="Zaplatit" />
@@ -131,7 +131,7 @@ const RadioButtons = () => {
               </div>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | Live stream přístup | 2490 Kč
+                  InfluCon 2024 | {t("Ticket2Headline2")} | 2490 Kč
                 </div>
                 <Link onClick={buyTwo} href="#">
                   <Button text="Zaplatit" />
@@ -160,7 +160,7 @@ const RadioButtons = () => {
               ) : null}
               {paymentRecord?.paid !== "true" &&
               paymentRecord?.paid2 !== "true" ? (
-                <div className={styles.box}>Namáte žádnou vstupenku</div>
+                <div className={styles.box}>{t("NoTicket")}</div>
               ) : null}
             </div>
           </div>
@@ -169,9 +169,9 @@ const RadioButtons = () => {
           <div className={styles.content}>
             {paymentRecord?.paid !== "true" &&
             paymentRecord?.paid2 !== "true" ? (
-              <div>Live stream se zobrazí po zakoupení ONLINE vstupenky.</div>
+              <div>{t("LiveStream")}</div>
             ) : (
-              <div>Přehrávač se zobrazí v době live streamu.</div>
+              <div>{t("LiveStream2")}</div>
             )}
           </div>
         )}
