@@ -65,7 +65,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" ">
+    <nav>
       <div
         className={`${Styles.navbar} ${
           isMobile && burgerMenuActive ? Styles.active : ""
@@ -127,12 +127,16 @@ const Navbar = () => {
             </div>
           )}
           {isMobile && (
-            <div
-              className={Styles.burgerMenuContainer}
-              onClick={() => toggleBurgerMenu()}
-            >
-              <div className={Styles.burgerMenuTrigger}></div>
-              <div className={Styles.burgerMenu}></div>
+            <div className="flex gap-5">
+              {" "}
+              <LanguageChanger />
+              <div
+                className={Styles.burgerMenuContainer}
+                onClick={() => toggleBurgerMenu()}
+              >
+                <div className={Styles.burgerMenuTrigger}></div>
+                <div className={Styles.burgerMenu}></div>
+              </div>
             </div>
           )}
         </div>
