@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import styles from "/components/footer/Footer.module.scss";
 import Socials from "/components/socials/socials_black/Socials";
 import Woo from "/components/woo/Woo";
