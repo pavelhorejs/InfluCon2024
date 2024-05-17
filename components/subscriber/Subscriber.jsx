@@ -65,7 +65,7 @@ const Subscriber = () => {
             <input
               {...register("Email")}
               type="Email"
-              placeholder="Váš e-mail"
+              placeholder="novak@woo.cz"
               className={styles.input}
             />
             <motion.button

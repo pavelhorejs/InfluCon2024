@@ -58,9 +58,12 @@ const Page = () => {
                 <Flipcardwho />
               </div>
             </div>
-            <h2 className="pt-14 pb-5 font-3xl text-black text-center">
-              {t("moreSoon")}
-            </h2>
+            <Revealx delay={0.2}>
+              {" "}
+              <h2 className="pt-14 pb-5 font-3xl text-black text-center">
+                {t("moreSoon")}
+              </h2>
+            </Revealx>
           </div>
         </div>
       </div>
