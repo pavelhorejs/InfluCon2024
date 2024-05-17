@@ -174,5 +174,8 @@
 "gdprP3_1g": "g. právo souhlas se zpracováním osobních údajů kdykoliv odvolat,",
 "gdprP4": "4. Informace a otázky",
 "gdprP4_text": "Další informace o právech a povinnostech při ochraně osobních údajů můžete získat prostřednictvím e-mailu na: ",
-"gdprP5": "5. Tyto podmínky jsou účinné od 14.05.2024"
+"gdprP5": "5. Tyto podmínky jsou účinné od 14.05.2024",
+"cookieBanner": "Při návštěvě jakékoli webové stránky může prohlížeč ukládat nebo načítat informace, většinou ve formě souborů cookie. Protože respektujeme vaše právo na soukromí, můžete se rozhodnout některé typy souborů cookie nepovolit.",
+"cookieBannerButton": "Povolit",
+"cookieBannerButton2": "Povolit nezbytné"
 }

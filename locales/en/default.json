@@ -174,5 +174,8 @@
   "gdprP3_1g": "g. the right to withdraw consent to the processing of personal data at any time,",
   "gdprP4": "4. Information and Questions",
   "gdprP4_text": "You can obtain further information about rights and obligations concerning personal data protection via email at: ",
-  "gdprP5": "5. These terms are effective from 14.05.2024"
+  "gdprP5": "5. These terms are effective from 14.05.2024",
+  "cookieBanner": "When you visit any website, your browser may store or retrieve information, mostly in the form of cookies. Because we respect your right to privacy, you can choose to not allow some types of cookies.",
+  "cookieBannerButton": "Allow",
+  "cookieBannerButton2": "Allow Necessary"
 }
