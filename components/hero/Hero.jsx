@@ -17,7 +17,8 @@ const Hero = () => {
             <div className={Styles.greenItem1Mobile}></div>
             <div className={Styles.greenItem2Mobile}></div>
             <p className={Styles.mainText2}>07.10.2024</p>
-            <p className={Styles.offText2}>{t("heroHeadline")}</p>
+            <p className="text-black font-bold">{t("place")}</p>
+            <Dayscounter />
           </div>
         </div>
       </div>
