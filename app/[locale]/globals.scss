@@ -168,6 +168,16 @@ background-color: #D6005A;
 background-color: #34AF83;
 }
 
+@media screen and (max-width: 768px){
+  .button {
+      font-size: 18px;
+  }
+  .buttonGreen {
+      font-size: 18px;
+  }
+}
+
+
 .redGlow{
   box-shadow: 0 0 20px 1px rgba(240, 0, 101, 0.2); 
 }
