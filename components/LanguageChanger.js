@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import i18nConfig from '/i18nConfig';
+import { motion } from 'framer-motion';
 
 export default function LanguageChanger() {
   const { i18n } = useTranslation();
@@ -49,7 +50,8 @@ export default function LanguageChanger() {
 
   return (
     <div>
-      <button
+      <motion.button
+        whileHover={{ scale: 0.97 }}
         style={{
           ...buttonStyle,
           ...(currentLocale === 'cs' ? activeButtonStyle : {}),
@@ -57,9 +59,10 @@ export default function LanguageChanger() {
         onClick={() => handleChange('cs')}
       >
         CZ 
-      </button>
+      </motion.button>
       |
-      <button
+      <motion.button
+       whileHover={{ scale: 0.97 }}
         style={{
           ...buttonStyle,
           ...(currentLocale === 'en' ? activeButtonStyle : {}),
@@ -67,7 +70,7 @@ export default function LanguageChanger() {
         onClick={() => handleChange('en')}
       >
         EN
-      </button>
+      </motion.button>
     </div>
   );
 }
