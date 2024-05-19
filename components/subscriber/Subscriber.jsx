@@ -35,8 +35,8 @@ const Subscriber = () => {
   const onSubmit = async (data) => {
     try {
       const response = await databases.createDocument(
-        "66392c30001b34fefa14",
-        "663bcd6c003e4b981a09",
+        process.env.NEXT_PUBLIC_APPWRITE_DATABSE_ID,
+        process.env.NEXT_PUBLIC_APPWRITE_SUBSCRIBER_COLLECTION_ID,
         "unique()",
         data,
         [Permission.read(Role.any()), Permission.write(Role.any())]
@@ -57,7 +57,7 @@ const Subscriber = () => {
 
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           {errors.Email && (
-            <p className="error text-xs text-red-600 ml-4 mt-1 mb-2 absolute">
+            <p className="error text-xs text-red-600  d">
               {errors.Email.message}
             </p>
           )}
@@ -86,7 +86,6 @@ const Subscriber = () => {
               className: "",
               style: {
                 backgroundColor: "#22FFAF",
-                border: "1px solid #002554",
                 borderRadius: "16px 0.4px 16px  0.4px ",
                 padding: "16px",
                 color: "black",

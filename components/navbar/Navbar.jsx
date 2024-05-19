@@ -170,14 +170,14 @@ const Navbar = () => {
 
             <div className="absolute bottom-5 ">
               <div className="flex gap-4">
-                <Link href="">
+                <Link href="https://www.instagram.com/world_of_online/">
                   {" "}
                   <img src="/ig_white.svg" alt="" />
                 </Link>
-                <Link href="">
+                <Link href="https://www.facebook.com/worldofonlineagency">
                   <img src="/fb_white.svg" alt="" />
                 </Link>
-                <Link href="">
+                <Link href="https://www.linkedin.com/company/worldofonline/">
                   {" "}
                   <img src="/in_white.svg" alt="" />
                 </Link>
