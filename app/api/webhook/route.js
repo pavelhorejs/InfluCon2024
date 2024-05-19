@@ -5,7 +5,7 @@ import { headers } from "next/headers";
 
 const endpointSecret = process.env.STRIPE_TEST_WEBHOOK;
 
-const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 import { Account, Client, Databases, ID, Query } from "appwrite";
 
