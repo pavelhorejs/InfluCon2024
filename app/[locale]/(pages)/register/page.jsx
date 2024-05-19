@@ -32,8 +32,8 @@ const Page = () => {
       };
 
       await databases.createDocument(
-        "66392c30001b34fefa14",
-        "66392c62001ed202eeb8",
+        process.env.NEXT_PUBLIC_APPWRITE_DATABSE_ID,
+        process.env.NEXT_PUBLIC_APPWRITE_USERS_DATABASE_ID,
         ID.unique(),
         documentData
       );
