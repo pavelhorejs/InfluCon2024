@@ -66,7 +66,7 @@ const Page = () => {
               {t("DashboardLogOut")}
             </button>
           </div>
-          {loggedInUser.$id === "664508a70034600e72a3" ? (
+          {loggedInUser.$id === process.env.NEXT_PUBLIC_ADMIN_ID ? (
             <div>
               <RadioButtons2 />
             </div>

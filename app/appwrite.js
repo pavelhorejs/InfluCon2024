@@ -10,7 +10,7 @@ export const account = new Account(client);
 export const databases = new Databases(client);
 export {  ID };
 
-export const APPWRITE_ENDPOINT = "https://cloud.appwrite.io/v1"
-export const APPWRITE_PROJECT_ID = "66329460003701abe30c"
-export const APPWRITE_DATABASE_ID = "66392c30001b34fefa14" 
-export const APPWRITE_USERS_COLLECTION_ID = "66392c62001ed202eeb8" 
+export const APPWRITE_ENDPOINT = process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT
+export const APPWRITE_PROJECT_ID = process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID
+export const APPWRITE_DATABASE_ID = process.env.NEXT_PUBLIC_APPWRITE_DATABSE_ID
+export const APPWRITE_USERS_COLLECTION_ID = process.env.NEXT_PUBLIC_APPWRITE_USERS_DATABASE_ID
