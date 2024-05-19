@@ -12,8 +12,8 @@ import { Account, Client, Databases, ID, Query } from "appwrite";
 const client = new Client();
 
 client
-  .setEndpoint("https://cloud.appwrite.io/v1")
-  .setProject("66329460003701abe30c");
+  .setEndpoint(process.env.APPWRITE_ENDPOINT)
+  .setProject(process.env.APPWRITE_PROJECT_ID);
 
 const database = new appwrite.Databases(client);
 const account = new Account(client);
@@ -42,8 +42,7 @@ export async function POST(req) {
       if (!lineItems) return res.status(500).send("Internal Server Error");
 
       try {
-        // console.log("data", lineItems.data);
-        // console.log("customer email", event.data.object.customer_details.email);
+
         const userId = event.data.object.success_url.split("=")[1];
 
         console.log("sucess url .... ", userId);
@@ -51,8 +50,8 @@ export async function POST(req) {
         let user_found = "";
         try {
           const response = await database.listDocuments(
-            "66392c30001b34fefa14",
-            "66392c62001ed202eeb8",
+            process.env.APPWRITE_DATABSE_ID,
+            process.env.APPWRITE_USERS_DATABASE_ID,
             [Query.equal("userId", [userId])]
           );
 
@@ -60,8 +59,6 @@ export async function POST(req) {
             user_found = response.documents[0]
           }
 
-          // Fetch updated records after creating a new one
-          // fetchRecords();
         } catch (error) {
           console.error("Error document:", error);
         }
@@ -74,8 +71,8 @@ export async function POST(req) {
           ) {
             try {
               const result = await database.updateDocument(
-                "66392c30001b34fefa14",
-                "66392c62001ed202eeb8",
+                process.env.APPWRITE_DATABSE_ID,
+                process.env.APPWRITE_USERS_DATABASE_ID,
                 user_found.$id,
                 { paid: "true" }
               );
@@ -87,8 +84,8 @@ export async function POST(req) {
           ) {
             try {
               const result = await database.updateDocument(
-                "66392c30001b34fefa14",
-                "66392c62001ed202eeb8",
+                process.env.APPWRITE_DATABSE_ID,
+                process.env.APPWRITE_USERS_DATABASE_ID,
                 user_found.$id,
                 { paid2: "true" }
               );
