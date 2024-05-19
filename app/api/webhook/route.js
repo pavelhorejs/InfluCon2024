@@ -42,6 +42,8 @@ export async function POST(req) {
       if (!lineItems) return res.status(500).send("Internal Server Error");
 
       try {
+        // console.log("data", lineItems.data);
+        // console.log("customer email", event.data.object.customer_details.email);
         const userId = event.data.object.success_url.split("=")[1];
 
         console.log("sucess url .... ", userId);
@@ -57,6 +59,9 @@ export async function POST(req) {
           if (response.documents?.length) {
             user_found = response.documents[0]
           }
+
+          // Fetch updated records after creating a new one
+          // fetchRecords();
         } catch (error) {
           console.error("Error document:", error);
         }
@@ -65,7 +70,7 @@ export async function POST(req) {
 
         if (user_found) {
           if (
-            process.env.OFFLINE_PRODUCT_ID == lineItems.data[0].price.id
+            process.env.NEXT_PUBLIC_OFFLINE_PRODUCT_ID == lineItems.data[0].price.id
           ) {
             try {
               const result = await database.updateDocument(
@@ -78,7 +83,7 @@ export async function POST(req) {
               console.error("Error creating document:", error);
             }
           } else if (
-            process.env.ONLINE_PRODUCT_ID == lineItems.data[0].price.id
+            process.env.NEXT_PUBLIC_ONLINE_PRODUCT_ID == lineItems.data[0].price.id
           ) {
             try {
               const result = await database.updateDocument(
