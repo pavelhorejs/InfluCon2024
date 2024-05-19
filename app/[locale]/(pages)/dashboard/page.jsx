@@ -23,12 +23,28 @@ const Page = () => {
   const login = async (email, password) => {
     try {
       await account.deleteSession("current");
-    } catch (error) {}
+    } catch (error) {
+      console.log("Session delete error", error);
+    }
 
-    const session = await account.createEmailPasswordSession(email, password);
-    const user = await account.get();
-    setLoggedInUser(user);
-    localStorage.setItem("user", JSON.stringify(user));
+    try {
+      const session = await account.createEmailPasswordSession(email, password);
+      const user = await account.get();
+      setLoggedInUser(user);
+      localStorage.setItem("user", JSON.stringify(user));
+    } catch (error) {
+      if (
+        error.message.includes(
+          "Password must be between 8 and 256 characters long"
+        )
+      ) {
+        alert(
+          "Invalid password: Password must be between 8 and 256 characters long."
+        );
+      } else {
+        alert("Login failed: " + error.message);
+      }
+    }
   };
 
   const logout = async () => {

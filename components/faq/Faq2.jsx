@@ -69,6 +69,11 @@ const faqs_en = [
     answer:
       "The recording of the entire event will be available after the event ends upon logging into your user account. The recording will be accessible to those who have purchased either a standard ticket or a live stream.",
   },
+  {
+    question: "Is it possible to buy a ticket on an invoice?",
+    answer:
+      "Yes, if you want to issue an invoice, please email us at info@woo.cz with your billing details and the email you used to register on the website. After the invoice is paid, the ticket will be displayed when you log into your user account.",
+  },
 ];
 
 const faqs_cs = [
@@ -132,6 +137,11 @@ const faqs_cs = [
     question: "Jak si mohu po skončení akce zhlédnout záznam?",
     answer:
       "Záznam z celé akce bude po ukončení dostupný po přihlášení do uživatelského účtu. Záznam uvidí ti, kteří si zakoupili jak klasickou vstupenku, tak živý přenos.",
+  },
+  {
+    question: "Je možné koupit vstupenku na fakturu?",
+    answer:
+      "Ano, v případě, že chcete vystavit fakturu, napište nám na email info@woo.cz fakturační údaje a email pod kterým jste registrováni na webu. Po uhrazení faktury se vám vstupenka zobrazí po přihlášení do uživatelského účtu.",
   },
 ];
 
