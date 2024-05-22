@@ -1,5 +1,5 @@
 "use client";
-import styles from "/app/[locale]/(pages)/gdpr/gdpr.module.scss";
+import styles from "/components/pagesrepo/gdpr/gdpr.module.scss";
 import Revealx from "/components/reveals/Revealx";
 import { useTranslation } from "react-i18next";
 
