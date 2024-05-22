@@ -1,9 +1,9 @@
 "use client";
-import Success from "/components/pagesrepo/reg_success/Success";
+import Paid from "/components/pagesrepo/ticket_paid/Paid";
 const Page = () => {
   return (
     <>
-      <Success />
+      <Paid />
     </>
   );
 };

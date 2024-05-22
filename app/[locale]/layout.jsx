@@ -9,9 +9,9 @@ import initTranslations from "../i18n";
 const i18nNamespaces = ["default"];
 
 export const metadata = {
-  title: "InfluCon 2024",
+  title: "Největší influencer marketing konference v Praze (ČR) | InfluCon.cz",
   description:
-    "Zjistěte, jak influencer marketing posouvá značky. Včetně té vaší.",
+    "Největší influencer marketing konference v Česku. Poznejte roli influencerů v brand buildingu a zjistěte novinky od manažerů a odborníků z této oblasti.",
   robots: {
     index: true,
     googleBot: {
