@@ -34,12 +34,13 @@ export default async function RootLayout({ children, params: { locale } }) {
       >
         <body className={montserrat.className}>
           <GoogleAnalytics GA_MEASUREMENT_ID="GTM-KKTPGCGL" />
+          <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <div className="flex-1">{children}</div>
+            <CookieBanner />
 
-          <Navbar />
-          {children}
-          <CookieBanner />
-
-          <Footer />
+            <Footer />
+          </div>
         </body>
       </TranslationProvider>
     </html>
