@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 870);
     };
 
     checkIsMobile();

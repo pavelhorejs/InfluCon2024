@@ -57,6 +57,9 @@ const Footer = () => {
         </nav>
         <nav className={styles.menuSection}>
           <h6>{t("FooterOstatni")}</h6>
+          <Link href="/terms">
+            <span className={styles.navigaceText}>{t("FooterTerms")}</span>
+          </Link>
           <Link href="/cookies">
             <span className={styles.navigaceText}>{t("FooterCookies")}</span>
           </Link>

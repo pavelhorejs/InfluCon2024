@@ -16,6 +16,7 @@
 "FooterOstatni":"Ostatní",
 "FooterCookies":"Cookies",
 "FooterGdpr":"GDPR",
+"FooterTerms":"Obchodní podmínky",
 "Organiser":"Pořadatel",
 "heroHeadline":"Zjistěte, jak influencer marketing posouvá značky. Včetně té vaší."
 ,"place":"Hotel Clarion, Praha",
@@ -175,7 +176,8 @@
 "gdprP4": "4. Informace a otázky",
 "gdprP4_text": "Další informace o právech a povinnostech při ochraně osobních údajů můžete získat prostřednictvím e-mailu na: ",
 "gdprP5": "5. Tyto podmínky jsou účinné od 14.05.2024",
-"cookieBanner": "Při návštěvě jakékoli webové stránky může prohlížeč ukládat nebo načítat informace, většinou ve formě souborů cookie. Protože respektujeme vaše právo na soukromí, můžete se rozhodnout některé typy souborů cookie nepovolit.",
+"cookieBanner": "Děláme svět influencer marketingu lepším a s tím nám pomáhají cookies. Budeme rádi pokud nám dovolíte je použít.",
+"cookieBannerHdl": "Bez cookies to není ono",
 "cookieBannerButton": "Povolit",
 "cookieBannerButton2": "Povolit nezbytné",
 "Clanek1Headline": "​​Influencer marketing v roce 2024: Kam se bude ubírat a jak držet krok s trendy?",
@@ -230,5 +232,27 @@
 "Clanek3P8":"Jak tedy influencerskou kampaň - a svoje očekávání - nastavit?",
 "Clanek3P8Text":"Správný výběr založený na cílech kampaně a znalosti influencerského trhu je absolutní základ. Postřehy této analýzy mohou pomoci správně odhadnout výkonové cíle a poznat, jak si daná kampaň vede v porovnání s trhem. Ze zkušenosti WOO navíc vychází, že lepší výsledky mají ty kampaně, které dokážou zaujmout sdělením nebo formou, a nejsou jen pouhým doporučením produktu. I tady proto platí, že spolupráce s odborníky je nakonec ta nejlepší investice.",
 "RegOk": "Registrace proběhla úspěšně, nyní se můžete přihlásit.",
-"ticketPaid": "Platba proběhla úspěšně, vaše vstupenka se zobrazí v uživatelské sekci."
+"ticketPaid": "Platba proběhla úspěšně, vaše vstupenka se zobrazí v uživatelské sekci.",
+"sent": "Zpráva byla úspěšně odeslána.",
+"bankPayment": "Platba bankovním převodem",
+"bankPaymentText": "Pro vystavení faktury na vámi požadované fakturační údaje, prosím vyplňte formulář níže a my vám fakturu zašleme emailem.",
+"showForm": "Zadat fakturační údaje",
+"hideForm": "Skrýt formulář",
+"form": "Fakturační údaje",
+"formCompany": "Společnost",
+"formIC": "IČ",
+"formDIC": "DIČ",
+"formCity": "Město",
+"formStreet": "Ulice + číslo popisné",
+"formCode": "PSČ",
+"formCountry": "Země",
+"formAttendee": "Účastník",
+"ticketType": "Typ vstupenky",
+"zvolteVstupenku": "Zvolte vstupenku",
+"ticketButton": "Odeslat",
+"onlineTicket1": "Vstupenka na konferenci",
+"onlineTicket2": "Live stream přístup",
+"formSent": "Fakturační údaje byli úspěšně odeslány, fakturu vám pošleme emailem."
+
+
 }

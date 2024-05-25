@@ -23,9 +23,7 @@ const Dashboard = () => {
   const login = async (email, password) => {
     try {
       await account.deleteSession("current");
-    } catch (error) {
-      console.log("Session delete error", error);
-    }
+    } catch (error) {}
 
     try {
       const session = await account.createEmailPasswordSession(email, password);
@@ -52,7 +50,6 @@ const Dashboard = () => {
     localStorage.removeItem("user");
     setLoggedInUser(null);
   };
-  console.log("loggedInUser", loggedInUser);
 
   if (loggedInUser) {
     return (

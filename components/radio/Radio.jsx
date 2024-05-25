@@ -1,4 +1,3 @@
-// components/radio/RadioButtons.jsx
 import { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { account } from "/app/appwrite.js";
@@ -8,7 +7,7 @@ import Link from "next/link";
 import * as appwrite from "appwrite";
 import { useTranslation } from "react-i18next";
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_SECRET);
-
+import Invoice from "../pagesrepo/invoice_form/Invoice";
 import { Account, Client, Databases, ID, Query } from "appwrite";
 
 const client = new Client();
@@ -22,8 +21,23 @@ const database = new appwrite.Databases(client);
 const RadioButtons = () => {
   const [selectedOption, setSelectedOption] = useState("option1");
   const [paymentRecord, setPaymentRecord] = useState(null);
+  const [showNewComponent, setShowNewComponent] = useState(false);
+  const [userId, setUserId] = useState(null);
+  const [user, setUser] = useState(null); // Add user state
 
-  console.log("..... ", process.env.NEXT_PUBLIC_STRIPE_SECRET);
+  useEffect(() => {
+    async function fetchUser() {
+      try {
+        const user = await account.get();
+        setUser(user); // Set the user state
+        setUserId(user.$id);
+      } catch (error) {
+        console.error("Failed to fetch user:", error);
+      }
+    }
+
+    fetchUser();
+  }, []);
 
   const buyOne = async () => {
     let user = await account.get();
@@ -33,7 +47,7 @@ const RadioButtons = () => {
         { price: process.env.NEXT_PUBLIC_OFFLINE_PRODUCT_ID, quantity: 1 },
       ],
       mode: "payment",
-      successUrl: `${window.location.origin}/dashboard?user=${user.$id}`,
+      successUrl: `${window.location.origin}/ticket_paid?user=${user.$id}`,
       cancelUrl: `${window.location.origin}`,
     });
     if (error) {
@@ -48,7 +62,7 @@ const RadioButtons = () => {
         { price: process.env.NEXT_PUBLIC_ONLINE_PRODUCT_ID, quantity: 1 },
       ],
       mode: "payment",
-      successUrl: `${window.location.origin}/dashboard?user=${user.$id}`,
+      successUrl: `${window.location.origin}/ticket_paid?user=${user.$id}`,
       cancelUrl: `${window.location.origin}`,
     });
     if (error) {
@@ -75,6 +89,10 @@ const RadioButtons = () => {
     }
     getData();
   }, []);
+  const handleButtonClick = () => {
+    setShowNewComponent(!showNewComponent);
+  };
+
   const { t } = useTranslation();
   return (
     <div className={styles.container}>
@@ -121,9 +139,10 @@ const RadioButtons = () => {
         {selectedOption === "option1" && (
           <div className="flex flex-col md:flex-row gap-20">
             <div>
+              <h3 className="text-xl pb-[8px]">Platba online</h3>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | {t("TicketHeadline2")} | 3990 Kč
+                  InfluCon 2024 | {t("TicketHeadline2")} | 3990 Kč bez DPH
                 </div>
                 <Link onClick={buyOne} href="#">
                   <Button text="Zaplatit" />
@@ -131,11 +150,29 @@ const RadioButtons = () => {
               </div>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | {t("Ticket2Headline2")} | 2490 Kč
+                  InfluCon 2024 | {t("Ticket2Headline2")} | 2490 Kč bez DPH
                 </div>
                 <Link onClick={buyTwo} href="#">
                   <Button text="Zaplatit" />
                 </Link>
+              </div>
+              <h3 className="text-xl pt-[64px]">{t("bankPayment")}</h3>
+              <p className="max-w-[550px] pb-[16px]">{t("bankPaymentText")}</p>
+
+              <div>
+                <button className="buttonGreen" onClick={handleButtonClick}>
+                  {showNewComponent ? `${t("hideForm")}` : `${t("showForm")}`}
+                </button>
+                {showNewComponent && (
+                  <div className="mt-10">
+                    {" "}
+                    <Invoice
+                      userId={userId}
+                      name={user?.name}
+                      email={user?.email}
+                    />
+                  </div>
+                )}
               </div>
             </div>
             <div className="flex justify-center">

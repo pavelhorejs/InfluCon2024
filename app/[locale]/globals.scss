@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-$main-green: #22FFAF;
-$main-red: #F00065;
-$mangolia: #F7F5FF;
-$silver: #C4C4C4;
+@import "/app/variables.scss";
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,7 +23,7 @@ body {
   font-weight: 500;
   line-height: 1.6;
   color: white;
-  background-color: #131313;
+  background-color: $darkBg;
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {
@@ -79,16 +77,7 @@ margin-bottom: 210px;
 .maxIndex{
   z-index: 1000;
 }
-// COOKIE BAR //
-.cookieBar{
-background-color: $main-green;
-color: $silver;
-position: fixed;
-left: 0px;
-bottom: 0px;
-z-index: 1000;
-width: 100%;
-}
+
 .custom-ol {
   list-style-type: decimal; /* standardní čísla, lze změnit na např. lower-roman pro římské číslice */
   padding-left: 20px; /* nastavení odsazení pro čísla */

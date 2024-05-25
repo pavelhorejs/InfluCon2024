@@ -1,8 +1,8 @@
 import "./globals.scss";
-import GoogleAnalytics from "/components/GoogleAnalytics";
+import GoogleAnalytics from "/components/cookies/GoogleAnalytics";
+import CookieBanner from "/components/cookies/CookieBanner";
 import Navbar from "/components/navbar/Navbar";
 import Footer from "/components/footer/Footer";
-import CookieBanner from "../../components/CookieBanner";
 import { Montserrat } from "next/font/google";
 import TranslationProvider from "/components/TranslationProvider";
 import initTranslations from "../i18n";
@@ -33,15 +33,13 @@ export default async function RootLayout({ children, params: { locale } }) {
         namespaces={i18nNamespaces}
       >
         <body className={montserrat.className}>
-          <div className="flex flex-col min-h-screen">
-            <GoogleAnalytics GA_MEASUREMENT_ID="G-2NXZDKNBYP" />
-            <div className="flex-grow">
-              <Navbar />
-              {children}
-            </div>
-            <CookieBanner />
-            <Footer />
-          </div>
+          <GoogleAnalytics GA_MEASUREMENT_ID="GTM-KKTPGCGL" />
+
+          <Navbar />
+          {children}
+          <CookieBanner />
+
+          <Footer />
         </body>
       </TranslationProvider>
     </html>
