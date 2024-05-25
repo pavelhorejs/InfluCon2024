@@ -1,5 +1,5 @@
 import "./globals.scss";
-import GoogleAnalytics from "/components/cookies/GoogleAnalytics";
+
 import CookieBanner from "/components/cookies/CookieBanner";
 import Navbar from "/components/navbar/Navbar";
 import Footer from "/components/footer/Footer";
@@ -33,12 +33,10 @@ export default async function RootLayout({ children, params: { locale } }) {
         namespaces={i18nNamespaces}
       >
         <body className={montserrat.className}>
-          <GoogleAnalytics GA_MEASUREMENT_ID="GTM-KKTPGCGL" />
           <div className="flex flex-col min-h-screen">
             <Navbar />
             <div className="flex-1">{children}</div>
             <CookieBanner />
-
             <Footer />
           </div>
         </body>

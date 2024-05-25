@@ -1,7 +1,7 @@
 "use client";
 import Flipcard1 from "/components/flip_card/flip1/Flipcard";
-import Flipcard2 from "/components/flip_card/flip2/Flipcard";
-import Flipcard3 from "/components/flip_card/flip3/Flipcard";
+import Flipcard2 from "/components/flip_card/flip5/Flipcard";
+import Flipcard3 from "/components/flip_card/flip6/Flipcard";
 import Flipcard4 from "/components/flip_card/flip4/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
