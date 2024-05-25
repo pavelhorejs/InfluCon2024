@@ -1,4 +1,3 @@
-import { metadata } from "../../layout";
 import Contact from "/components/pagesrepo/contact/Contact";
 
 export const metadata = {
