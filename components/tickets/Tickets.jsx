@@ -20,7 +20,7 @@ const Tickets = () => {
               <div className={styles.blackItem2}></div>
               <div className="flex flex-col ">
                 <p className={styles.cena}>3990 Kč</p>
-                <p className="-mt-4 text-[12px]">Uvedená cena je bez DPH</p>
+                {/* <p className="-mt-4 text-[12px]">Uvedená cena je bez DPH</p> */}
               </div>
               <p className={styles.typ}>{t("TicketHeadline")}</p>
               <div className="flex gap-3">
@@ -101,7 +101,7 @@ const Tickets = () => {
               <div className={styles.blackItem4}></div>
               <div className="flex flex-col ">
                 <p className={styles.cena}>2490 Kč</p>
-                <p className="-mt-4 text-[12px]">Uvedená cena je bez DPH</p>
+                {/* <p className="-mt-4 text-[12px]">Uvedená cena je bez DPH</p> */}
               </div>
               <p className={styles.typ}>{t("Ticket2Headline")}</p>
 

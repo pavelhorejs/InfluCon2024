@@ -139,10 +139,10 @@ const RadioButtons = () => {
         {selectedOption === "option1" && (
           <div className="flex flex-col md:flex-row gap-20">
             <div>
-              <h3 className="text-xl pb-[8px]">Platba online</h3>
+              <h3 className="text-xl pb-[8px]">{t("platbaOnline")}</h3>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | {t("TicketHeadline2")} | 3990 Kč bez DPH
+                  InfluCon 2024 | {t("TicketHeadline2")} | 3990 Kč
                 </div>
                 <Link onClick={buyOne} href="#">
                   <Button text="Zaplatit" />
@@ -150,7 +150,7 @@ const RadioButtons = () => {
               </div>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | {t("Ticket2Headline2")} | 2490 Kč bez DPH
+                  InfluCon 2024 | {t("Ticket2Headline2")} | 2490 Kč
                 </div>
                 <Link onClick={buyTwo} href="#">
                   <Button text="Zaplatit" />

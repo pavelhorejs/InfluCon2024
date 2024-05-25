@@ -252,7 +252,7 @@
 "ticketButton": "Submit",
 "onlineTicket1": "Conference ticket",
 "onlineTicket2": "Live stream access",
-"formSent": "Billing details have been successfully submitted, we will send you the invoice by email."
-
+"formSent": "Billing details have been successfully submitted, we will send you the invoice by email.",
+"platbaOnline": "Online payment"
 
 }
