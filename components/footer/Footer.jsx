@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import styles from "/components/footer/Footer.module.scss";
 import Socials from "/components/socials/socials_black/Socials";
 import Woo from "/components/woo/Woo";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
+import footerLogo from "/public/logo_3.svg";
 const Footer = () => {
   const { t } = useTranslation();
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
       <div className={styles.container}>
         <div className="flex flex-col items-center md:items-start">
           <Link href="/">
-            <img src="/logo_3.svg" className="w-56" alt="" />
+            <Image src={footerLogo} width={225} alt="footer logo" />
           </Link>
           <div className="mt-[24px]">
             <p className="pb-[8px]">{t("Organiser")}</p>

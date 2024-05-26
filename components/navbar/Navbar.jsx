@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Styles from "./navbar.module.scss";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "/components/LanguageChanger";
