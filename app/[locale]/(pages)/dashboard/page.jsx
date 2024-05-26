@@ -1,5 +1,5 @@
 import Dashboard from "/components/pagesrepo/dashboard/Dashboard";
-import { metadataCs, metadataEn } from "/app/metadata/dashabord";
+import { metadataCs, metadataEn } from "/app/metadata/dashboard";
 
 export async function generateMetadata({ params: { locale } }) {
   const metadata = locale === "cs" ? metadataCs : metadataEn;
