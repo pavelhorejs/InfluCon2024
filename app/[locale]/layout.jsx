@@ -5,7 +5,6 @@ import Footer from "/components/footer/Footer";
 import { Montserrat } from "next/font/google";
 import TranslationProvider from "/components/TranslationProvider";
 import initTranslations from "../i18n";
-import openGraphImage from "/public/og.webp";
 import { metadataCs, metadataEn } from "/app/metadata/metadata";
 
 const i18nNamespaces = ["default"];
@@ -17,13 +16,6 @@ export async function generateMetadata({ params: { locale } }) {
   return {
     title: metadata.title,
     description: metadata.description,
-    openGraph: {
-      title: metadata.openGraph.title,
-      description: metadata.openGraph.description,
-      url: metadata.openGraph.url,
-      type: metadata.openGraph.type,
-      images: openGraphImage,
-    },
   };
 }
 

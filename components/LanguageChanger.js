@@ -13,7 +13,6 @@ export default function LanguageChanger() {
   const currentPathname = usePathname();
 
   const handleChange = newLocale => {
-    // set cookie for next-i18n-router
     const days = 30;
     const date = new Date();
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
