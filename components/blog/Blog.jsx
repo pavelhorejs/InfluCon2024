@@ -2,6 +2,11 @@
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
+import imageIm from "/public/im.webp";
+import imageOchrana from "/public/ochrana.webp";
+import imageKampane from "/public/kampane.webp";
+
 const Blog = () => {
   const { t } = useTranslation();
   return (
@@ -19,7 +24,7 @@ const Blog = () => {
             <Revealx delay="0.4">
               {" "}
               <div className="image-box">
-                <img src="/im.jpg" alt="blog cover" />
+                <Image src={imageIm} alt="blog cover" />
               </div>
             </Revealx>
             <Revealx delay="0.4">
@@ -35,7 +40,7 @@ const Blog = () => {
             <Revealx delay="0.2">
               {" "}
               <div className="image-box">
-                <img src="/ochrana.jpg" alt="blog cover" />
+                <Image src={imageOchrana} alt="blog cover" />
               </div>
             </Revealx>
             <Revealx delay="0.4">
@@ -51,6 +56,7 @@ const Blog = () => {
             <Revealx delay="0.4">
               {" "}
               <div className="image-box">
+                <Image src={imageKampane} alt="blog cover" />
                 <img src="/kampane.jpg" alt="blog cover" />
               </div>
             </Revealx>

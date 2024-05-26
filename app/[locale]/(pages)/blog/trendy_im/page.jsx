@@ -3,6 +3,9 @@ import styles from "/components/pagesrepo/gdpr/gdpr.module.scss";
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
+import imageImBig from "/public/im_big.webp";
+
 const Page = () => {
   const { t } = useTranslation();
   return (
@@ -10,7 +13,11 @@ const Page = () => {
       <div className="max-w-6xl mx-auto mt-32 lg:mt-40 md:mt-480 pb-14 px-3">
         <Revealx delay={0.2}>
           {" "}
-          <img src="/im_big.jpg" className="pb-[24px] lg:pb-[48px]" alt="" />
+          <Image
+            src={imageImBig}
+            className="pb-[24px] lg:pb-[48px]"
+            alt="blog cover"
+          />
         </Revealx>
         <Revealx delay={0.4}>
           {" "}

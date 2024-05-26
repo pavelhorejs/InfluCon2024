@@ -2,17 +2,18 @@
 import styles from "/components/pagesrepo/gdpr/gdpr.module.scss";
 import Revealx from "/components/reveals/Revealx";
 import { useTranslation } from "react-i18next";
-
+import Image from "next/image";
+import imageOchranaBig from "/public/ochrana_big.webp";
 const Page = () => {
   const { t } = useTranslation();
   return (
     <>
       <div className="max-w-6xl mx-auto mt-32 lg:mt-40 pb-14 px-3">
         <Revealx delay={0.2}>
-          <img
-            src="/ochrana_big.jpg"
+          <Image
+            src={imageOchranaBig}
             className="pb-[24px] lg:pb-[48px]"
-            alt=""
+            alt="blog cover"
           />
         </Revealx>
         <Revealx delay={0.4}>
