@@ -7,6 +7,7 @@ import { Montserrat } from "next/font/google";
 import TranslationProvider from "/components/TranslationProvider";
 import initTranslations from "../i18n";
 const i18nNamespaces = ["default"];
+import { openGraphImage } from "/public/og.webp";
 
 export const metadata = {
   title: "Největší influencer marketing konference v Praze (ČR) | InfluCon.cz",
@@ -16,6 +17,13 @@ export const metadata = {
     index: true,
     googleBot: {
       index: true,
+    },
+    openGraph: {
+      ...openGraphImage,
+      title:
+        "Největší influencer marketing konference v Praze (ČR) | InfluCon.cz",
+      description:
+        "Největší influencer marketing konference v Česku. Poznejte roli influencerů v brand buildingu a zjistěte novinky od manažerů a odborníků z této oblasti.",
     },
   },
 };
