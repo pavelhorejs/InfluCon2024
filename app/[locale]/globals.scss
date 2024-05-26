@@ -103,27 +103,21 @@ text-wrap: wrap;}
   margin: auto;
   overflow: hidden;
   max-height: 250px;
-  height: auto; /* Ensure the container height adjusts to the image */
+  height: auto; 
 }
 
 .image-box img {
-  transition: transform 0.3s; /* Only transition the transform property */
+  transition: transform 0.3s; 
   display: block;
   width: 100%;
   height: auto;
-  transform-origin: center center; /* Set the transform origin to the center */
+  transform-origin: center center; 
 }
 
 .image-box:hover img {
   transform: scale(1.05);
 }
-.bgWrap{
-background-image: url('/bg.webp');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-height: 85vh;
-}
+
 .button {
   display: flex;
   flex-direction: row;
