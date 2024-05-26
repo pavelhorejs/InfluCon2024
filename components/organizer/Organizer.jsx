@@ -3,6 +3,7 @@ import styles from "/components/organizer/styles.module.scss";
 import Revealx from "../reveals/Revealx";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import LazyLoad from "react-lazyload";
 const Organizer = () => {
   const { t } = useTranslation();
   return (
@@ -14,14 +15,16 @@ const Organizer = () => {
         <Revealx>
           {" "}
           <div className="flex justify-center">
-            <video
-              src="/reel.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls={false}
-            ></video>
+            <LazyLoad height={200} once>
+              <video
+                src="/reel.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls={false}
+              ></video>
+            </LazyLoad>
           </div>
         </Revealx>
         <div className="flex flex-col justify-center items-center lg:items-start pl-0 lg:pl-10">
