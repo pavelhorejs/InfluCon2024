@@ -1,10 +1,13 @@
 import Contact from "/components/pagesrepo/contact/Contact";
+import { metadataCs, metadataEn } from "/app/metadata/contact";
 
-export const metadata = {
-  title: "Kontaktujte nás pomocí kontaktního formuláře | InfluCon.cz",
-  description:
-    "Ozvěte se nám! Rádi vám pomůžeme najít odpovědi na všechny otázky o účasti na naší influencer marketing konferenci InfluCon. Neváhejte a kontaktujte nás.",
-};
+export async function generateMetadata({ params: { locale } }) {
+  const metadata = locale === "cs" ? metadataCs : metadataEn;
+
+  return {
+    title: metadata.title,
+  };
+}
 
 const Page = () => {
   return (
@@ -13,4 +16,5 @@ const Page = () => {
     </>
   );
 };
+
 export default Page;

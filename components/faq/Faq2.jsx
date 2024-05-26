@@ -141,7 +141,7 @@ const faqs_cs = [
   {
     question: "Je možné koupit vstupenku na fakturu?",
     answer:
-      "Ano, v případě, že chcete vystavit fakturu, napište nám na email info@woo.cz fakturační údaje a email pod kterým jste registrováni na webu. Po uhrazení faktury se vám vstupenka zobrazí po přihlášení do uživatelského účtu.",
+      "Sure, if you want to issue an invoice with the billing details you requested, you can fill out the form with the billing information in the user section, and we will send you the invoice by email. Once the invoice is paid, your ticket will be displayed upon logging into your user account.",
   },
 ];
 

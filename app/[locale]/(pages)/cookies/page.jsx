@@ -1,7 +1,13 @@
 import Cookies from "/components/pagesrepo/cookies/Cookies";
-export const metadata = {
-  title: "Soubory Cookies | InfluCon.cz",
-};
+import { metadataCs, metadataEn } from "/app/metadata/cookies";
+
+export async function generateMetadata({ params: { locale } }) {
+  const metadata = locale === "cs" ? metadataCs : metadataEn;
+
+  return {
+    title: metadata.title,
+  };
+}
 
 const Page = () => {
   return (

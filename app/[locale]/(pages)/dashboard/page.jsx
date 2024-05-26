@@ -1,10 +1,14 @@
 import Dashboard from "/components/pagesrepo/dashboard/Dashboard";
+import { metadataCs, metadataEn } from "/app/metadata/contact";
 
-export const metadata = {
-  title: "Vstupenky na největší influencer marketing konferenci | InfluCon.cz",
-  description:
-    "V ceně vstupenek máte přednášky od marketingových odborníků, videozáznamy přednášek a seznámíte se z marketéry z firem a agentur, freelancery i influencery.",
-};
+export async function generateMetadata({ params: { locale } }) {
+  const metadata = locale === "cs" ? metadataCs : metadataEn;
+
+  return {
+    title: metadata.title,
+  };
+}
+
 const Page = () => {
   return (
     <>
