@@ -5,11 +5,23 @@ import Socials from "/components/socials/socials_green/Socials";
 import Styles from "/components/hero/styles.module.scss";
 import Revealx from "../reveals/Revealx";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
+import bgPhoto from "/public/bg.webp";
 
 const Hero = () => {
   const { t } = useTranslation();
   return (
-    <div className="bgWrap pt-32 lg:pt-20 px-2">
+    <div className={Styles.hero}>
+      <Image
+        src={bgPhoto}
+        className={Styles.image}
+        alt="Background Image"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority={true}
+      />
+
       <div className="md:hidden justify-end mt-5 md:mt-10 lg:mt-28">
         <div className="flex gap-[64px]">
           <div className={Styles.greenCard2}>
