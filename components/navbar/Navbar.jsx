@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 870);
+      setIsMobile(window.innerWidth < 910);
     };
 
     checkIsMobile();
@@ -80,6 +80,7 @@ const Navbar = () => {
                 src="/logo_2.svg"
                 alt="logo"
                 width={150}
+                height={150}
               />
             </Link>
           ) : (
@@ -90,6 +91,7 @@ const Navbar = () => {
                 src="/logo.svg"
                 alt="logo"
                 width={150}
+                height={150}
               />
             </Link>
           )}
@@ -121,9 +123,10 @@ const Navbar = () => {
               <LanguageChanger />
               <Link href="/dashboard">
                 <motion.img
-                  whileHover={{ scale: 0.95 }}
+                  whileHover={{ scale: 0.94 }}
                   src="/login.svg"
                   width={17}
+                  height={17}
                   alt=""
                 />
               </Link>
@@ -178,14 +181,14 @@ const Navbar = () => {
               <div className="flex gap-4">
                 <Link href="https://www.instagram.com/world_of_online/">
                   {" "}
-                  <img src="/ig_white.svg" alt="" />
+                  <img src="/ig_white.svg" alt="instagram icon" />
                 </Link>
                 <Link href="https://www.facebook.com/worldofonlineagency">
-                  <img src="/fb_white.svg" alt="" />
+                  <img src="/fb_white.svg" alt="facebook icon" />
                 </Link>
                 <Link href="https://www.linkedin.com/company/worldofonline/">
                   {" "}
-                  <img src="/in_white.svg" alt="" />
+                  <img src="/in_white.svg" alt="linked in icon" />
                 </Link>
               </div>
             </div>

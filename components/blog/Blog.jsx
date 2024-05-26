@@ -57,7 +57,6 @@ const Blog = () => {
               {" "}
               <div className="image-box">
                 <Image src={imageKampane} alt="blog cover" />
-                <img src="/kampane.jpg" alt="blog cover" />
               </div>
             </Revealx>
             <Revealx delay="0.4">

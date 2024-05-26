@@ -6,7 +6,10 @@ const Socials = () => {
   return (
     <div className="flex gap-6 z-50">
       <Revealhide delay={1.3}>
-        <Link href="https://www.instagram.com/world_of_online/">
+        <Link
+          href="https://www.instagram.com/world_of_online/"
+          aria-label="Instagram icon"
+        >
           {" "}
           <motion.img
             width={41}
@@ -20,7 +23,10 @@ const Socials = () => {
       </Revealhide>
 
       <Revealhide delay={1.6}>
-        <Link href="https://www.facebook.com/worldofonlineagency">
+        <Link
+          href="https://www.facebook.com/worldofonlineagency"
+          aria-label="Facebook icon"
+        >
           {" "}
           <motion.img
             width={41}
@@ -34,7 +40,10 @@ const Socials = () => {
       </Revealhide>
 
       <Revealhide delay={1.9}>
-        <Link href="https://www.linkedin.com/company/worldofonline/">
+        <Link
+          href="https://www.linkedin.com/company/worldofonline/"
+          aria-label="LinkedIn icon"
+        >
           {" "}
           <motion.img
             width={41}

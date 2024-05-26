@@ -7,7 +7,10 @@ const Socials = () => {
   return (
     <>
       <div className="flex gap-4">
-        <Link href="https://www.instagram.com/world_of_online/">
+        <Link
+          href="https://www.instagram.com/world_of_online/"
+          aria-label="Instagram icon"
+        >
           <Revealx delay="1">
             <motion.img
               width={22}
@@ -19,7 +22,10 @@ const Socials = () => {
             />
           </Revealx>
         </Link>
-        <Link href="https://www.facebook.com/worldofonlineagency">
+        <Link
+          href="https://www.facebook.com/worldofonlineagency"
+          aria-label="Facebook icon"
+        >
           <Revealx delay="1.2">
             <motion.img
               width={14}
@@ -31,7 +37,10 @@ const Socials = () => {
             />
           </Revealx>
         </Link>
-        <Link href="https://www.linkedin.com/company/worldofonline/">
+        <Link
+          href="https://www.linkedin.com/company/worldofonline/"
+          aria-label="LinkedIn icon"
+        >
           <Revealx delay="1.4">
             <motion.img
               width={22}
