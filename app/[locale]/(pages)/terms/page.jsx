@@ -9,7 +9,7 @@ const Gdpr = () => {
       <div className="max-w-6xl mx-auto mt-32 lg:mt-40 md:mt-480 pb-14 px-3">
         <h2 className="pb-[24px]">
           Obchodní podmínky pro prodej vstupenek na konferenci Influcon <br />
-          Pravidla konference Influcon{" "}
+          Pravidla konference Influcon
         </h2>
         <p>
           Organizátorem konference Influcon (dále také jen „konference“) je
