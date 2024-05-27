@@ -6,6 +6,7 @@ import { Montserrat } from "next/font/google";
 import TranslationProvider from "/components/TranslationProvider";
 import initTranslations from "../i18n";
 import { metadataCs, metadataEn } from "/app/metadata/metadata";
+import ogImage from "/app/opengraph-image.jpg";
 
 const i18nNamespaces = ["default"];
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -20,7 +21,7 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 export default async function RootLayout({ children, params: { locale } }) {
-  const { resources, t } = await initTranslations(locale, i18nNamespaces);
+  const { resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
     <html lang="cs">

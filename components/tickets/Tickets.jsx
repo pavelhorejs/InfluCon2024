@@ -45,7 +45,7 @@ const Tickets = () => {
               </div>
               <div className="mt-4">
                 {" "}
-                <Link href="/register">
+                <Link href="/dashboard">
                   <motion.button
                     whileHover={{ scale: 0.97 }}
                     transition={{ type: "spring" }}
@@ -116,7 +116,7 @@ const Tickets = () => {
 
               <div className="mt-4">
                 {" "}
-                <Link href="/register">
+                <Link href="/dashboard">
                   <motion.button
                     whileHover={{ scale: 0.97 }}
                     transition={{ type: "spring" }}
