@@ -18,6 +18,7 @@ const Invoice = ({ userId, name, email }) => {
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
   const [Ticket, setTicket] = useState("");
+  const [currentDate, setCurrentDate] = useState(""); // New state for current date
   const router = useRouter();
 
   const { t } = useTranslation();
@@ -26,6 +27,12 @@ const Invoice = ({ userId, name, email }) => {
     setName(name);
     setEmail(email);
   }, [name, email]);
+
+  useEffect(() => {
+    // Update current date when the component mounts
+    const formattedDate = new Date().toISOString().split("T")[0];
+    setCurrentDate(formattedDate);
+  }, []);
 
   const data = {
     company,
@@ -39,6 +46,7 @@ const Invoice = ({ userId, name, email }) => {
     Name,
     Ticket,
     userId: userId,
+    date: currentDate, // Include current date in the form data
   };
 
   const onSubmit = async (e) => {
@@ -61,6 +69,8 @@ const Invoice = ({ userId, name, email }) => {
   return (
     <div className={styles.form}>
       <form noValidate onSubmit={onSubmit} className={styles.formInner}>
+        <input type="hidden" value={currentDate} />
+
         <p className="text-center -mb-1">{t("form")}</p>
         <div className="flex flex-wrap justify-center">
           <input

@@ -32,7 +32,7 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src="/denisaZ.webp"
+              src="/lenka.webp"
               alt="Front Image"
               style={contentStyle}
             />
@@ -41,7 +41,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">{t("denisaZidkova")}</p>
+              <p className="">{t("lenka")}</p>
             </div>
           </div>
         }
@@ -50,12 +50,12 @@ const Flipcard = () => {
       <div className="flex flex-col justify-between max-w-[300px]">
         <div className="flex justify-between items-center">
           {" "}
-          <p className={style.name}>Denisa Zideková</p>
-          <Link href="https://www.linkedin.com/in/denisa-zidekova-49163b56/">
+          <p className={style.name}>Lenka Mastešová</p>
+          <Link href="https://www.linkedin.com/in/lenka-mastesova/">
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
-        <p className={style.company}>Sr. Brand Manager, P&G</p>
+        <p className={style.company}>Head of marketing, Holding HP Tronic</p>
       </div>
     </div>
   );

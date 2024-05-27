@@ -1,8 +1,8 @@
 "use client";
-import Flipcard1 from "/components/flip_card/flip1/Flipcard";
-import Flipcard2 from "/components/flip_card/flip5/Flipcard";
-import Flipcard3 from "/components/flip_card/flip6/Flipcard";
-import Flipcard4 from "/components/flip_card/flip4/Flipcard";
+import PetrCard from "/components/flip_card/flip1/Flipcard";
+import JanCard from "/components/flip_card/flip5/Flipcard";
+import DenisaCard from "/components/flip_card/flip6/Flipcard";
+import LenkaCard from "/components/flip_card/flip7/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -28,18 +28,17 @@ const Speakers = () => {
             </Revealx>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-[16px] gap-y-[32px]">
               <div className="flex justify-center">
-                <Flipcard1 />
+                <PetrCard />
               </div>
               <div className="flex justify-center">
-                <Flipcard2 />
-              </div>
-              <div className="flex justify-center">
-                {" "}
-                <Flipcard3 />
+                <JanCard />
               </div>
               <div className="flex justify-center">
                 {" "}
-                <Flipcard4 />
+                <DenisaCard />
+              </div>
+              <div className="flex justify-center">
+                <LenkaCard />{" "}
               </div>
               <div className="flex justify-center">
                 {" "}

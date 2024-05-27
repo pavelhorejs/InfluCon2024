@@ -72,7 +72,7 @@ const faqs_en = [
   {
     question: "Is it possible to buy a ticket on an invoice?",
     answer:
-      "Yes, if you want to issue an invoice, please email us at info@woo.cz with your billing details and the email you used to register on the website. After the invoice is paid, the ticket will be displayed when you log into your user account.",
+      "Yes, if you want to issue an invoice, fill out the billing details form in the user section, and we will send you the invoice by email. After the invoice is paid, your ticket will be displayed in the user section",
   },
 ];
 
@@ -141,7 +141,7 @@ const faqs_cs = [
   {
     question: "Je možné koupit vstupenku na fakturu?",
     answer:
-      "Sure, if you want to issue an invoice with the billing details you requested, you can fill out the form with the billing information in the user section, and we will send you the invoice by email. Once the invoice is paid, your ticket will be displayed upon logging into your user account.",
+      "Ano, v případě, že chcete vystavit fakturu, vyplňte formulář s fakturačními údaji v uživatelské sekci a my vám fakturu pošleme na email. Po uhrazení faktury se vám vstupenka zobrazí v uživatelské sekci",
   },
 ];
 
