@@ -49,8 +49,9 @@ const Cookies = () => {
           <br />
           {t("cookiesP5_4Text")} <br /> <br />
           <span className={styles.bold}>{t("cookiesP6")}</span>
-          <br /> {t("cookiesP6_Text1")} <br /> {t("cookiesP6_Text2")}
-          <br /> {t("cookiesP6_Text3")} <br /> {t("cookiesP6_Text4")}
+          <br /> _ga_CSPYF2X5LT <br />
+          _ga
+          <br /> _fbp <br /> _gcl_au <br /> NEXT_LOCACE
           <br /> <br />
           <span className={styles.bold}>
             {t("cookiesP7")} <br />
