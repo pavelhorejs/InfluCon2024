@@ -36,6 +36,8 @@ export default async function RootLayout({ children, params: { locale } }) {
 
               gtag('consent', 'default', {
                 'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
                 'analytics_storage': 'denied',
                 'personalization_storage': 'denied',
               });
@@ -55,6 +57,8 @@ export default async function RootLayout({ children, params: { locale } }) {
               __html: `
             gtag('consent', 'update', {
               'ad_storage': 'granted',
+              'ad_user_data': 'granted',
+              'ad_personalization': 'granted',
               'analytics_storage': 'granted',
               'personalization_storage': 'granted',
             });

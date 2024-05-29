@@ -8,6 +8,7 @@ import { setCookie, hasCookie } from 'cookies-next';
 function Consent() {
   const [consent, setConsent] = useState(true);
   const { t } = useTranslation();
+  
   useEffect(() => {
     setConsent(hasCookie('localConsent'));
   }, []);
@@ -17,16 +18,16 @@ function Consent() {
     setCookie('localConsent', 'true', { maxAge: 60 * 60 * 24 * 365 });
     gtag('consent', 'update', {
       ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
       analytics_storage: 'granted',
       personalization_storage: 'granted',
     });
-    console.log('accepting cookies');
   };
 
   const denyCookie = () => {
     setConsent(true);
     setCookie('localConsent', 'false', { maxAge: 60 * 60 * 24 * 365 });
-    console.log('denying cookie');
   };
   if (consent === true) {
     return null;
