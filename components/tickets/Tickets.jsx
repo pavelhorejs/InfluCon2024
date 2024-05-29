@@ -18,7 +18,14 @@ const Tickets = () => {
             <div className={styles.ticket}>
               <div className={styles.blackItem1}></div>
               <div className={styles.blackItem2}></div>
-              <div className="flex flex-col ">
+              <div className="">
+                <p>
+                  <span className="bg-[#F00065] text-white px-1 py-0.5 text-[13px] text-center">
+                    {t("earlyBird")}
+                  </span>
+                </p>
+              </div>
+              <div className="flex flex-col">
                 <p className={styles.cena}>3990 Kč</p>
                 {/* <p className="-mt-4 text-[12px]">Uvedená cena je bez DPH</p> */}
               </div>
