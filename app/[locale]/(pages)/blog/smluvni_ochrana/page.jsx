@@ -4,14 +4,30 @@ import Revealx from "/components/reveals/Revealx";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import imageOchranaBig from "/public/ochrana_big.webp";
+import imageOchranaBigMobile from "/public/Ochrana_mobile_big.jpg";
+import { useState, useEffect } from "react";
 const Page = () => {
   const { t } = useTranslation();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
   return (
     <>
       <div className="max-w-6xl mx-auto mt-32 lg:mt-40 pb-14 px-3">
         <Revealx delay={0.2}>
           <Image
-            src={imageOchranaBig}
+            src={isMobile ? imageOchranaBigMobile : imageOchranaBig}
             className="pb-[24px] lg:pb-[48px]"
             alt="blog cover"
           />

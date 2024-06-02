@@ -1,5 +1,8 @@
 "use client";
 import PetrCard from "/components/flip_card/flip1/Flipcard";
+import BaraCard from "/components/flip_card/flip9/Flipcard";
+import AdamCard from "/components/flip_card/flip4/Flipcard";
+import LukasCard from "/components/flip_card/flip8/Flipcard";
 import JanCard from "/components/flip_card/flip5/Flipcard";
 import DenisaCard from "/components/flip_card/flip6/Flipcard";
 import LenkaCard from "/components/flip_card/flip7/Flipcard";
@@ -28,29 +31,29 @@ const Speakers = () => {
             </Revealx>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-[16px] gap-y-[32px]">
               <div className="flex justify-center">
-                <PetrCard />
+                <DenisaCard />
+              </div>
+              <div className="flex justify-center">
+                <LukasCard />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <BaraCard />{" "}
               </div>
               <div className="flex justify-center">
                 <JanCard />
               </div>
               <div className="flex justify-center">
                 {" "}
-                <DenisaCard />
+                <AdamCard />{" "}
               </div>
               <div className="flex justify-center">
+                {" "}
                 <LenkaCard />{" "}
               </div>
               <div className="flex justify-center">
                 {" "}
-                <Flipcardwho />
-              </div>
-              <div className="flex justify-center">
-                {" "}
-                <Flipcardwho />
-              </div>
-              <div className="flex justify-center">
-                {" "}
-                <Flipcardwho />
+                <PetrCard />
               </div>
               <div className="flex justify-center">
                 {" "}

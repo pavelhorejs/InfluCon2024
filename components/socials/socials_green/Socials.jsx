@@ -8,7 +8,7 @@ const Socials = () => {
     <>
       <div className="flex gap-4">
         <Link
-          href="https://www.instagram.com/world_of_online/"
+          href="https://www.instagram.com/influconcz/"
           aria-label="Instagram icon"
         >
           <Revealx delay="1">

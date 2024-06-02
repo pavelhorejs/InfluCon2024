@@ -10,13 +10,27 @@ import Consent from "/components/cookies/Consent";
 import { getCookie } from "cookies-next";
 const i18nNamespaces = ["default"];
 const montserrat = Montserrat({ subsets: ["latin"] });
+import opengraphImage from "/public/opengraph-image.jpg"; // Ensure the image is imported correctly
 
 export async function generateMetadata({ params: { locale } }) {
   const metadata = locale === "cs" ? metadataCs : metadataEn;
 
   return {
+    metadataBase: new URL("https://www.influcon.cz"), // Set the base URL
     title: metadata.title,
     description: metadata.description,
+
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+      images: [
+        {
+          url: new URL(opengraphImage, "https://www.influcon.cz").toString(), // Generate a fully qualified URL
+        },
+      ],
+      url: "https://www.influcon.cz",
+      type: "website",
+    },
   };
 }
 
@@ -26,6 +40,7 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <head>
+        <meta property="og:image" content="/opengraph-image.jpg" />
         <Script
           id="gtag"
           strategy="afterInteractive"

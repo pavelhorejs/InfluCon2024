@@ -7,7 +7,7 @@ const Socials = () => {
     <div className="flex gap-6 z-50">
       <Revealhide delay={1.3}>
         <Link
-          href="https://www.instagram.com/world_of_online/"
+          href="https://www.instagram.com/influconcz/"
           aria-label="Instagram icon"
         >
           {" "}

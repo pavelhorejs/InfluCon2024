@@ -4,11 +4,30 @@ import Revealx from "/components/reveals/Revealx";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import imageIm from "/public/im.webp";
+import imageImMobile from "/public/IM_mobile.jpg";
 import imageOchrana from "/public/ochrana.webp";
+import imageOchranaMobile from "/public/Ochrana_mobile.jpg";
 import imageKampane from "/public/kampane.webp";
+import imageKampaneMobile from "/public/Kampane_mobile.jpg";
+import { useState, useEffect } from "react";
 
 const Blog = () => {
   const { t } = useTranslation();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
   return (
     <section className="max-w-7xl mx-auto px-2" id="blog">
       <Revealx delay={0.2}>
@@ -24,7 +43,10 @@ const Blog = () => {
             <Revealx delay="0.4">
               {" "}
               <div className="image-box">
-                <Image src={imageIm} alt="blog cover" />
+                <Image
+                  src={isMobile ? imageImMobile : imageIm}
+                  alt="blog cover"
+                />
               </div>
             </Revealx>
             <Revealx delay="0.4">
@@ -40,7 +62,10 @@ const Blog = () => {
             <Revealx delay="0.2">
               {" "}
               <div className="image-box">
-                <Image src={imageOchrana} alt="blog cover" />
+                <Image
+                  src={isMobile ? imageOchranaMobile : imageOchrana}
+                  alt="blog cover"
+                />
               </div>
             </Revealx>
             <Revealx delay="0.4">
@@ -56,7 +81,10 @@ const Blog = () => {
             <Revealx delay="0.4">
               {" "}
               <div className="image-box">
-                <Image src={imageKampane} alt="blog cover" />
+                <Image
+                  src={isMobile ? imageKampaneMobile : imageKampane}
+                  alt="blog cover"
+                />
               </div>
             </Revealx>
             <Revealx delay="0.4">
