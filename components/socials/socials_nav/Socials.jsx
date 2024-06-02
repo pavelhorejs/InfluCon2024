@@ -24,7 +24,7 @@ const Socials = () => {
 
       <Revealhide delay={1.6}>
         <Link
-          href="https://www.facebook.com/worldofonlineagency"
+          href="https://www.facebook.com/profile.php?id=61560266676251"
           aria-label="Facebook icon"
         >
           {" "}

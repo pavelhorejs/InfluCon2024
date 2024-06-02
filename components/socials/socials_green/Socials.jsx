@@ -23,7 +23,7 @@ const Socials = () => {
           </Revealx>
         </Link>
         <Link
-          href="https://www.facebook.com/worldofonlineagency"
+          href="https://www.facebook.com/profile.php?id=61560266676251"
           aria-label="Facebook icon"
         >
           <Revealx delay="1.2">
