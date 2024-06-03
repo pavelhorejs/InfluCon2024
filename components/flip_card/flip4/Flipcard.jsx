@@ -41,7 +41,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">{t("adam")}</p>
+              <p className="text-[14px]">{t("adam")}</p>
             </div>
           </div>
         }
