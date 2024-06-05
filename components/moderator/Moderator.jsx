@@ -6,7 +6,7 @@ const Moderator = () => {
   return (
     <div>
       <Revealx delay={0.4}>
-        <section className="flex flex-col gap-5 max-w-6xl mx-auto px-2">
+        <section className="flex flex-col gap-5 max-w-3xl mx-auto px-2">
           {" "}
           <img src="/moderator.webp" alt="moderator" />
           <p className="text-xl">

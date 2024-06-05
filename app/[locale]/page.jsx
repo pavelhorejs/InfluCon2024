@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <Speakers />
       <About />
-      <Moderator />
+      {/* <Moderator /> */}
       <Agenda />
       <Tickets />
       <Program />
