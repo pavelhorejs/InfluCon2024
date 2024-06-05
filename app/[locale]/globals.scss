@@ -216,3 +216,16 @@ position: absolute;
 bottom: 10px;
 right: 0px;
 }
+.resize-column {
+  resize: horizontal;
+  overflow: hidden;
+}
+.overfloko{
+  overflow-x: scroll;
+  padding-bottom: 50px;
+  scrollbar-color: $main-green $darkBg;
+  scroll-behavior: auto;
+}
+.greenhover:hover{
+color: $main-green;
+}

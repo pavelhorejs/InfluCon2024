@@ -342,71 +342,74 @@ const RadioButtons = () => {
           </table>
         )}
         {selectedOption === "option3" && (
-          <table className="w-full text-white">
-            <thead>
-              <tr>
-                <th className="px-2 py-2 text-left">No.</th>
-                <th className="px-2 py-2 text-left">Jméno</th>
-                <th className="px-2 py-2 text-left">Email</th>
-                <th className="px-2 py-2 text-left">Společnost</th>
-                <th className="px-2 py-2 text-left">IČ</th>
-                <th className="px-2 py-2 text-left">DIČ</th>
-                <th className="px-2 py-2 text-left">Město</th>
-                <th className="px-2 py-2 text-left">Ulice</th>
-                <th className="px-2 py-2 text-left">Vstupenka</th>
-                <th className="px-2 py-2 text-left">Datum</th>
-                <th className="px-2 py-2 text-left">Vyfakturováno</th>
-                <th className="px-2 py-2 text-left">Zaplaceno</th>
-              </tr>
-            </thead>
-            <tbody>
-              {invoices.map((invoice, index) => (
-                <tr
-                  key={index}
-                  className={index % 2 === 0 ? "" : ""} // Apply different background colors to alternating rows
-                >
-                  <td className="px-2 py-2">{index + 1}</td>
-                  <td className="px-2 py-2">{invoice.Name}</td>
-                  <td className="px-2 py-2">{invoice.Email}</td>
-                  <td className="px-2 py-2">{invoice.company}</td>
-                  <td className="px-2 py-2">{invoice.Ic}</td>
-                  <td className="px-2 py-2">{invoice.Dic}</td>
-                  <td className="px-2 py-2">{invoice.Mesto}</td>
-                  <td className="px-2 py-2">{invoice.Ulice}</td>
-                  <td className="px-2 py-2">{invoice.Ticket}</td>
-                  <td className="px-2 py-2">
-                    {invoice.date && formatDate(invoice.date)}
-                  </td>
-                  <td className="px-2 py-2">
-                    <input
-                      type="checkbox"
-                      checked={invoicedCheckbox[invoice.$id]?.invoiced || false}
-                      onChange={(e) =>
-                        handleCheckboxChange(
-                          invoice.$id,
-                          "invoiced",
-                          e.target.checked
-                        )
-                      }
-                    />
-                  </td>
-                  <td className="px-2 py-2">
-                    <input
-                      type="checkbox"
-                      checked={paidCheckbox[invoice.$id]?.paid || false}
-                      onChange={(e) =>
-                        handleCheckboxChange(
-                          invoice.$id,
-                          "paid",
-                          e.target.checked
-                        )
-                      }
-                    />
-                  </td>
+          <div className="w-full overflow-x-auto overfloko">
+            <table className="min-w-full text-white">
+              <thead>
+                <tr>
+                  <th className="px-2 py-2 text-left">No.</th>
+                  <th className="px-2 py-2 text-left">Jméno</th>
+                  <th className="px-2 py-2 text-left">Email</th>
+                  <th className="px-2 py-2 text-left">Spol.</th>
+                  <th className="px-2 py-2 text-left">IČ</th>
+                  <th className="px-2 py-2 text-left">DIČ</th>
+                  <th className="px-2 py-2 text-left">Číslo obj.</th>
+                  <th className="px-2 py-2 text-left">Město</th>
+                  <th className="px-2 py-2 text-left">Ulice</th>
+                  <th className="px-2 py-2 text-left">Vstupenka</th>
+                  <th className="px-2 py-2 text-left">Datum</th>
+                  <th className="px-2 py-2 text-left">Vyfakturováno</th>
+                  <th className="px-2 py-2 text-left">Zaplaceno</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {invoices.map((invoice, index) => (
+                  <tr key={index} className={index % 2 === 0 ? "" : ""}>
+                    <td className="px-2 py-2">{index + 1}</td>
+                    <td className="px-2 py-2">{invoice.Name}</td>
+                    <td className="px-2 py-2">{invoice.Email}</td>
+                    <td className="px-2 py-2">{invoice.company}</td>
+                    <td className="px-2 py-2">{invoice.Ic}</td>
+                    <td className="px-2 py-2">{invoice.Dic}</td>
+                    <td className="px-2 py-2">{invoice.Objednavka}</td>
+                    <td className="px-2 py-2">{invoice.Mesto}</td>
+                    <td className="px-2 py-2">{invoice.Ulice}</td>
+                    <td className="px-2 py-2">{invoice.Ticket}</td>
+                    <td className="px-2 py-2">
+                      {invoice.date && formatDate(invoice.date)}
+                    </td>
+                    <td className="px-2 py-2">
+                      <input
+                        type="checkbox"
+                        checked={
+                          invoicedCheckbox[invoice.$id]?.invoiced || false
+                        }
+                        onChange={(e) =>
+                          handleCheckboxChange(
+                            invoice.$id,
+                            "invoiced",
+                            e.target.checked
+                          )
+                        }
+                      />
+                    </td>
+                    <td className="px-2 py-2">
+                      <input
+                        type="checkbox"
+                        checked={paidCheckbox[invoice.$id]?.paid || false}
+                        onChange={(e) =>
+                          handleCheckboxChange(
+                            invoice.$id,
+                            "paid",
+                            e.target.checked
+                          )
+                        }
+                      />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
       </div>
     </div>

@@ -139,6 +139,9 @@ const RadioButtons = () => {
         {selectedOption === "option1" && (
           <div className="flex flex-col md:flex-row gap-20">
             <div>
+              <p className="pb-[40px]">
+                <span className="p-1 bg-[#F00065]"> {t("ticketistied")}</span>
+              </p>
               <h3 className="text-xl pb-[8px]">{t("platbaOnline")}</h3>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
@@ -156,7 +159,7 @@ const RadioButtons = () => {
                   <Button text="Zaplatit" />
                 </Link>
               </div>
-              <h3 className="text-xl pt-[64px]">{t("bankPayment")}</h3>
+              <h3 className="text-xl pt-[40px]">{t("bankPayment")}</h3>
               <p className="max-w-[550px] pb-[16px]">{t("bankPaymentText")}</p>
 
               <div>
@@ -175,7 +178,7 @@ const RadioButtons = () => {
                 )}
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center w-full">
               {" "}
               {paymentRecord?.paid == "true" &&
               paymentRecord?.paid2 !== "true" ? (

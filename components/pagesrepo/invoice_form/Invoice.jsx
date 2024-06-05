@@ -17,6 +17,7 @@ const Invoice = ({ userId, name, email }) => {
   const [Zeme, setZeme] = useState("");
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
+  const [Objednavka, setObjednavka] = useState("");
   const [Ticket, setTicket] = useState("");
   const [currentDate, setCurrentDate] = useState(""); // New state for current date
   const router = useRouter();
@@ -44,6 +45,7 @@ const Invoice = ({ userId, name, email }) => {
     Zeme,
     Email,
     Name,
+    Objednavka,
     Ticket,
     userId: userId,
     date: currentDate, // Include current date in the form data
@@ -72,12 +74,19 @@ const Invoice = ({ userId, name, email }) => {
         <input type="hidden" value={currentDate} />
 
         <p className="text-center -mb-1">{t("form")}</p>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center gap-[16px]">
           <input
             type="text"
             value={company}
             onChange={(e) => setCompany(e.target.value)}
             placeholder={t("formCompany")}
+            className={styles.input}
+          />
+          <input
+            type="text"
+            value={Objednavka}
+            onChange={(e) => setObjednavka(e.target.value)}
+            placeholder={t("formObjednavka")}
             className={styles.input}
           />
         </div>
@@ -131,12 +140,14 @@ const Invoice = ({ userId, name, email }) => {
           />
         </div>
 
-        <p className="text-center -mb-1">{t("formAttendee")}</p>
-        <div className="flex flex-wrap justify-center gap-[16px]">
-          <input value={name} type="text" className={styles.input} />
-          <input type="text" className={styles.input} value={email} />
+        <div className="relative">
+          <div className="absolute top-0 left-0 w-full h-full opacity-0 pointer-events-none">
+            <div className="flex flex-wrap justify-center gap-[16px]">
+              <input value={name} type="text" className={styles.input} />
+              <input type="text" className={styles.input} value={email} />
+            </div>
+          </div>
         </div>
-
         <p className="text-center -mb-1">{t("ticketType")}</p>
         <select
           name="ticket"
@@ -154,6 +165,7 @@ const Invoice = ({ userId, name, email }) => {
           whileHover={{ scale: 0.98 }}
           className={styles.button}
           type="submit"
+          disabled={!Ticket}
         >
           {t("ticketButton")}
         </motion.button>
