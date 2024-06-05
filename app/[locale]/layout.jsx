@@ -40,7 +40,11 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <head>
-        <meta property="og:image" content="/opengraph-image.jpg" />
+        <meta
+          name="image"
+          property="og:image"
+          content="/opengraph-image.jpg"
+        ></meta>
         <Script
           id="gtag"
           strategy="afterInteractive"
