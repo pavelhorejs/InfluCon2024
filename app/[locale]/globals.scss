@@ -229,3 +229,11 @@ right: 0px;
 .greenhover:hover{
 color: $main-green;
 }
+@media (max-width: 768px) {
+  .video-div {
+    order: 2;
+  }
+  .text-div {
+    order: 1;
+  }
+}
