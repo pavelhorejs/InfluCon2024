@@ -5,23 +5,17 @@ const Partners = () => {
       <Revealx delay={0.2}>
         {" "}
         <h2 className="pb-[32px] lg:pb-[48px] text-center">
-          Partneři <br className="md:hidden"></br> a sponzoři
+          Mediální partneři konference
         </h2>
       </Revealx>
-      <div className="md:grid grid-cols-2 md:grid-cols-4 gap-y-20 justify-items-center hidden ">
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
-      </div>
-      <div className="grid grid-cols-1 gap-y-10 justify-items-center md:hidden ">
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
-        <img width="150" src="/woo_logo.svg" alt="" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-20">
+        <div className="flex justify-center md:justify-end items-center">
+          <img width="150" src="/fajn.svg" alt="" />
+        </div>
+        <div className="flex justify-center md:justify-start items-center">
+          {" "}
+          <img width="240" src="/mam.png" alt="" />
+        </div>
       </div>
     </section>
   );
