@@ -27,6 +27,9 @@ const Tickets = () => {
               </div>
               <div className="flex flex-col">
                 <p className={styles.cena}>3990 Kč</p>
+                <p className="text-black -mt-4 pb-2 text-[13px]">
+                  {t("secondPrice")}
+                </p>
                 {/* <p className="-mt-4 text-[12px]">Uvedená cena je bez DPH</p> */}
               </div>
               <p className={styles.typ}>{t("TicketHeadline")}</p>
@@ -65,6 +68,7 @@ const Tickets = () => {
             </div>
           </div>
         </Revealx>
+
         {/* <div className="flex justify-center">
           <div className={`${styles.ticket2} ${styles.largeHeight}`}>
             <p className={styles.cena}> €145</p>
