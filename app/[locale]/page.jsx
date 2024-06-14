@@ -10,6 +10,7 @@ import Blog from "/components/blog/Blog";
 import Faq from "/components/faq/Faq";
 import Subscribe from "/components/subscribe/Subscribe";
 import Partners from "../../components/partners/Partners";
+import Wroteaboutus from "../../components/wroteaboutus/Wroteaboutus";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Organizer />
 
       <Blog />
+      <Wroteaboutus />
       <Faq />
       <Subscribe />
     </>

@@ -57,7 +57,7 @@
 "TicketFeature5":"Networking se seniorními marketéry z firem i agentur, freelancery a influencery",
 "Ticket2Headline":"LIVE STREAM PŘÍSTUP",
 "Ticket2Feature1":"Přednášky z celého světa",
-"Ticket2Feature2":"Videozáznamy všech přednášek ve vysoké kvalitě",
+"Ticket2Feature2":"Videozáznamy všech přednášek ve vysoké kvalitě", 
 "earlyBird": "Early bird, cena platí do 30.6.",
 "secondPrice": "Základní vstupné od 1.7. 4990 Kč",
 "CooperationComponent":"Chcete s námi spolupracovat?",
@@ -316,4 +316,11 @@
 "tigran": "Pokud máte rádi kapku nekorektního humoru, celý den vám zpříjemní Tigran Hovakimyan! Pokud ho ještě nesledujete, můžete ",
 "tigran2": "začít.",
 "tigranhdl": "Moderátor",
-"partnershdl": "Mediální partneři konference"}
+"partnershdl": "Mediální partneři konference",
+"zodpovednosti": "Influcon tým a zodpovědnosti",
+"partneri": "Partneři",
+"organizace": "Organizace",
+"speakeri": "Speakeři",
+"after": "After party",
+"napsalionas": "Kde se o nás píše"
+}

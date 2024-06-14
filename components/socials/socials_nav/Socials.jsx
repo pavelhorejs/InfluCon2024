@@ -41,7 +41,7 @@ const Socials = () => {
 
       <Revealhide delay={1.9}>
         <Link
-          href="https://www.linkedin.com/company/worldofonline/"
+          href="https://www.linkedin.com/showcase/104046570"
           aria-label="LinkedIn icon"
         >
           {" "}

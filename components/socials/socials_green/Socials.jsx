@@ -38,7 +38,7 @@ const Socials = () => {
           </Revealx>
         </Link>
         <Link
-          href="https://www.linkedin.com/company/worldofonline/"
+          href="https://www.linkedin.com/showcase/104046570"
           aria-label="LinkedIn icon"
         >
           <Revealx delay="1.4">
