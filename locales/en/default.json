@@ -321,5 +321,18 @@
 "organizace": "Organization",
 "speakeri": "Speakers",
 "after": "After Party",
- "napsalionas": "Where we are mentioned"
+ "napsalionas": "Where we are mentioned",
+ "recovery": "Password recovery",
+ "recovery1": "In case you forgot your password, please enter your registration email.",
+ "recovery2": "After that, you will receive a reset link to your email.",
+ "sendRecoverybutton": "Send recovery email",
+ "newPassword": "Set new password",
+ "resetPasswordButton": "Confirm",
+ "newpassword": "Enter new password",
+ "newpassword2": "Repeat new password",
+  "passwordchanged": "Password reset successfully. You can now log in with your new password",
+  "invalidlink": "Invalid recovery link",
+  "passwordsdonotmatch": "Passwords do not match",
+  "recoverysent": "Recovery email sent. Please check your inbox.",
+  "forgottenpasswdhedlin": "Forgotten password"
 }

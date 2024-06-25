@@ -1,0 +1,18 @@
+@import "/app/variables.scss";
+
+
+.form{
+display: flex;
+flex-direction: column;
+
+    input{
+        border: solid 1px $main-red;
+        color: white;
+        background: transparent;
+        padding: 8px 16px;
+    }
+    .input::placeholder {
+        font-size: 14px;
+        color: rgb(205, 205, 205);
+    }
+}

@@ -322,5 +322,18 @@
 "organizace": "Organizace",
 "speakeri": "Speakeři",
 "after": "After party",
-"napsalionas": "Kde se o nás píše"
+"napsalionas": "Kde se o nás píše",
+ "recovery": "Obnova hesla",
+ "recovery1": "V případě, že jste zapomněli heslo, zadejte prosím svůj registrační e-mail.",
+"recovery2": "Poté obdržíte na svůj e-mail odkaz pro resetování hesla.",
+"sendRecoverybutton": "Odeslat e-mail pro obnovení",
+"newPassword": "Nastavte si nové heslo",
+"resetPasswordButton": "Potvrdit",
+ "newpassword": "Zadejte nové heslo",
+ "newpassword2": "Potvrďte nové heslo",
+"passwordchanged": "Heslo bylo úspěšně změněno. Nyní se můžete přihlásit s novým heslem.",
+  "invalidlink": "Neplatný link pro obnovu",
+   "passwordsdonotmatch": "Hesla se neschodují",
+  "recoverysent": "E-mail s obnovou hesla odeslán. Zkontrolujte prosím svou doručenou poštu.",
+    "forgottenpasswdhedlin": "Zapomenuté heslo"
 }

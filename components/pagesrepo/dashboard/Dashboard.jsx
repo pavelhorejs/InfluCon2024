@@ -127,6 +127,11 @@ const Dashboard = () => {
                 </Link>
               </span>
             </p>
+            <Link href="/password_recovery" className={styles.link}>
+              <p className="text-sm text-center underline">
+                {t("forgottenpasswdhedlin")}
+              </p>
+            </Link>
           </Revealx>
         </div>
       </div>
