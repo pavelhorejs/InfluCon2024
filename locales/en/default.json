@@ -333,6 +333,6 @@
   "passwordchanged": "Password reset successfully. You can now log in with your new password",
   "invalidlink": "Invalid recovery link",
   "passwordsdonotmatch": "Passwords do not match",
-  "recoverysent": "Recovery email sent. Please check your inbox.",
+  "recoverysent": "Recovery email sent. Please check your inbox and also SPAM folder.",
   "forgottenpasswdhedlin": "Forgotten password"
 }
