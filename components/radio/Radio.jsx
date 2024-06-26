@@ -140,9 +140,10 @@ const RadioButtons = () => {
           <div className="flex flex-col md:flex-row gap-20">
             <div>
               <p className="pb-[40px]">
-                <span className="p-1 bg-[#F00065]"> {t("ticketistied")}</span>
+                <span className="p-1 bg-[#F00065]">{t("ticketistied")}</span>
               </p>
-              <h3 className="text-xl pb-[8px]">{t("platbaOnline")}</h3>
+              <h3 className="text-xl font-bold">{t("platbaOnline")}</h3>
+              <p className="pb-[8px]">{t("platbaonůonepopis")}</p>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
                   InfluCon 2024 | {t("TicketHeadline2")} | 3990 Kč
@@ -159,7 +160,9 @@ const RadioButtons = () => {
                   <Button text="Zaplatit" />
                 </Link>
               </div>
-              <h3 className="text-xl pt-[40px]">{t("bankPayment")}</h3>
+              <h3 className="text-xl font-bold pt-[40px]">
+                {t("bankPayment")}
+              </h3>
               <p className="max-w-[550px] pb-[16px]">{t("bankPaymentText")}</p>
 
               <div>
