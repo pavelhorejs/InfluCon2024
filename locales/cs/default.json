@@ -196,8 +196,8 @@
 "sent": "Zpráva byla úspěšně odeslána.",
 "bankPayment": "Chci vystavit fakturu (neplatím online, ale bankovním převodem)",
 "bankPaymentText": "Vyplňte fakturační údaje společnosti, na kterou chcete fakturu vystavit, my vám nejpozději do 5 pracovních dnů odešleme fakturu a po jejím zaplacení na účet, se vám nahraje vstupenka do účtu zde do prázdného pole",
-"showForm": "Zadat fakturační údaje",
-"hideForm": "Skrýt formulář",
+"showForm": "Vyplnit",
+"hideForm": "Skrýt",
 "form": "Fakturační údaje",
 "formCompany": "Společnost",
 "formIC": "IČ",
@@ -336,5 +336,6 @@
 "invalidlink": "Neplatný link pro obnovu",
 "passwordsdonotmatch": "Hesla se neschodují",
 "recoverysent": "E-mail s obnovou hesla odeslán. Zkontrolujte prosím svou doručenou poštu včetně složky SPAM.",
-"forgottenpasswdhedlin": "Zapomenuté heslo"
+"forgottenpasswdhedlin": "Zapomenuté heslo",
+"oneuseroneticket": "1 registrace = 1 lístek"
 }

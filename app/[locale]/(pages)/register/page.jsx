@@ -17,6 +17,7 @@ const Page = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
   const router = useRouter();
+  const [error, setError] = useState(null); // State for error message
 
   const register = async () => {
     try {
@@ -41,6 +42,11 @@ const Page = () => {
       router.push("/success");
     } catch (error) {
       console.error("Error registering user:", error);
+      if (error.message.includes("Password must be between 8 and 265")) {
+        alert("Password must be between 8 and 265 characters long.");
+      } else {
+        alert("Too many tries in a short time. Try again later, please.");
+      }
     }
   };
 

@@ -18,7 +18,7 @@ const Invoice = ({ userId, name, email }) => {
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
   const [Objednavka, setObjednavka] = useState("");
-  const [Ticket, setTicket] = useState("Offline");
+  const [Ticket, setTicket] = useState("Online");
   const [currentDate, setCurrentDate] = useState(""); // New state for current date
   const router = useRouter();
 
@@ -164,6 +164,7 @@ const Invoice = ({ userId, name, email }) => {
           whileHover={{ scale: 0.98 }}
           className={styles.button}
           type="submit"
+          disabled={!Ticket}
         >
           {t("ticketButton")}
         </motion.button>

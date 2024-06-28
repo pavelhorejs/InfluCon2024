@@ -195,8 +195,8 @@
 "sent": "Message has been successfully sent.",
 "bankPayment": "I want to issue an invoice (I am not paying online, but by bank transfer)",
 "bankPaymentText": "Fill in the billing information for the company to which you want the invoice issued. We will send you the invoice within 5 business days at the latest, and after it is paid, the ticket will be uploaded to your account in the designated field.",
-"showForm": "Enter billing details",
-"hideForm": "Hide form",
+"showForm": "Fill",
+"hideForm": "Hide",
 "form": "Billing details",
 "formCompany": "Company",
 "formIC": "Identification Number (IČ)",
@@ -335,5 +335,6 @@
   "invalidlink": "Invalid recovery link",
   "passwordsdonotmatch": "Passwords do not match",
   "recoverysent": "Recovery email sent. Please check your inbox and also SPAM folder.",
-  "forgottenpasswdhedlin": "Forgotten password"
+  "forgottenpasswdhedlin": "Forgotten password",
+  "oneuseroneticket": "1 registration = 1 ticket"
 }

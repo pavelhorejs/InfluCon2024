@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import styles from "/components/radio/styles.module.scss";
+import styles from "./styles.module.scss";
 import { Client, Databases, Query } from "appwrite";
 
 const RadioButtons = () => {
@@ -12,7 +12,16 @@ const RadioButtons = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [invoicedCheckbox, setInvoicedCheckbox] = useState({});
   const [paidCheckbox, setPaidCheckbox] = useState({});
+  const filteredUsers = users.filter((user) => user.paid2 === "true");
+  const filteredUsers2 = users.filter((user) => user.paid === "true");
+  const [filterPaid, setFilterPaid] = useState(false); // State for the checkbox
 
+  // Filtered users based on paid2 being true
+
+  // Apply additional filter when checkbox is enabled
+  const displayedUsers = filteredUsers.filter(
+    (user) => !filterPaid || (user.paid === "false" && user.paid2 === "false")
+  );
   useEffect(() => {
     // Retrieve saved option from localStorage
     const savedOption = localStorage.getItem("selectedOption");
@@ -237,6 +246,44 @@ const RadioButtons = () => {
 
         <input
           type="radio"
+          id="option5"
+          name="options"
+          value="option5"
+          className={styles.radioInput}
+          checked={selectedOption === "option5"}
+          onChange={() => setSelectedOption("option5")}
+        />
+        <label htmlFor="option5" className={styles.radioOption}>
+          <div
+            className={`${styles.radioLabel} ${
+              selectedOption === "option5" ? styles.active : ""
+            }`}
+          >
+            Vstupenky ({filteredUsers2.length})
+          </div>
+        </label>
+
+        <input
+          type="radio"
+          id="option4"
+          name="options"
+          value="option4"
+          className={styles.radioInput}
+          checked={selectedOption === "option4"}
+          onChange={() => setSelectedOption("option4")}
+        />
+        <label htmlFor="option4" className={styles.radioOption}>
+          <div
+            className={`${styles.radioLabel} ${
+              selectedOption === "option4" ? styles.active : ""
+            }`}
+          >
+            Live stream ({filteredUsers.length})
+          </div>
+        </label>
+
+        <input
+          type="radio"
           id="option2"
           name="options"
           value="option2"
@@ -276,12 +323,87 @@ const RadioButtons = () => {
       <div className={styles.contentContainer}>
         {selectedOption === "option1" && (
           <>
+            <div className="flex items-center gap-[16px]">
+              {" "}
+              <input
+                type="text"
+                placeholder="Vyhledat dle jména, firmy"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className={styles.inputSearch}
+              />
+              <div>
+                <input
+                  className="mr-[8px]"
+                  type="checkbox"
+                  id="filterPaid"
+                  checked={filterPaid}
+                  onChange={() => setFilterPaid(!filterPaid)}
+                />
+                <label htmlFor="filterPaid">Pouze registrovaní</label>
+              </div>
+            </div>
+
+            <table className="w-full text-white">
+              <thead>
+                <tr>
+                  <th className="px-2 py-2 text-left">No.</th>
+                  <th className="px-2 py-2 text-left">Jméno</th>
+                  <th className="px-2 py-2 text-left">Email</th>
+                  <th className="px-2 py-2 text-left">Telefon</th>
+                  <th className="px-2 py-2 text-left">Společnost</th>
+                  <th className="px-2 py-2 text-left">Adresa</th>
+                  <th className="px-2 py-2 text-left">Offline</th>
+                  <th className="px-2 py-2 text-left">Online</th>
+                </tr>
+              </thead>
+              <tbody>
+                {users
+                  .filter((user) => {
+                    const matchesSearchTerm =
+                      searchTerm === "" ||
+                      user.name
+                        .toLowerCase()
+                        .includes(searchTerm.toLowerCase()) ||
+                      user.company
+                        .toLowerCase()
+                        .includes(searchTerm.toLowerCase());
+
+                    const matchesPaidFilter =
+                      !filterPaid ||
+                      (user.paid === null && user.paid2 === null);
+
+                    return matchesSearchTerm && matchesPaidFilter;
+                  })
+                  .map((user, index) => (
+                    <tr key={index} className={index % 2 === 0 ? "" : ""}>
+                      <td className="px-2 py-2">{index + 1}</td>
+                      <td className="px-2 py-2">{user.name}</td>
+                      <td className="px-2 py-2">{user.email}</td>
+                      <td className="px-2 py-2">{user.phoneNumber}</td>
+                      <td className="px-2 py-2">{user.company}</td>
+                      <td className="px-2 py-2">{user.address}</td>
+                      <td className="px-2 py-2">
+                        {user.paid === "true" ? "x" : user.paid}
+                      </td>
+                      <td className="px-2 py-2">
+                        {user.paid2 === "true" ? "x" : user.paid2}
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </>
+        )}
+
+        {selectedOption === "option4" && (
+          <>
             <input
               type="text"
-              placeholder="Vyhledat dle jména"
+              placeholder="Vyhledat dle jména, firmy"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="inputSearch"
+              className={styles.inputSearch}
             />
             <table className="w-full text-white">
               <thead>
@@ -300,8 +422,69 @@ const RadioButtons = () => {
                 {users
                   .filter(
                     (user) =>
-                      searchTerm === "" ||
-                      user.name.toLowerCase().includes(searchTerm.toLowerCase())
+                      user.paid2 === "true" &&
+                      (searchTerm === "" ||
+                        user.name
+                          .toLowerCase()
+                          .includes(searchTerm.toLowerCase()) ||
+                        user.company
+                          .toLowerCase()
+                          .includes(searchTerm.toLowerCase()))
+                  )
+                  .map((user, index) => (
+                    <tr key={index} className={index % 2 === 0 ? "" : ""}>
+                      <td className="px-2 py-2">{index + 1}</td>
+                      <td className="px-2 py-2">{user.name}</td>
+                      <td className="px-2 py-2">{user.email}</td>
+                      <td className="px-2 py-2">{user.phoneNumber}</td>
+                      <td className="px-2 py-2">{user.company}</td>
+                      <td className="px-2 py-2">{user.address}</td>
+                      <td className="px-2 py-2">
+                        {user.paid === "true" ? "x" : user.paid}
+                      </td>
+                      <td className="px-2 py-2">
+                        {user.paid2 === "true" ? "x" : user.paid2}
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </>
+        )}
+        {selectedOption === "option5" && (
+          <>
+            <input
+              type="text"
+              placeholder="Vyhledat dle jména, firmy"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className={styles.inputSearch}
+            />
+            <table className="w-full text-white">
+              <thead>
+                <tr>
+                  <th className="px-2 py-2 text-left">No.</th>
+                  <th className="px-2 py-2 text-left">Jméno</th>
+                  <th className="px-2 py-2 text-left">Email</th>
+                  <th className="px-2 py-2 text-left">Telefon</th>
+                  <th className="px-2 py-2 text-left">Společnost</th>
+                  <th className="px-2 py-2 text-left">Adresa</th>
+                  <th className="px-2 py-2 text-left">Offline</th>
+                  <th className="px-2 py-2 text-left">Online</th>
+                </tr>
+              </thead>
+              <tbody>
+                {users
+                  .filter(
+                    (user) =>
+                      user.paid === "true" &&
+                      (searchTerm === "" ||
+                        user.name
+                          .toLowerCase()
+                          .includes(searchTerm.toLowerCase()) ||
+                        user.company
+                          .toLowerCase()
+                          .includes(searchTerm.toLowerCase()))
                   )
                   .map((user, index) => (
                     <tr key={index} className={index % 2 === 0 ? "" : ""}>
