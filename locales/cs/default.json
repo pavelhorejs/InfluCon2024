@@ -337,5 +337,6 @@
 "passwordsdonotmatch": "Hesla se neschodují",
 "recoverysent": "E-mail s obnovou hesla odeslán. Zkontrolujte prosím svou doručenou poštu včetně složky SPAM.",
 "forgottenpasswdhedlin": "Zapomenuté heslo",
-"oneuseroneticket": "1 registrace = 1 lístek"
+"oneuseroneticket": "1 registrace = 1 lístek",
+  "oneBrand": "Jedna značka, 17 zemí Evropy"
 }

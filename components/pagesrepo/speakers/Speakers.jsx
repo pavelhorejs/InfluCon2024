@@ -6,6 +6,7 @@ import LukasCard from "/components/flip_card/flip8/Flipcard";
 import JanCard from "/components/flip_card/flip5/Flipcard";
 import DenisaCard from "/components/flip_card/flip6/Flipcard";
 import LenkaCard from "/components/flip_card/flip7/Flipcard";
+import Doublefoto from "/components/flip_card/flip10/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -54,6 +55,22 @@ const Speakers = () => {
               <div className="flex justify-center">
                 {" "}
                 <PetrCard />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Doublefoto />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcardwho />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcardwho />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Flipcardwho />
               </div>
               <div className="flex justify-center">
                 {" "}

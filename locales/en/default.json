@@ -336,5 +336,6 @@
   "passwordsdonotmatch": "Passwords do not match",
   "recoverysent": "Recovery email sent. Please check your inbox and also SPAM folder.",
   "forgottenpasswdhedlin": "Forgotten password",
-  "oneuseroneticket": "1 registration = 1 ticket"
+  "oneuseroneticket": "1 registration = 1 ticket",
+  "oneBrand": "One brand, 17 countries in Europe"
 }
