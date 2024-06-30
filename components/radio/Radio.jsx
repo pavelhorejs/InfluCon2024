@@ -158,7 +158,7 @@ const RadioButtons = () => {
               <p className="pb-[8px]">{t("platbaonůonepopis")}</p>
               <div className={styles.ticketsContainer}>
                 <div className={styles.vstupenka}>
-                  InfluCon 2024 | {t("TicketHeadline2")} | 3990 Kč
+                  InfluCon 2024 | {t("TicketHeadline2")} | 4990 Kč
                 </div>
                 <Link onClick={buyOne} href="#">
                   <Button text="Zaplatit" />
@@ -180,7 +180,7 @@ const RadioButtons = () => {
               <div>
                 <div className="flex">
                   <div className={styles.vstupenka}>
-                    InfluCon 2024 | {t("TicketHeadline2")} | 3990 Kč
+                    InfluCon 2024 | {t("TicketHeadline2")} | 4990 Kč
                   </div>
                   <button
                     className="buttonGreen ml-[16px] max-w-[130px]"
