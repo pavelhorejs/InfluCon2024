@@ -11,7 +11,7 @@ const Program = () => {
       id="partnership"
     >
       {" "}
-      <Revealx delay={0.2}>
+      <Revealx delay={0.3}>
         <h2 className="text-center pb-[24px]">{t("CooperationComponent")}</h2>
       </Revealx>
       <Revealx delay={0.4}>

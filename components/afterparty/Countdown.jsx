@@ -42,7 +42,7 @@ const Countdown = ({ timeTillDate }) => {
 
   return (
     <div>
-      <h1 className="text-center">{t("countdown")}</h1>
+      <h1 className="text-center pb-2 lg:pb-0">{t("countdown")}</h1>
       <div className="countdown-wrapper">
         <div className="countdown-item">
           {days} <span>{t("dni")}</span>

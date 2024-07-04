@@ -53,7 +53,7 @@ export default function FaqComponent() {
       <div className="mx-auto max-w-7xl px-2">
         {" "}
         <div className="mx-auto max-w-4xl divide-y divide-gray-200/10">
-          <Revealx delay={0.2}>
+          <Revealx delay={0.3}>
             <h2 className="pb-[32px] lg:pb-[48px] text-center">
               {t("Faq")} <br className="md:hidden" /> {t("Faq2")}
             </h2>
