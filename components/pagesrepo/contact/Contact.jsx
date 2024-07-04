@@ -29,55 +29,57 @@ const Contact = () => {
         <div className="pb-[24px] ">
           <Socials />
         </div>
-        <div>
-          <p className="font-bold text-lg pb-[8px]">{t("zodpovednosti")}</p>
-          <div className="pb-[8px]">
-            {" "}
-            <Link href="https://www.linkedin.com/in/petrsrna/">
-              <span className="font-bold text-[#22FFAF] hover:text-[#F00065]">
-                Petr Srna
-              </span>{" "}
-              | {t("partneri")}
-            </Link>{" "}
-            <br />
-            <Link href="mailto:petr.srna@woo.cz">petr.srna@woo.cz</Link>
-          </div>
-          <div className="pb-[8px]">
-            <Link href="https://www.linkedin.com/in/nicolatošnarová/">
-              <span className="font-bold text-[#22FFAF] hover:text-[#F00065]">
-                Nicola Tošnarová
-              </span>{" "}
-              | {t("organizace")}
-            </Link>{" "}
-            <br />
-            <Link href="mailto:nicola.tosnarova@woo.cz">
-              nicola.tosnarova@woo.cz
-            </Link>
-          </div>
-          <div className="pb-[8px]">
-            {" "}
-            <Link href="https://www.linkedin.com/in/david-zamecnik-19773356/">
+        <Revealx delay={0.8}>
+          <div>
+            <p className="font-bold text-lg pb-[8px]">{t("zodpovednosti")}</p>
+            <div className="pb-[8px]">
+              {" "}
+              <Link href="https://www.linkedin.com/in/petrsrna/">
+                <span className="font-bold text-[#22FFAF] hover:text-[#F00065]">
+                  Petr Srna
+                </span>{" "}
+                | {t("partneri")}
+              </Link>{" "}
+              <br />
+              <Link href="mailto:petr.srna@woo.cz">petr.srna@woo.cz</Link>
+            </div>
+            <div className="pb-[8px]">
+              <Link href="https://www.linkedin.com/in/nicolatošnarová/">
+                <span className="font-bold text-[#22FFAF] hover:text-[#F00065]">
+                  Nicola Tošnarová
+                </span>{" "}
+                | {t("organizace")}
+              </Link>{" "}
+              <br />
+              <Link href="mailto:nicola.tosnarova@woo.cz">
+                nicola.tosnarova@woo.cz
+              </Link>
+            </div>
+            <div className="pb-[8px]">
+              {" "}
+              <Link href="https://www.linkedin.com/in/david-zamecnik-19773356/">
+                {" "}
+                <span className="font-bold text-[#22FFAF] hover:text-[#F00065]">
+                  David Zámečník
+                </span>{" "}
+                | {t("speakeri")}
+              </Link>{" "}
+              <br />
+              <Link href="mailto:david.zamecnik@woo.cz">
+                david.zamecnik@woo.cz
+              </Link>
+            </div>
+            <Link href="https://www.linkedin.com/in/natálie-bartoňová-7497192b3/">
               {" "}
               <span className="font-bold text-[#22FFAF] hover:text-[#F00065]">
-                David Zámečník
+                Natálka Bartoňová
               </span>{" "}
-              | {t("speakeri")}
+              | {t("after")}
             </Link>{" "}
             <br />
-            <Link href="mailto:david.zamecnik@woo.cz">
-              david.zamecnik@woo.cz
-            </Link>
+            <Link href="mailto:backoffice@woo.cz">backoffice@woo.cz</Link>
           </div>
-          <Link href="https://www.linkedin.com/in/natálie-bartoňová-7497192b3/">
-            {" "}
-            <span className="font-bold text-[#22FFAF] hover:text-[#F00065]">
-              Natálka Bartoňová
-            </span>{" "}
-            | {t("after")}
-          </Link>{" "}
-          <br />
-          <Link href="mailto:backoffice@woo.cz">backoffice@woo.cz</Link>
-        </div>
+        </Revealx>
       </div>
       <div className="mx-2 max-w-[500px]">
         <Revealx delay={0.6}>

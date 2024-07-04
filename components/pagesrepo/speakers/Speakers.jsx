@@ -5,7 +5,6 @@ import AdamCard from "/components/flip_card/flip4/Flipcard";
 import LukasCard from "/components/flip_card/flip8/Flipcard";
 import JanCard from "/components/flip_card/flip5/Flipcard";
 import DenisaCard from "/components/flip_card/flip6/Flipcard";
-import LenkaCard from "/components/flip_card/flip7/Flipcard";
 import Doublefoto from "/components/flip_card/flip10/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import { motion } from "framer-motion";
@@ -32,25 +31,25 @@ const Speakers = () => {
             </Revealx>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-[16px] gap-y-[32px]">
               <div className="flex justify-center">
-                <DenisaCard />
+                <Doublefoto />
               </div>
               <div className="flex justify-center">
                 <LukasCard />
               </div>
               <div className="flex justify-center">
                 {" "}
-                <BaraCard />{" "}
+                <AdamCard />{" "}
               </div>
               <div className="flex justify-center">
                 <JanCard />
               </div>
               <div className="flex justify-center">
                 {" "}
-                <AdamCard />{" "}
+                <BaraCard />{" "}
               </div>
               <div className="flex justify-center">
                 {" "}
-                <LenkaCard />{" "}
+                <DenisaCard />{" "}
               </div>
               <div className="flex justify-center">
                 {" "}
@@ -58,23 +57,7 @@ const Speakers = () => {
               </div>
               <div className="flex justify-center">
                 {" "}
-                <Doublefoto />
-              </div>
-              <div className="flex justify-center">
-                {" "}
-                <Flipcardwho />
-              </div>
-              <div className="flex justify-center">
-                {" "}
-                <Flipcardwho />
-              </div>
-              <div className="flex justify-center">
-                {" "}
-                <Flipcardwho />
-              </div>
-              <div className="flex justify-center">
-                {" "}
-                <Flipcardwho />
+                <Flipcardwho />{" "}
               </div>
             </div>
             <Revealx delay={0.2}>

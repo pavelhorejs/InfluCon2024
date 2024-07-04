@@ -32,7 +32,7 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src="/doublefoto.png"
+              src="/doublefoto.webp"
               alt="Front Image"
               style={contentStyle}
             />

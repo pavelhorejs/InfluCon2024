@@ -221,6 +221,18 @@ const RadioButtons = () => {
                   </div>
                 )}
               </div>
+              <div>
+                {" "}
+                <h3 className="font-bold mt-[40px]">
+                  Fakturační údaje pořadatele:
+                </h3>
+                <p>
+                  World of Online, s. r. o. <br />
+                  Voršilská 139/5, 110 00 Praha <br />
+                  IČ: 06063071 <br />
+                  DIČ: CZ06063071
+                </p>
+              </div>
             </div>
 
             <div className="flex justify-center w-full">

@@ -17,7 +17,7 @@ const Page = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
   const router = useRouter();
-  const [error, setError] = useState(null); // State for error message
+  const [error, setError] = useState(null);
 
   const register = async () => {
     try {

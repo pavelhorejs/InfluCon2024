@@ -232,3 +232,36 @@ color: $main-green;
     order: 1;
   }
 }
+
+
+
+
+.countdown-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.countdown-item {
+	color: white;
+	font-size: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  line-height: 30px;
+	margin: 10px;
+  padding-top: 10px;
+	width: 100px;
+	height: 100px;
+}
+
+.countdown-item span {
+	color: #cfcfcf;
+	font-size: 0.7rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+

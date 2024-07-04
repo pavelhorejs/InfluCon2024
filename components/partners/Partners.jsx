@@ -13,13 +13,17 @@ const Partners = () => {
           {t("partnershdl")}
         </h2>
       </Revealx>
-      <div className="grid grid-cols-2 gap-y-5 lg:gap-y-20 gap-x-1 lg:gap-x-20">
-        <div className="flex justify-center md:justify-end items-center">
+      <div className="grid grid-cols-3 gap-y-5 lg:gap-y-20 gap-x-1 lg:gap-x-20">
+        <div className="flex justify-center md:justify-center items-center">
+          {" "}
+          <img className="w-[100px] lg:w-[270px]" src="/nova.png" alt="" />
+        </div>
+        <div className="flex justify-center md:justify-center items-center">
           <img className="w-[100px] lg:w-[240px]" src="/fajn.svg" alt="" />
         </div>
-        <div className="flex justify-center md:justify-start items-center">
+        <div className="flex justify-center md:justify-center items-center">
           {" "}
-          <img className="w-[100px] lg:w-[240px]" src="/mam.png" alt="" />
+          <img className="w-[100px] lg:w-[340px]" src="/mam.png" alt="" />
         </div>
       </div>
     </section>
