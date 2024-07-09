@@ -38,14 +38,26 @@ const Page = () => {
         ID.unique(),
         documentData
       );
+      const response = await fetch("/api/sendMInvoiceForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
 
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
       router.push("/success");
     } catch (error) {
       console.error("Error registering user:", error);
       if (error.message.includes("Password must be between 8 and 265")) {
         alert("Password must be between 8 and 265 characters long.");
       } else {
-        alert("Too many tries in a short time. Try again later, please.");
+        alert(
+          "Too many tries in a short time. Try again later, please. Or a user with the same email, or phone already exists."
+        );
       }
     }
   };
