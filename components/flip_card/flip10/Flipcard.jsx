@@ -50,14 +50,19 @@ const Flipcard = () => {
       <div className="flex flex-col justify-between max-w-[300px]">
         <div className="flex justify-between items-center">
           {" "}
-          <p className={style.name2}>Victoria Pearce</p>
+          <p className={style.name2}>
+            Victoria Pearce{" "}
+            <span className="font-normal text-base pl-3">C&A</span>
+          </p>
           <Link href="https://www.linkedin.com/in/victoria-pearce-6a60911a3/">
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
         <div className="flex justify-between items-center -mt-3">
           {" "}
-          <p className={style.name2}>Eva Van Elst</p>
+          <p className={style.name2}>
+            Eva Van Elst <span className="font-normal text-base pl-3">C&A</span>
+          </p>
           <Link href="https://www.linkedin.com/in/evavanelst/">
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>

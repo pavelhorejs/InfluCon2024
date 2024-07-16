@@ -32,7 +32,7 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src="/janLos.webp"
+              src="/double2.jpg"
               alt="Front Image"
               style={contentStyle}
             />
@@ -41,7 +41,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">{t("janLos")}</p>
+              <p className="text-[14px]">{t("janLos")}</p>
             </div>
           </div>
         }
@@ -50,12 +50,23 @@ const Flipcard = () => {
       <div className="flex flex-col justify-between max-w-[300px]">
         <div className="flex justify-between items-center">
           {" "}
-          <p className={style.name}>Jan Los</p>
+          <p className={style.name2}>
+            Jan Los <span className="font-normal text-base pl-3">L´Oréal</span>
+          </p>
           <Link href="https://www.linkedin.com/in/losage/">
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
-        <p className={style.company}>CMO & CDO, L'Oréal</p>
+        <div className="flex justify-between items-center -mt-3">
+          {" "}
+          <p className={style.name2}>
+            Tereza Law{" "}
+            <span className="font-normal text-base pl-3">L´Oréal</span>
+          </p>
+          <Link href="https://www.linkedin.com/in/tereza-law-418bb9213/">
+            <img src="/in_black.svg" className="w-5" alt="" />
+          </Link>
+        </div>
       </div>
     </div>
   );
