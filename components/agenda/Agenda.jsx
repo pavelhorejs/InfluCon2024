@@ -12,7 +12,7 @@ const Agenda = () => {
         </h2>
       </Revealx>
       <Revealx delay={0.2}>
-        <p className="pb-[32px]">Influencer marketing, to je oč tu běží!</p>
+        <p className="pb-[32px]">{t("tojeoc")}</p>
       </Revealx>
       <Revealx delay={0.2}>
         {" "}
