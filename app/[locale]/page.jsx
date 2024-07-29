@@ -11,7 +11,7 @@ import Faq from "/components/faq/Faq";
 import Subscribe from "/components/subscribe/Subscribe";
 import Partners from "../../components/partners/Partners";
 import Wroteaboutus from "../../components/wroteaboutus/Wroteaboutus";
-
+import Zastita from "/components/po_zastitou/Zastita";
 export default function Home() {
   return (
     <>
@@ -27,6 +27,7 @@ export default function Home() {
       <Program />
 
       <Organizer />
+      <Zastita />
 
       <Blog />
       <Wroteaboutus />

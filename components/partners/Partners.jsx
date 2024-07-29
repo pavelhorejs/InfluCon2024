@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import Revealx from "../reveals/Revealx";
-import { use } from "react";
+
 const Partners = () => {
   const { t } = useTranslation();
   return (
@@ -13,7 +13,7 @@ const Partners = () => {
           {t("partnershdl")}
         </h2>
       </Revealx>
-      <div className="grid grid-cols-3 gap-y-5 lg:gap-y-20 gap-x-1 lg:gap-x-20">
+      <div className="grid grid-cols-3 lg:grid-cols-5 gap-y-5 lg:gap-y-20 gap-x-1 lg:gap-x-20">
         <div className="flex justify-center md:justify-center items-center">
           {" "}
           <Revealx delay={0.6}>
@@ -24,7 +24,7 @@ const Partners = () => {
         <div className="flex justify-center md:justify-center items-center">
           <Revealx delay={0.4}>
             {" "}
-            <img className="w-[100px] lg:w-[240px]" src="/fajn.svg" alt="" />
+            <img className="w-[70px] lg:w-[200px]" src="/fajn.svg" alt="" />
           </Revealx>
         </div>
         <div className="flex justify-center md:justify-center items-center">
@@ -32,6 +32,24 @@ const Partners = () => {
           <Revealx delay={0.6}>
             {" "}
             <img className="w-[100px] lg:w-[340px]" src="/mam.png" alt="" />
+          </Revealx>
+        </div>
+        <div className="flex justify-center md:justify-center items-center">
+          {" "}
+          <Revealx delay={0.6}>
+            {" "}
+            <img
+              className="w-[100px] lg:w-[240px]"
+              src="/newsfeed.svg"
+              alt=""
+            />
+          </Revealx>
+        </div>
+        <div className="flex justify-center md:justify-center items-center">
+          {" "}
+          <Revealx delay={0.6}>
+            {" "}
+            <img className="w-[80px] lg:w-[200px]" src="/webtop.png" alt="" />
           </Revealx>
         </div>
       </div>
