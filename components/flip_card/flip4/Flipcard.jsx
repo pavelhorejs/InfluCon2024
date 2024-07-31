@@ -32,7 +32,7 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src="/adam.webp"
+              src={i18n.language === "en" ? "/adam_en.webp" : "/adam.webp"}
               alt="Front Image"
               style={contentStyle}
             />

@@ -5,7 +5,7 @@ import style from "/components/flip_card/flip1/Style.module.scss";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 const Flipcard = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const containerStyle = {
     width: "300px",
     height: "300px",
@@ -32,7 +32,11 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src="/doublefoto.webp"
+              src={
+                i18n.language === "en"
+                  ? "/doublefoto_en.webp"
+                  : "/doublefoto.webp"
+              }
               alt="Front Image"
               style={contentStyle}
             />
