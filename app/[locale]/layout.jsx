@@ -1,6 +1,7 @@
 import "./globals.scss";
 import Navbar from "/components/navbar/Navbar";
 import Footer from "/components/footer/Footer";
+import Sticky from "/components/sticky_ticket/Sticky";
 import { Montserrat } from "next/font/google";
 import TranslationProvider from "/components/TranslationProvider";
 import initTranslations from "../i18n";
@@ -10,13 +11,13 @@ import Consent from "/components/cookies/Consent";
 import { getCookie } from "cookies-next";
 const i18nNamespaces = ["default"];
 const montserrat = Montserrat({ subsets: ["latin"] });
-import opengraphImage from "/public/opengraph-image.jpg"; // Ensure the image is imported correctly
+import opengraphImage from "/public/opengraph-image.jpg";
 
 export async function generateMetadata({ params: { locale } }) {
   const metadata = locale === "cs" ? metadataCs : metadataEn;
 
   return {
-    metadataBase: new URL("https://www.influcon.cz"), // Set the base URL
+    metadataBase: new URL("https://www.influcon.cz"),
     title: metadata.title,
     description: metadata.description,
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ params: { locale } }) {
       description: metadata.description,
       images: [
         {
-          url: new URL(opengraphImage, "https://www.influcon.cz").toString(), // Generate a fully qualified URL
+          url: new URL(opengraphImage, "https://www.influcon.cz").toString(),
         },
       ],
       url: "https://www.influcon.cz",
@@ -94,6 +95,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         >
           <div className="flex flex-col min-h-screen">
             <Navbar />
+            <Sticky />
             <div className="flex-1">{children}</div>
             <Consent />
             <Footer />

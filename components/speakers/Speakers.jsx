@@ -15,7 +15,7 @@ const Speakers = () => {
       <div className="max-w-7xl mx-auto px-2">
         <Revealx delay={0.2}>
           {" "}
-          <h2 className="text-black pb-[32px] text-center lg:text-left">
+          <h2 className="text-black pb-[32px] text-center">
             {t("speakerComponent")}
           </h2>
         </Revealx>

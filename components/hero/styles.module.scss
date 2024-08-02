@@ -21,7 +21,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensure the image is behind the content */
+    z-index: -1; 
   }
 
 .grid{
@@ -46,17 +46,15 @@ padding-right: 1rem;
 box-shadow: 0 0 20px 1px rgba(240, 0, 101, 0.2); 
 }
 
-
-
 @media screen and (max-width: 768px){
     .redCard{
-        position: relative;
-        background-color: $main-red;
-        padding-top: 0.5rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        box-shadow: 0 0 20px 1px rgba(240, 0, 101, 0.2); 
-        }
+    position: relative;
+    background-color: $main-red;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-shadow: 0 0 20px 1px rgba(240, 0, 101, 0.2); 
+    }
 }
 .redItem1 {
     width: 20px;
@@ -108,7 +106,6 @@ color: black;
 font-weight: 700;
 }
 }
-
 
 @media screen and (max-width: 768px){
     .greenCard2{

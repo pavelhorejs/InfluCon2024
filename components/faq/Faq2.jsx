@@ -46,14 +46,9 @@ const faqs_en = [
   {
     question: "How do I buy the ticket?",
     answer:
-      "You can purchase your ticket directly on our website after logging into the user section. It is possible to pay with an online payment card, Apple Pay, or Google Pay. Upon payment, you will receive a tax receipt.",
+      "Ticket can be purchased through the GoOut portal, to which you will be redirected by clicking the 'Buy ticket' button.",
   },
-  {
-    question:
-      "If I’m buying multiple tickets, do I need to know the names of all the attendees?",
-    answer:
-      "No, each participant must have their own account. Tickets are tied to the user account of the specific participant.",
-  },
+
   {
     question: "Can I get a discount if I buy more tickets?",
     answer:
@@ -72,7 +67,7 @@ const faqs_en = [
   {
     question: "Is it possible to buy a ticket on an invoice?",
     answer:
-      "Yes, if you want to issue an invoice, fill out the billing details form in the user section, and we will send you the invoice by email. After the invoice is paid, your ticket will be displayed in the user section",
+      "Yes, if you want to issue an invoice, please select the 'Invoice' option during payment.",
   },
 ];
 
@@ -116,12 +111,7 @@ const faqs_cs = [
   {
     question: "Jak si mohu pořídit vstupenku?",
     answer:
-      "Vstupenku si můžete zakoupit přímo na našem webu po přihlášení do uživatelské sekce. Je možné platit online platební kartou, Apple Pay nebo Google Pay. Po úhradě dostanete daňový doklad.",
-  },
-  {
-    question: "Nakupuji více lístků, mohu nakupovat na jednom účtě?",
-    answer:
-      "Ne, každý účastník musí mít svůj vlastní účet. Vstupenky jsou vázané na uživatelský účet konkrétního účastníka.",
+      "Vstupenku si můžete zakoupit přes portál GoOut, na který budete přesměrování po kliknutím na tlačítko 'Koupit lístek'.",
   },
   {
     question: "Dostanu slevu při koupi více vstupenek?",
@@ -141,7 +131,7 @@ const faqs_cs = [
   {
     question: "Je možné koupit vstupenku na fakturu?",
     answer:
-      "Ano, v případě, že chcete vystavit fakturu, vyplňte formulář s fakturačními údaji v uživatelské sekci a my vám fakturu pošleme na email. Po uhrazení faktury se vám vstupenka zobrazí v uživatelské sekci",
+      "Ano, v případě, že chcete vystavit fakturu, zvolte možnost 'Faktura' při platbě.",
   },
 ];
 

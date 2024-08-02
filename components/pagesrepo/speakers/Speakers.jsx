@@ -1,11 +1,12 @@
 "use client";
 import PetrCard from "/components/flip_card/flip1/Flipcard";
-import BaraCard from "/components/flip_card/flip9/Flipcard";
 import AdamCard from "/components/flip_card/flip4/Flipcard";
-import LukasCard from "/components/flip_card/flip8/Flipcard";
 import JanCard from "/components/flip_card/flip5/Flipcard";
 import DenisaCard from "/components/flip_card/flip6/Flipcard";
+import LukasCard from "/components/flip_card/flip8/Flipcard";
+import BaraCard from "/components/flip_card/flip9/Flipcard";
 import Doublefoto from "/components/flip_card/flip10/Flipcard";
+import NikoCard from "/components/flip_card/flip11/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -43,13 +44,17 @@ const Speakers = () => {
               <div className="flex justify-center">
                 <JanCard />
               </div>
-              <div className="flex justify-center">
+              {/* <div className="flex justify-center">
                 {" "}
                 <BaraCard />{" "}
               </div>
               <div className="flex justify-center">
                 {" "}
                 <DenisaCard />{" "}
+              </div> */}
+              <div className="flex justify-center">
+                {" "}
+                <NikoCard />{" "}
               </div>
               <div className="flex justify-center">
                 {" "}

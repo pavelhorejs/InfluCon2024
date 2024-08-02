@@ -63,9 +63,6 @@ const Footer = () => {
           <a href="/#tickets">
             <span className={styles.navigaceText}>{t("FooterKoupit")}</span>
           </a>
-          <a href="/dashboard">
-            <span className={styles.navigaceText}>{t("FooterPrihlaseni")}</span>
-          </a>
         </nav>
         <nav className={styles.menuSection}>
           <h6>{t("FooterOstatni")}</h6>

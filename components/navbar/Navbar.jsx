@@ -110,9 +110,6 @@ const Navbar = () => {
                 <Link className={Styles.navigaceText} href="/#tickets">
                   {t("NavItem3")}
                 </Link>
-                <Link className={Styles.navigaceText} href="/dashboard">
-                  {t("NavItem4")}
-                </Link>
                 <Link className={Styles.navigaceText} href="/#faq">
                   Q&A
                 </Link>
@@ -124,15 +121,6 @@ const Navbar = () => {
                 </Link>
               </div>
               <LanguageChanger />
-              <Link href="/dashboard">
-                <motion.img
-                  whileHover={{ scale: 0.94 }}
-                  src="/login.svg"
-                  width={17}
-                  height={17}
-                  alt=""
-                />
-              </Link>
             </div>
           )}
           {isMobile && (
@@ -166,9 +154,7 @@ const Navbar = () => {
               <motion.li variants={listItemVariants}>
                 <a href="/#tickets"> {t("NavItem3")}</a>
               </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/dashboard">Login</a>
-              </motion.li>
+
               <motion.li variants={listItemVariants}>
                 <a href="/afterparty">Afterparty</a>
               </motion.li>

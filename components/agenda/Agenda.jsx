@@ -7,37 +7,35 @@ const Agenda = () => {
     <section className="max-w-7xl mx-auto px-2" id="agenda">
       <Revealx delay={0.2}>
         {" "}
-        <h2 className="mb-[16px] text-center lg:text-left">
-          {t("programComponent")}
-        </h2>
+        <h2 className="mb-[16px] text-center ">{t("programComponent")}</h2>
       </Revealx>
       <Revealx delay={0.2}>
-        <p className="pb-[32px]">{t("tojeoc")}</p>
+        <p className="pb-[32px] text-center">{t("tojeoc")}</p>
       </Revealx>
       <Revealx delay={0.2}>
         {" "}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-10 bg-[#F00065] hover:bg-[#D6005A] py-9 px-9 mb-8 redGlow redCard">
           <div className="redItem1"></div>
           <div className="redItem2"></div>
-          <div className="">
+          <div>
             <h3 className="text-4xl font-bold pb-5">9:00-10:00</h3>
 
-            <p className="">{t("programBlock1")}</p>
+            <p>{t("programBlock1")}</p>
           </div>
-          <div className="">
+          <div>
             <h3 className="text-4xl font-bold pb-5">10:00-11:05</h3>
-            <p className="">
+            <p>
               {t("programBlock2")} <br />
             </p>
           </div>
-          <div className="">
+          <div>
             <h3 className="text-4xl font-bold pb-5">11:05-12:45</h3>
             {t("programBlock2_1")}
           </div>
-          <div className="">
+          <div>
             <h3 className="text-4xl font-bold pb-5">12:45-13:45</h3>
 
-            <p className="">
+            <p>
               {t("programBlock3")} <br />
             </p>
           </div>
