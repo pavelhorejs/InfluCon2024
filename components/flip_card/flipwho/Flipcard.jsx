@@ -3,8 +3,10 @@ import ReactFlipCard from "reactjs-flip-card";
 import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const Flipcard = () => {
+  const { t } = useTranslation();
   const containerStyle = {
     width: "300px",
     height: "300px",
@@ -39,18 +41,16 @@ const Flipcard = () => {
         }
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
-            <div></div>
+            <div>
+              {" "}
+              <p className="">{t("soon")}</p>
+            </div>
           </div>
         }
       />
 
       <div className="flex flex-col justify-between max-w-[300px]">
-        <div className="flex justify-between items-center">
-          {" "}
-          <Link href="">
-            {/* <img src="/in_black.svg" className="w-5" alt="" /> */}
-          </Link>
-        </div>
+        <div className="flex justify-between items-center"> </div>
       </div>
     </div>
   );

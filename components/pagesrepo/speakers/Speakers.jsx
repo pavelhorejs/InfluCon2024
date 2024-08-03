@@ -39,7 +39,7 @@ const Speakers = () => {
               </div>
               <div className="flex justify-center">
                 {" "}
-                <AdamCard />{" "}
+                <NikoCard />{" "}
               </div>
               <div className="flex justify-center">
                 <JanCard />
@@ -54,7 +54,7 @@ const Speakers = () => {
               </div> */}
               <div className="flex justify-center">
                 {" "}
-                <NikoCard />{" "}
+                <AdamCard />{" "}
               </div>
               <div className="flex justify-center">
                 {" "}

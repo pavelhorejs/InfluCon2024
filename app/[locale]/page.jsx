@@ -15,14 +15,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-
+    <div className="overflow-x-hidden relative">
+      <div className="z-10">
+        {" "}
+        <Hero />
+      </div>
       <Image
         src="/blur_red.png"
-        alt="hero"
-        className="absolute left-[-550px] top-[600px]"
-        width={800}
+        alt="Decorative red blur"
+        className="absolute left-[-120px] top-[600px] -translate-x-1/2 pointer-events-none"
+        width={700}
         height={800}
       />
 
@@ -30,57 +32,57 @@ export default function Home() {
       <Tickets />
       <Image
         src="/blur_green.png"
-        alt="hero"
-        className="absolute right-[-600px] top-[1400px]"
+        alt="Decorative green blur"
+        className="absolute right-[-150px] top-[1400px] translate-x-1/2 pointer-events-none"
         width={800}
         height={800}
       />
       <Speakers />
       <Image
         src="/blur_green.png"
-        alt="hero"
-        className="absolute left-[-550px] top-[2900px]"
+        alt="Decorative green blur"
+        className="absolute left-[-150px] top-[2900px] -translate-x-1/2 pointer-events-none"
         width={800}
         height={800}
       />
       <Agenda />
       <Image
         src="/blur_red.png"
-        alt="hero"
-        className="absolute left-[-500px] top-[3900px]"
+        alt="Decorative red blur"
+        className="absolute left-[-150px] top-[3900px] -translate-x-1/2 pointer-events-none"
         width={800}
         height={800}
       />
       <Image
         src="/blur_green.png"
-        alt="hero"
-        className="absolute right-[-500px] top-[4400px]"
+        alt="Decorative green blur"
+        className="absolute right-[-150px] top-[4400px] translate-x-1/2 pointer-events-none"
         width={800}
         height={800}
       />
       <Image
         src="/blur_red.png"
-        alt="hero"
-        className="absolute left-[-500px] top-[4900px]"
+        alt="Decorative red blur"
+        className="absolute left-[-150px] top-[4900px] -translate-x-1/2 pointer-events-none"
         width={800}
         height={800}
       />
       <Partners />
       <Image
         src="/blur_green.png"
-        alt="hero"
-        className="absolute right-[-500px] top-[5800px]"
+        alt="Decorative green blur"
+        className="absolute right-[-150px] top-[5800px] translate-x-1/2 pointer-events-none"
         width={800}
         height={800}
       />
-      <Moderator />
       <Program />
+      <Moderator />
       <Organizer />
       <Blog />
       <Image
         src="/blur_red.png"
-        alt="hero"
-        className="absolute left-[-500px] top-[7700px]"
+        alt="Decorative red blur"
+        className="absolute left-[-150px] top-[7700px] -translate-x-1/2 pointer-events-none"
         width={800}
         height={800}
       />
@@ -88,12 +90,12 @@ export default function Home() {
       <Wroteaboutus />
       <Image
         src="/blur_green.png"
-        alt="hero"
-        className="absolute right-[-600px] top-[8500px]"
+        alt="Decorative green blur"
+        className="absolute right-[-150px] top-[8500px] translate-x-1/2 pointer-events-none"
         width={800}
         height={800}
       />
       <Subscribe />
-    </>
+    </div>
   );
 }

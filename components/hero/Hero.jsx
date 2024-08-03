@@ -7,6 +7,7 @@ import Revealx from "../reveals/Revealx";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import bgPhoto from "/public/bg.webp";
+import Link from "next/link";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -48,7 +49,7 @@ const Hero = () => {
             {" "}
             <Revealx delay={0.2}>
               {" "}
-              <a href="#tickets">
+              <Link href="https://goout.net/cs/listky/influcon-2024/xdxy/">
                 <motion.button
                   whileHover={{ scale: 0.97 }}
                   transition={{ type: "spring" }}
@@ -56,7 +57,7 @@ const Hero = () => {
                 >
                   {t("Button1")}
                 </motion.button>
-              </a>
+              </Link>
             </Revealx>
             <Revealx delay={0.4}>
               {" "}

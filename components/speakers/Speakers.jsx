@@ -6,6 +6,7 @@ import Doublefoto from "/components/flip_card/flip10/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
+import NikoCard from "/components/flip_card/flip11/Flipcard";
 import { useTranslation } from "react-i18next";
 const Speakers = () => {
   const { t } = useTranslation();
@@ -28,7 +29,7 @@ const Speakers = () => {
           </div>
           <div className="flex justify-center">
             {" "}
-            <AdamCard />{" "}
+            <NikoCard />
           </div>
           <div className="flex justify-center">
             {" "}
