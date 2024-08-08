@@ -4,7 +4,8 @@ import Revealx from "../reveals/Revealx";
 import { useTranslation } from "react-i18next";
 import LazyLoad from "react-lazyload";
 const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="mt-28 lg:mt-[190px]">
       {" "}
@@ -29,7 +30,9 @@ const About = () => {
         <div className="flex flex-col items-center mt-10 md:mt-0">
           <LazyLoad height={200} once>
             <video
-              src="/pozvanka.mp4"
+              src={
+                i18n.language === "en" ? "/pozvanka_en.mp4" : "/pozvanka_cz.mp4"
+              }
               className=" h-[600px]"
               controls
               loop

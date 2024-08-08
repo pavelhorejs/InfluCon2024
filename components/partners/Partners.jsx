@@ -3,6 +3,7 @@
 import { useTranslation } from "react-i18next";
 import Revealx from "../reveals/Revealx";
 import Image from "next/image";
+import Link from "next/link";
 
 const Partners = () => {
   const { t } = useTranslation();
@@ -18,7 +19,9 @@ const Partners = () => {
         <div className="grid grid-cols-3 max-w-xl mx-auto gap-y-5 lg:gap-y-20 gap-x-10 lg:gap-x-20">
           <div className="flex justify-center md:justify-center items-center">
             <Revealx delay={0.5}>
-              <Image width={130} height={130} src="/woo.svg" alt="woo logo" />
+              <Link href="https://www.woo.cz/">
+                <Image width={130} height={130} src="/woo.svg" alt="woo logo" />
+              </Link>
             </Revealx>
           </div>
           <div className="flex justify-center md:justify-center items-center">
@@ -28,12 +31,14 @@ const Partners = () => {
           </div>
           <div className="flex justify-center md:justify-center items-center">
             <Revealx delay={0.5}>
-              <Image
-                width={130}
-                height={130}
-                src="/Loreal.svg"
-                alt="loreal logo"
-              />
+              <Link href="https://www.loreal.com/cs-cz/czech-republic/">
+                <Image
+                  width={130}
+                  height={130}
+                  src="/Loreal.svg"
+                  alt="loreal logo"
+                />
+              </Link>
             </Revealx>
           </div>
         </div>
@@ -50,13 +55,17 @@ const Partners = () => {
             {" "}
             <Revealx delay={0.5}>
               {" "}
-              <Image width={130} height={130} src="/nova.svg" alt="" />
+              <Link href="https://tv.nova.cz/">
+                <Image width={130} height={130} src="/nova.svg" alt="" />
+              </Link>
             </Revealx>
           </div>
           <div className="flex justify-center md:justify-center items-center">
             <Revealx delay={0.5}>
               {" "}
-              <Image width={95} height={130} src="/fajn.svg" alt="" />
+              <Link href="https://fajnradio.cz/">
+                <Image width={95} height={130} src="/fajn.svg" alt="" />
+              </Link>
             </Revealx>
           </div>
           <div className="flex justify-center md:justify-center items-center">
@@ -68,7 +77,9 @@ const Partners = () => {
           <div className="flex justify-center md:justify-center items-center">
             {" "}
             <Revealx delay={0.5}>
-              <Image width={130} height={130} src="/newsfeed.svg" alt="" />
+              <Link href="https://www.newsfeed.cz/">
+                <Image width={130} height={130} src="/newsfeed.svg" alt="" />
+              </Link>
             </Revealx>
           </div>
         </div>
@@ -82,14 +93,18 @@ const Partners = () => {
           <div className="flex justify-center md:justify-end items-center">
             {" "}
             <Revealx delay={0.5}>
-              <Image width={200} height={150} src="/aka.svg" alt="" />
+              <Link href="https://www.aka.cz/">
+                <Image width={200} height={150} src="/aka.svg" alt="" />
+              </Link>
             </Revealx>
           </div>
           <div className="flex justify-center md:justify-start items-center">
             {" "}
             <Revealx delay={0.5}>
               {" "}
-              <Image width={200} height={150} src="/ferfluencer.png" alt="" />
+              <Link href="https://ferovyinfluencer.cz/">
+                <Image width={200} height={150} src="/ferfluencer.png" alt="" />
+              </Link>
             </Revealx>
           </div>
         </div>
@@ -101,12 +116,23 @@ const Partners = () => {
             {t("spolupracujeme")}
           </h2>
         </Revealx>
-        <div className="flex justify-center md:justify-center items-center">
+        <div className="grid grid-cols-2 gap-y-5 lg:gap-y-20 gap-x-1 lg:gap-x-20">
           {" "}
-          <Revealx delay={0.5}>
+          <div className="flex justify-center md:justify-end items-center">
             {" "}
-            <Image width={100} height={130} src="/webtop.png" alt="" />
-          </Revealx>
+            <Revealx delay={0.5}>
+              <Link href="https://www.webtop100.cz/">
+                <Image width={150} height={150} src="/webtop.png" alt="" />
+              </Link>
+            </Revealx>
+          </div>
+          <div className="flex justify-center md:justify-start items-center">
+            {" "}
+            <Revealx delay={0.5}>
+              {" "}
+              <Image width={150} height={150} src="/mikeon.png" alt="" />
+            </Revealx>
+          </div>
         </div>
       </div>
     </>
