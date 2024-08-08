@@ -79,7 +79,7 @@ const Navbar = () => {
                 transition={{ type: "spring" }}
                 src="/logo_2.svg"
                 alt="logo"
-                width={150}
+                width={160}
                 height={150}
               />
             </Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
                 transition={{ type: "spring" }}
                 src="/logo.svg"
                 alt="logo"
-                width={150}
+                width={160}
                 height={150}
               />
             </Link>

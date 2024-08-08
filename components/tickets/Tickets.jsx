@@ -6,7 +6,7 @@ import Revealx from "../reveals/Revealx";
 import { useTranslation } from "react-i18next";
 
 const Tickets = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section className="max-w-6xl mx-auto px-3" id="tickets">
       <Revealx delay={0.2}>
@@ -55,7 +55,13 @@ const Tickets = () => {
               </div>
               <div className="mt-4">
                 {" "}
-                <Link href="https://goout.net/cs/listky/influcon-2024/xdxy/">
+                <Link
+                  href={
+                    i18n.language === "cs"
+                      ? "https://goout.net/cs/listky/influcon-2024/xdxy/"
+                      : "https://goout.net/en/listky/influcon-2024/xdxy/"
+                  }
+                >
                   <motion.button
                     whileHover={{ scale: 0.97 }}
                     transition={{ type: "spring" }}
@@ -127,7 +133,13 @@ const Tickets = () => {
 
               <div className="mt-4">
                 {" "}
-                <Link href="https://goout.net/cs/listky/influcon-2024/xdxy/">
+                <Link
+                  href={
+                    i18n.language === "cs"
+                      ? "https://goout.net/cs/listky/influcon-2024/xdxy/"
+                      : "https://goout.net/en/listky/influcon-2024/xdxy/"
+                  }
+                >
                   <motion.button
                     whileHover={{ scale: 0.97 }}
                     transition={{ type: "spring" }}

@@ -50,7 +50,7 @@ const Partners = () => {
             {t("partnershdl")}
           </h2>
         </Revealx>
-        <div className="grid grid-cols-3 lg:grid-cols-4 gap-y-5 lg:gap-y-20 gap-x-1 lg:gap-x-20">
+        <div className="grid grid-cols-4 gap-y-5 lg:gap-y-20 gap-x-5 lg:gap-x-20">
           <div className="flex justify-center md:justify-center items-center">
             {" "}
             <Revealx delay={0.5}>
@@ -64,7 +64,7 @@ const Partners = () => {
             <Revealx delay={0.5}>
               {" "}
               <Link href="https://fajnradio.cz/">
-                <Image width={95} height={130} src="/fajn.svg" alt="" />
+                <Image width={85} height={850} src="/fajn.svg" alt="" />
               </Link>
             </Revealx>
           </div>

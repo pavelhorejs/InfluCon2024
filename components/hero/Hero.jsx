@@ -10,7 +10,7 @@ import bgPhoto from "/public/bg.webp";
 import Link from "next/link";
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <div className={Styles.hero}>
       <Image
@@ -49,7 +49,13 @@ const Hero = () => {
             {" "}
             <Revealx delay={0.2}>
               {" "}
-              <Link href="https://goout.net/cs/listky/influcon-2024/xdxy/">
+              <Link
+                href={
+                  i18n.language === "cs"
+                    ? "https://goout.net/cs/listky/influcon-2024/xdxy/"
+                    : "https://goout.net/en/listky/influcon-2024/xdxy/"
+                }
+              >
                 <motion.button
                   whileHover={{ scale: 0.97 }}
                   transition={{ type: "spring" }}

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const StickyBanner = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -42,7 +42,13 @@ const StickyBanner = () => {
           <p className="text-xl font-bold">{t("stickyHdl")}</p>
         </div>
 
-        <Link href="https://goout.net/cs/listky/influcon-2024/xdxy/">
+        <Link
+          href={
+            i18n.language === "cs"
+              ? "https://goout.net/cs/listky/influcon-2024/xdxy/"
+              : "https://goout.net/en/listky/influcon-2024/xdxy/"
+          }
+        >
           <motion.button
             whileHover={{ scale: 0.97 }}
             transition={{ type: "spring" }}
