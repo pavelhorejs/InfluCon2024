@@ -36,6 +36,9 @@ const About = () => {
               className=" h-[600px]"
               controls
               loop
+              poster={
+                i18n.language === "en" ? "/poster_en.webp" : "/poster_cz.webp"
+              }
             ></video>
           </LazyLoad>
         </div>
