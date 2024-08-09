@@ -4,6 +4,7 @@ import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+
 const Flipcard = () => {
   const { t, i18n } = useTranslation();
   const containerStyle = {
