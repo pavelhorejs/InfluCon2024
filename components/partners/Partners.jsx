@@ -26,7 +26,9 @@ const Partners = () => {
           </div>
           <div className="flex justify-center md:justify-center items-center">
             <Revealx delay={0.5}>
-              <Image width={130} height={130} src="/hoo.svg" alt="hoo logo" />
+              <Link href="https://www.heroesofonline.cz">
+                <Image width={130} height={130} src="/hoo.svg" alt="hoo logo" />
+              </Link>
             </Revealx>
           </div>
           <div className="flex justify-center md:justify-center items-center">
@@ -56,7 +58,7 @@ const Partners = () => {
             <Revealx delay={0.5}>
               {" "}
               <Link href="https://tv.nova.cz/">
-                <Image width={130} height={130} src="/nova.svg" alt="" />
+                <Image width={130} height={130} src="/nova.png" alt="" />
               </Link>
             </Revealx>
           </div>
