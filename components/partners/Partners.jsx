@@ -16,7 +16,7 @@ const Partners = () => {
             {t("komercniParneri")}
           </h2>
         </Revealx>
-        <div className="grid grid-cols-3 max-w-xl mx-auto gap-y-5 lg:gap-y-20 gap-x-10 lg:gap-x-20">
+        <div className="grid grid-cols-4 max-w-3xl mx-auto gap-y-5 lg:gap-y-20 gap-x-10 lg:gap-x-20">
           <div className="flex justify-center md:justify-center items-center">
             <Revealx delay={0.5}>
               <Link href="https://www.woo.cz/">
@@ -38,6 +38,18 @@ const Partners = () => {
                   width={130}
                   height={130}
                   src="/Loreal.svg"
+                  alt="loreal logo"
+                />
+              </Link>
+            </Revealx>
+          </div>
+          <div className="flex justify-center md:justify-center items-center">
+            <Revealx delay={0.5}>
+              <Link href="https://oxoshop.cz/">
+                <Image
+                  width={130}
+                  height={130}
+                  src="/OXO_bila.png"
                   alt="loreal logo"
                 />
               </Link>
