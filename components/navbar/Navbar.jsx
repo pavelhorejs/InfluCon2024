@@ -88,10 +88,10 @@ const Navbar = () => {
               <motion.img
                 whileHover={{ scale: 0.97 }}
                 transition={{ type: "spring" }}
-                src="/logo.svg"
+                src="/logo.png"
                 alt="logo"
-                width={160}
-                height={150}
+                width={isMobile ? 180 : 250}
+                height={200}
               />
             </Link>
           )}

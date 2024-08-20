@@ -45,7 +45,7 @@ const Partners = () => {
           </div>
           <div className="flex justify-center md:justify-center items-center">
             <Revealx delay={0.5}>
-              <Link href="https://oxoshop.cz/">
+              <Link href="https://www.oxotea.cz/">
                 <Image
                   width={130}
                   height={130}
