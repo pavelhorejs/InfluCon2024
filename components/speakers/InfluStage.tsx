@@ -145,7 +145,7 @@ export default function MainStage() {
 
         <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px]">
           <div className="flex items-center gap-x-[32px]">
-            <p className="text-[24px] font-bold md:text-[40px]">
+            <p className="text-[16px] font-bold md:text-[24px]">
               13:10 - 15:10
             </p>
             <p className="text-[24px]">|</p>
