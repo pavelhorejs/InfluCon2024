@@ -11,7 +11,7 @@ export async function generateMetadata({ params: { locale } }) {
 
 const Page = () => {
   return (
-    <div className="h-[80vh] flex justify-center items-center">
+    <div className="flex h-[80vh] items-center justify-center">
       <Newpassword />
     </div>
   );

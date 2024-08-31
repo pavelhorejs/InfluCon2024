@@ -8,6 +8,7 @@ import BaraCard from "/components/flip_card/flip9/Flipcard";
 import Doublefoto from "/components/flip_card/flip10/Flipcard";
 import NikoCard from "/components/flip_card/flip11/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
+import Kaderavkova from "/components/flip_card/flip12/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
@@ -16,21 +17,21 @@ const Speakers = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="mt-28 lg:mt-40 ">
+      <div className="mt-28 lg:mt-40">
         <div className="bg-[#22FFAF] px-2">
-          <div className="max-w-7xl mx-auto py-5 lg:py-14">
+          <div className="mx-auto max-w-7xl py-5 lg:py-14">
             <Revealx delay={0.2}>
-              <h2 className="text-black pb-[24px] text-center lg:text-left mt-5 lg:mt-0">
+              <h2 className="mt-5 pb-[24px] text-center text-black lg:mt-0 lg:text-left">
                 {t("SpeakerPageHeadline")}
               </h2>
             </Revealx>
             <Revealx delay={0.4}>
               {" "}
-              <p className="text-black max-w-xl pb-[48px] text-center lg:text-left">
+              <p className="max-w-xl pb-[48px] text-center text-black lg:text-left">
                 {t("SpeakerPageText")}
               </p>
             </Revealx>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-[16px] gap-y-[32px]">
+            <div className="grid grid-cols-1 gap-x-[16px] gap-y-[32px] md:grid-cols-3 lg:grid-cols-4">
               <div className="flex justify-center">
                 <Doublefoto />
               </div>
@@ -62,26 +63,30 @@ const Speakers = () => {
               </div>
               <div className="flex justify-center">
                 {" "}
+                <Kaderavkova />
+              </div>
+              <div className="flex justify-center">
+                {" "}
                 <Flipcardwho />{" "}
               </div>
             </div>
             <Revealx delay={0.2}>
               {" "}
-              <h2 className="pt-14 pb-5 font-3xl text-black text-center">
+              <h2 className="font-3xl pb-5 pt-14 text-center text-black">
                 {t("moreSoon")}
               </h2>
             </Revealx>
           </div>
         </div>
       </div>
-      <div className="py-[32px] max-w-[1280px] mx-auto px-2">
+      <div className="mx-auto max-w-[1280px] px-2 py-[32px]">
         <Link href="/">
           <Revealx delay={0.2}>
             {" "}
             <motion.button
               whileHover={{ scale: 0.99 }}
               transition={{ type: "spring" }}
-              className="button h-[64px] max-w-[300px] md:max-w-full mx-auto"
+              className="button mx-auto h-[64px] max-w-[300px] md:max-w-full"
             >
               {t("Back")}
             </motion.button>

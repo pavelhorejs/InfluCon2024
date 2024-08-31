@@ -33,7 +33,11 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src={i18n.language === "en" ? "/petr_en.webp" : "/petr_cz.webp"}
+              src={
+                i18n.language === "en"
+                  ? "/kaderavkova_eng.webp"
+                  : "/kaderavkova_cz.webp"
+              }
               alt="Front Image"
               style={contentStyle}
             />
@@ -42,7 +46,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">{t("petr")}</p>
+              <p className="">{t("kaderavkova")}</p>
             </div>
           </div>
         }
@@ -51,12 +55,12 @@ const Flipcard = () => {
       <div className="flex max-w-[300px] flex-col justify-between">
         <div className="flex items-center justify-between">
           {" "}
-          <p className={style.name}>Petr Srna</p>
-          <Link href="https://www.linkedin.com/in/petrsrna/">
+          <p className={style.name}>Anna Kadeřávková</p>
+          <Link href="https://www.linkedin.com/in/anna-kade%C5%99%C3%A1vkov%C3%A1-677922a3/">
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
-        <p className={style.company}>CEO, World of Online</p>
+        <p className={style.company}>Herečka & Influencerka </p>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden relative">
+    <div className="relative overflow-x-hidden">
       <div className="z-10">
         {" "}
         <Hero />
@@ -23,7 +23,7 @@ export default function Home() {
       <Image
         src="/blur_red.png"
         alt="Decorative red blur"
-        className="absolute left-[-120px] top-[600px] -translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute left-[-120px] top-[600px] -translate-x-1/2"
         width={700}
         height={800}
       />
@@ -33,7 +33,7 @@ export default function Home() {
       <Image
         src="/blur_green.png"
         alt="Decorative green blur"
-        className="absolute right-[-150px] top-[1400px] translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute right-[-150px] top-[1400px] translate-x-1/2"
         width={800}
         height={800}
       />
@@ -41,7 +41,7 @@ export default function Home() {
       <Image
         src="/blur_green.png"
         alt="Decorative green blur"
-        className="absolute left-[-150px] top-[2900px] -translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute left-[-150px] top-[2900px] -translate-x-1/2"
         width={800}
         height={800}
       />
@@ -49,21 +49,21 @@ export default function Home() {
       <Image
         src="/blur_red.png"
         alt="Decorative red blur"
-        className="absolute left-[-150px] top-[3900px] -translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute left-[-150px] top-[3900px] -translate-x-1/2"
         width={800}
         height={800}
       />
       <Image
         src="/blur_green.png"
         alt="Decorative green blur"
-        className="absolute right-[-150px] top-[4400px] translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute right-[-150px] top-[4400px] translate-x-1/2"
         width={800}
         height={800}
       />
       <Image
         src="/blur_red.png"
         alt="Decorative red blur"
-        className="absolute left-[-150px] top-[4900px] -translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute left-[-150px] top-[4900px] -translate-x-1/2"
         width={800}
         height={800}
       />
@@ -71,7 +71,7 @@ export default function Home() {
       <Image
         src="/blur_green.png"
         alt="Decorative green blur"
-        className="absolute right-[-150px] top-[5800px] translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute right-[-150px] top-[5800px] translate-x-1/2"
         width={800}
         height={800}
       />
@@ -82,7 +82,7 @@ export default function Home() {
       <Image
         src="/blur_red.png"
         alt="Decorative red blur"
-        className="absolute left-[-150px] top-[7700px] -translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute left-[-150px] top-[7700px] -translate-x-1/2"
         width={800}
         height={800}
       />
@@ -91,7 +91,7 @@ export default function Home() {
       <Image
         src="/blur_green.png"
         alt="Decorative green blur"
-        className="absolute right-[-150px] top-[8500px] translate-x-1/2 pointer-events-none"
+        className="pointer-events-none absolute right-[-150px] top-[8500px] translate-x-1/2"
         width={800}
         height={800}
       />
