@@ -56,7 +56,7 @@ export default function MainStage() {
     },
     {
       name: "Lukáš Kratochvíl",
-      position: "YTESCO - LEADER OF DIGITAL CAMPAIGNS",
+      position: "TESCO - LEADER OF DIGITAL CAMPAIGNS",
       topic: "TÉMA - Co mohou změnit influenceři v retailu?",
       description:
         "Lukáš je aktuálně Leader of Digital Campaigns pro Tesco ČR. Pamatujete na Mistrovství světa v ledním hokeji? Tesco bylo jeho oficiálním sponzorem a zrovna když se konalo v Česku. S influencery Tesco pracuje necelý rok a Lukáš nám ukáže jak vypadalo TESCO bez influencerů a jak vypadá dnes s nimi. Je tam vůbec nějaký rozdíl? A přináší to největšímu retailovému hráči nějaké výsledky?",
