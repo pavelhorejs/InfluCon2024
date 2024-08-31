@@ -127,16 +127,13 @@ export default function MainStage() {
   return (
     <div>
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4">
-        <SmallBlock
-          time="9:00 - 10:00"
-          topic="Welcome coffee break a registrace"
-        />
+        <SmallBlock time="9:00 - 10:00" topic="Welcome coffee a registrace" />
         <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px]">
           <div className="flex items-center gap-x-[32px]">
             <p className="text-[16px] font-bold md:text-[24px]">
               10:00 - 12:10
             </p>
-            <p className="hidden md:block">|</p>
+            <p>|</p>
             <p className="text-[16px] md:text-[24px]">1. a 2. blok</p>
           </div>
           <div className="w-full border-t border-white pb-[8px] md:pb-0" />
@@ -160,7 +157,7 @@ export default function MainStage() {
             <p className="text-[16px] font-bold md:text-[24px]">
               13:10 - 15:10
             </p>
-            <p className="hidden md:block">|</p>
+            <p>|</p>
             <p className="text-[16px] md:text-[24px]">3. a 4. blok</p>
           </div>
           <div className="w-full border-t border-white pb-[8px] md:pb-0" />
