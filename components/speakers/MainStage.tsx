@@ -5,7 +5,7 @@ import Adam from "/public/adam2.webp";
 import Barbora from "/public/barobora.webp";
 import Denisa from "/public/denisa.webp";
 import JT from "/public/jt.webp";
-import Lukas from "/public/lukas_cz.webp";
+import Lukas from "/public/lukas.webp";
 import Victoria from "/public/doublefoto.webp";
 import Anna from "/public/anna.webp";
 import Niko from "/public/niko.webp";
@@ -29,7 +29,7 @@ export default function MainStage() {
       image: Petr,
     },
     {
-      name: "Adam Ranjnoha",
+      name: "Adam Rajnoha",
       position: "YORD - CEO",
       topic: t("topic.adam"),
       description: t("description.adam"),
