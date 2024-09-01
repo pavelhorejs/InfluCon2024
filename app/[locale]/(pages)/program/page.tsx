@@ -12,8 +12,10 @@ const Page = () => {
 
   return (
     <div className="mx-auto mt-[140px] flex max-w-4xl flex-col items-center pb-[200px] md:mt-[200px]">
-      <h2 className="pb-[16px] text-[40px] font-bold">Program</h2>
-      <div className="mb-[32px] inline-flex" role="group">
+      <h2 className="pb-[32px] text-[40px] font-bold">Program</h2>
+
+      <MainStage />
+      {/* <div className="mb-[32px] inline-flex" role="group">
         <label
           className={`px-4 py-2 text-sm font-medium ${
             selectedOption === "mainStage"
@@ -47,7 +49,7 @@ const Page = () => {
           Influ Stage
         </label>
       </div>
-      {selectedOption === "mainStage" ? <MainStage /> : <InfluStage />}
+      {selectedOption === "mainStage" ?: <InfluStage />} */}
     </div>
   );
 };
