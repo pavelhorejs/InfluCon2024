@@ -20,9 +20,9 @@ const Footer = () => {
             <Woo />
           </div>
 
-          <div className="flex flex-col justify-center md:justify-start mt-[24px]">
+          <div className="mt-[24px] flex flex-col justify-center md:justify-start">
             <p className="pb-3">{t("socials")}</p>
-            <div className="w-full flex justify-center md:justify-start">
+            <div className="flex w-full justify-center md:justify-start">
               {" "}
               <Socials />
             </div>
@@ -51,7 +51,7 @@ const Footer = () => {
           <Link href="/#tickets">
             <span className={styles.navigaceText}>{t("FooterVstupenky")}</span>
           </Link>
-          <Link href="/#agenda">
+          <Link href="/program">
             <span className={styles.navigaceText}>{t("FooterProgram")}</span>
           </Link>
           <Link href="/afterparty">
@@ -84,7 +84,7 @@ const Footer = () => {
         </nav>
       </div>
       <div>
-        <p className="text-center text-sm pb-1 text-gray-600">
+        <p className="pb-1 text-center text-sm text-gray-600">
           Copyright © 2024 InfluCon
         </p>
       </div>

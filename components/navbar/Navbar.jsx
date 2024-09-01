@@ -104,7 +104,7 @@ const Navbar = () => {
                 <Link className={Styles.navigaceText} href="/speakers">
                   {t("NavItem1")}
                 </Link>
-                <a className={Styles.navigaceText} href="/#agenda">
+                <a className={Styles.navigaceText} href="/program">
                   {t("NavItem2")}
                 </a>
                 <Link className={Styles.navigaceText} href="/#tickets">
@@ -149,7 +149,7 @@ const Navbar = () => {
                 <a href="/speakers"> {t("NavItem1")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <Link href="/#agenda"> {t("NavItem2")}</Link>
+                <Link href="/program"> {t("NavItem2")}</Link>
               </motion.li>
               <motion.li variants={listItemVariants}>
                 <a href="https://goout.net/cs/listky/influcon-2024/xdxy/">
@@ -172,7 +172,7 @@ const Navbar = () => {
               </motion.li>
             </motion.ul>
 
-            <div className="absolute bottom-5 ">
+            <div className="absolute bottom-5">
               <div className="flex gap-4">
                 <Link href="https://www.instagram.com/world_of_online/">
                   {" "}
