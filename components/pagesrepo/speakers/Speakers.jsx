@@ -9,6 +9,8 @@ import Doublefoto from "/components/flip_card/flip10/Flipcard";
 import NikoCard from "/components/flip_card/flip11/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import Kaderavkova from "/components/flip_card/flip12/Flipcard";
+import Hana from "/components/flip_card/flip13/Flipcard";
+import Nova from "/components/flip_card/flip14/Flipcard";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
@@ -45,10 +47,10 @@ const Speakers = () => {
               <div className="flex justify-center">
                 <JanCard />
               </div>
-              {/* <div className="flex justify-center">
+              <div className="flex justify-center">
                 {" "}
                 <BaraCard />{" "}
-              </div> */}
+              </div>
               <div className="flex justify-center">
                 {" "}
                 <DenisaCard />{" "}
@@ -64,6 +66,14 @@ const Speakers = () => {
               <div className="flex justify-center">
                 {" "}
                 <Kaderavkova />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Hana />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Nova />
               </div>
               <div className="flex justify-center">
                 {" "}

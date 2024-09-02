@@ -47,8 +47,8 @@ const Flipcard = () => {
         }
       />
 
-      <div className="flex flex-col justify-between max-w-[300px]">
-        <div className="flex justify-between items-center">
+      <div className="flex max-w-[300px] flex-col justify-between">
+        <div className="flex items-center justify-between">
           {" "}
           <p className={style.name}>Lenka Mastešová</p>
           <Link href="https://www.linkedin.com/in/lenka-mastesova/">

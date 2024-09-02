@@ -4,6 +4,7 @@ import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+
 const Flipcard = () => {
   const { t, i18n } = useTranslation();
   const containerStyle = {
@@ -34,8 +35,8 @@ const Flipcard = () => {
               height={300}
               src={
                 i18n.language === "en"
-                  ? "/doublefoto_en.webp"
-                  : "/doublefoto.webp"
+                  ? "/klouckova_eng.jpg"
+                  : "/klouckova_cz.jpg"
               }
               alt="Front Image"
               style={contentStyle}
@@ -45,7 +46,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">{t("oneBrand")}</p>
+              <p className="text-[12px]">{t("description.hana")}</p>
             </div>
           </div>
         }
@@ -54,23 +55,12 @@ const Flipcard = () => {
       <div className="flex max-w-[300px] flex-col justify-between">
         <div className="flex items-center justify-between">
           {" "}
-          <p className={style.name2}>
-            Victoria Pearce{" "}
-            <span className="pl-3 text-base font-normal">C&A</span>
-          </p>
-          <Link href="https://www.linkedin.com/in/victoria-pearce-6a60911a3/">
+          <p className={style.name}>Hana Kloučková</p>
+          <Link href="https://www.linkedin.com/in/hanaklouckova/">
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
-        <div className="-mt-3 flex items-center justify-between">
-          {" "}
-          <p className={style.name2}>
-            Eva Van Elst <span className="pl-3 text-base font-normal">C&A</span>
-          </p>
-          <Link href="https://www.linkedin.com/in/evavanelst/">
-            <img src="/in_black.svg" className="w-5" alt="" />
-          </Link>
-        </div>
+        <p className={style.company}>CEO, Confess </p>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Link from "next/link";
 import style from "/components/flip_card/flip1/Style.module.scss";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+
 const Flipcard = () => {
   const { t, i18n } = useTranslation();
   const containerStyle = {
@@ -32,11 +33,7 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src={
-                i18n.language === "en"
-                  ? "/doublefoto_en.webp"
-                  : "/doublefoto.webp"
-              }
+              src={i18n.language === "en" ? "/nova_eng.jpg" : "/nova_cz.jpg"}
               alt="Front Image"
               style={contentStyle}
             />
@@ -45,7 +42,7 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">{t("oneBrand")}</p>
+              <p className="text-[12px]">{t("description.td")}</p>
             </div>
           </div>
         }
@@ -55,19 +52,20 @@ const Flipcard = () => {
         <div className="flex items-center justify-between">
           {" "}
           <p className={style.name2}>
-            Victoria Pearce{" "}
-            <span className="pl-3 text-base font-normal">C&A</span>
+            Tomáš Hodboď{" "}
+            <span className="pl-3 text-base font-normal">TV Nova</span>
           </p>
-          <Link href="https://www.linkedin.com/in/victoria-pearce-6a60911a3/">
+          <Link href="https://www.linkedin.com/in/tomhodbod/">
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
         <div className="-mt-3 flex items-center justify-between">
           {" "}
           <p className={style.name2}>
-            Eva Van Elst <span className="pl-3 text-base font-normal">C&A</span>
+            Dominik Peroutka{" "}
+            <span className="pl-3 text-base font-normal">TV Nova</span>
           </p>
-          <Link href="https://www.linkedin.com/in/evavanelst/">
+          <Link href="https://www.linkedin.com/in/dominik-peroutka-99a658301">
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>

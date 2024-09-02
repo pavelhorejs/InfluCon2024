@@ -32,7 +32,7 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src="/baraS.webp"
+              src={i18n.language === "cs" ? "/baraS_cz.jpg" : "/baraS_en.jpg"}
               alt="Front Image"
               style={contentStyle}
             />
@@ -41,14 +41,14 @@ const Flipcard = () => {
         backComponent={
           <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
             <div>
-              <p className="">{t("baraS")}</p>
+              <p className="text-[12px]">{t("description.barbora")}</p>
             </div>
           </div>
         }
       />
 
-      <div className="flex flex-col justify-between max-w-[300px]">
-        <div className="flex justify-between items-center">
+      <div className="flex max-w-[300px] flex-col justify-between">
+        <div className="flex items-center justify-between">
           {" "}
           <p className={style.name}>Barbora Sulovská</p>
           <Link href="https://www.linkedin.com/in/barbora-sulovsk%C3%A1-2b25bb123/">
