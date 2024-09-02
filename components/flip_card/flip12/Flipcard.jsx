@@ -60,7 +60,7 @@ const Flipcard = () => {
             <img src="/in_black.svg" className="w-5" alt="" />
           </Link>
         </div>
-        <p className={style.company}>Herečka & Influencerka </p>
+        <p className={style.company}>{t("anna.profese")}</p>
       </div>
     </div>
   );
