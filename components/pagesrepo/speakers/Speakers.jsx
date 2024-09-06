@@ -9,6 +9,7 @@ import Doublefoto from "/components/flip_card/flip10/Flipcard";
 import NikoCard from "/components/flip_card/flip11/Flipcard";
 import Flipcardwho from "/components/flip_card/flipwho/Flipcard";
 import Kaderavkova from "/components/flip_card/flip12/Flipcard";
+import Dostal from "/components/flip_card/flip15/Flipcard";
 import Hana from "/components/flip_card/flip13/Flipcard";
 import Nova from "/components/flip_card/flip14/Flipcard";
 import { motion } from "framer-motion";
@@ -74,6 +75,10 @@ const Speakers = () => {
               <div className="flex justify-center">
                 {" "}
                 <Nova />
+              </div>
+              <div className="flex justify-center">
+                {" "}
+                <Dostal />
               </div>
               <div className="flex justify-center">
                 {" "}
