@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Petr from "/public/petr.webp";
 import Hana from "/public/hana.webp";
 import Adam from "/public/adam2.webp";
@@ -6,20 +7,17 @@ import Barbora from "/public/barobora.webp";
 import Denisa from "/public/denisa.webp";
 import JT from "/public/jt.webp";
 import Lukas from "/public/lukas.webp";
-import Victoria from "/public/doublefoto.webp";
 import Anna from "/public/anna.webp";
 import Niko from "/public/niko.webp";
-import JK from "/public/jankoukal.webp";
-import Peroutka from "/public/peroutka.webp";
 import SmallBlock from "@/components/speakers/SmallBlock";
-import Who from "/public/who.webp";
 import VE from "/public/ve.webp";
 import SpeakersMap from "@/components/speakers/SpeakersMap";
 import DK from "/public/dk.webp";
 import HP from "/public/hp.webp";
-import { useTranslation } from "react-i18next";
+
 export default function MainStage() {
   const { t } = useTranslation();
+
   const speakers1 = [
     {
       name: "Petr Srna",
@@ -82,6 +80,7 @@ export default function MainStage() {
       image: Denisa,
     },
   ];
+
   const speakers3 = [
     {
       name: "Nikoloz Bolkvadze",
@@ -114,6 +113,7 @@ export default function MainStage() {
       image: Anna,
     },
   ];
+
   return (
     <div>
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4">

@@ -410,7 +410,41 @@
 "Influenceri": "4th block - Influencers",
 "programButton": "Show full program",
 
-"koukal.dostal": "Josef Dostál, Olympic champion in speed canoeing and his manager Jan Koukal from the Sportegy agency will share with us the topic 'The athlete is not a classic influencer', because metrics alone are often not enough to understand the real reach of this type of influencers."
+"koukal.dostal": "Josef Dostál, Olympic champion in speed canoeing and his manager Jan Koukal from the Sportegy agency will share with us the topic 'The athlete is not a classic influencer', because metrics alone are often not enough to understand the real reach of this type of influencers.",
 
+"hejlova": "Doc. PhDr. Denisa Hejlová, Ph.D. is a scientist and lecturer at the Faculty of Social Sciences of Charles University. She will show us the academic point of view. What does the data say about the impact of influencer communication on followers? And is this even a topic we as influencers should be concerned with?",
+"vesely": "Ivo is an Influencer Marketing Freelancer and has been working in influencer marketing for 9 years. He was involved in the creation of the Fair Influencer Code of Ethics. At the conference, he will wade into the influencer pond and take a look at the legislation. Finally, we'll find out how to do it right!",
+"kotek": "Honza v marketingu a reklamním světě pracuje již 24 let. Nyní má na starosti hnutí Férový influencer. Proč se skupina odborníků schází každý měsíc nad influencer marketingem? A jakou roli v tom můžeme hrát my všichni? Co nás čeká nového?",
+"fryc": "Martin doesn't let any business opportunity pass him by and he has an overview of the European influencer marketing market. What is the biggest influencers fee and how much should we charge? Who is underestimated and who is overestimated? And isn't that not enough? No, It's not!",
+"jacova": "In this topic you will learn how to be a 'full-time' influencer. How to run a business and how not to end up in the tax office and also how to pay taxes correctly. How not to do it or, on the contrary, how to do it correctly so that we don't have a problem with the law?",
+"panel": "Representatives of the three target groups of influencer marketing will have a lively conversation about how to get the most out of it all. Martin Fryč will represent the agency, Terezka Law will represent the brand and Anička Kadeřávková will represent the voice of influencers.",
+"law2": "Tereza is responsible for promotion and PR in L'Oréal's consumer goods division for the Czech Republic, Slovakia and Hungary. She has been working for the company for almost 12 years. She will share with you the mindset of one of the biggest clients in influencer marketing. How do they choose influencers and how do I reach them?",
+"bilkovska": "Zuzana is launching a startup called Heroes of Online. She is an experienced Influencer Specialist and will talk about keeping a good relationship with the agency. How do Influencer Specialists do their research and who is responsible for an agency reaching out to me? What? Is there a blacklist of influencers?",
+"bubenicek": "Michal is the CEO of a creative digital agency and also the author of the Mike:ON podcast. In his speech, you'll learn how to use AI tools in influencer marketing, how to be more effective with AI, and how it can make your life easier at work and beyond.",
+"bolkvadze2": "Niko Bolkvadze is a client partner at Meta working with global clients across Central & Eastern Europe. Niko is supporting partners to develop strategies for short form video by involving Creators and leveraging the language of Reels.",
+"vojtech": "Dan is an experienced content creator. He's the one who makes those crazy Red Bull videos. That's why you'll get to shoot a Reels with him in practice. We'll use his experience. We can ask questions and we'll create with him. Let's have fun!",
+
+"hejlova.tema": "What impact can influencer communication have?",
+"vesely.tema"  : "How to avoid 'hate' for cooperation?  ",
+"kotek.tema" : "Why be a 'Fair Influencer'?",
+"fryc.tema" : "What feed should I ask for your collaboration?",
+"jacova.tema" : "How not to be fined by the tax office?",
+"panel.tema" : "How to get the most out of it?",
+"law2.tema" : "How to get to the biggest brands?",
+"bilkovska.tema" : "Does it make sense to pre-empt agencies?",
+"bubenicek.tema" : "Can AI make my life easier?",
+"bolkvadze2.tema" : " Language of Reels",
+"vojtech.tema" : "I make videos, that's why I'm here.",
+
+
+"panel.position": "Panel discussion",
+"jacova.position": "UOL ÚČETNICTVÍ - DIRECTOR",
+"vesely.position": "FÉROVÝ INFLUENCER - MEMBER",
+"hejlova.position": "UNIVERZITA KARLOVA - ACADEMIC",
+
+"influ.program": "1st block - Fair influencer marketing",
+"block3.program": "2nd block - Monetization and pricing",
+"block4.program": "3rd block - How to assert yourself",
+"workshop.program": "4th block - Workshop part 1"
 
 }
