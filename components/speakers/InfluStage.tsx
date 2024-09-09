@@ -128,7 +128,7 @@ export default function MainStage() {
           <p className="mt-[4px] text-[24px]">
             <span className="font-bold">{t("workshop.program")}</span>
           </p>
-          <SpeakersMap speakers={speakers2 as any} />
+          <SpeakersMap speakers={speakers3 as any} />
         </div>
 
         <SmallBlock time="12:10 - 13:10" topic={t("lunch")} />
@@ -145,12 +145,12 @@ export default function MainStage() {
           <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
             <span className="font-bold">{t("block3.program")}</span>
           </p>
-          <SpeakersMap speakers={speakers3 as any} />
+          <SpeakersMap speakers={speakers4 as any} />
 
           <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
             <span className="font-bold">{t("block4.program")}</span>
           </p>
-          <SpeakersMap speakers={speakers4 as any} />
+          <SpeakersMap speakers={speakers2 as any} />
         </div>
       </div>
     </div>
