@@ -80,10 +80,6 @@ const Speakers = () => {
                 {" "}
                 <Dostal />
               </div>
-              <div className="flex justify-center">
-                {" "}
-                <Flipcardwho />{" "}
-              </div>
             </div>
             <Revealx delay={0.2}>
               {" "}

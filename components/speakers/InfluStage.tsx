@@ -63,7 +63,7 @@ export default function MainStage() {
   const speakers3 = [
     {
       name: "Martin Fryč",
-      position: "OPPORTUNITY MANAGER - WOO",
+      position: "WOO - OPPORTUNITY MANAGER",
       topic: t("fryc.tema"),
       description: t("fryc"),
       image: Fryc,
@@ -93,7 +93,7 @@ export default function MainStage() {
     },
     {
       name: "Zuzana Bílkovská",
-      position: "INFLUENCER'S QUEEN - HEROES OF ONLINE",
+      position: "HEROES OF ONLINE - INFLUENCER'S QUEEN",
       topic: t("bilkovska.tema"),
       description: t("bilkovska"),
       image: Zuzka,
@@ -107,51 +107,45 @@ export default function MainStage() {
     },
   ];
   return (
-    <div>
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4">
-        <SmallBlock time="9:00 - 10:00" topic={t("welcome.cofee")} />
+    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4">
+      <SmallBlock time="9:00 - 10:00" topic={t("welcome.cofee")} />
 
-        <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px]">
-          <div className="flex gap-x-[32px] md:flex-row">
-            <p className="text-[16px] font-bold md:text-[24px]">
-              10:00 - 12:10
-            </p>
-            <p>|</p>
-            <p className="text-[16px] md:text-[24px]">{t("block1")}</p>
-          </div>
-          <div className="w-full border-t border-white pb-[8px] md:pb-0" />
-          <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
-            <span className="font-bold">{t("influ.program")}</span>
-          </p>
-          <SpeakersMap speakers={speakers1 as any} />
-
-          <p className="mt-[4px] text-[24px]">
-            <span className="font-bold">{t("workshop.program")}</span>
-          </p>
-          <SpeakersMap speakers={speakers3 as any} />
+      <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px] lg:min-w-[900px]">
+        <div className="flex gap-x-[32px] md:flex-row">
+          <p className="text-[16px] font-bold md:text-[24px]">10:00 - 12:10</p>
+          <p>|</p>
+          <p className="text-[16px] md:text-[24px]">{t("block1")}</p>
         </div>
+        <div className="w-full border-t border-white pb-[8px] md:pb-0" />
+        <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
+          <span className="font-bold">{t("influ.program")}</span>
+        </p>
+        <SpeakersMap speakers={speakers1 as any} />
 
-        <SmallBlock time="12:10 - 13:10" topic={t("lunch")} />
+        <p className="mt-[4px] text-[24px]">
+          <span className="font-bold">{t("workshop.program")}</span>
+        </p>
+        <SpeakersMap speakers={speakers3 as any} />
+      </div>
 
-        <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px]">
-          <div className="flex items-center gap-x-[32px]">
-            <p className="text-[16px] font-bold md:text-[24px]">
-              13:10 - 15:10
-            </p>
-            <p className="text-[24px]">|</p>
-            <p className="text-[16px] md:text-[24px]">{t("block3")}</p>
-          </div>
-          <div className="w-full border-t border-white pb-[8px] md:pb-0" />
-          <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
-            <span className="font-bold">{t("block3.program")}</span>
-          </p>
-          <SpeakersMap speakers={speakers4 as any} />
+      <SmallBlock time="12:10 - 13:10" topic={t("lunch")} />
 
-          <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
-            <span className="font-bold">{t("block4.program")}</span>
-          </p>
-          <SpeakersMap speakers={speakers2 as any} />
+      <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px]">
+        <div className="flex items-center gap-x-[32px]">
+          <p className="text-[16px] font-bold md:text-[24px]">13:10 - 15:10</p>
+          <p className="text-[24px]">|</p>
+          <p className="text-[16px] md:text-[24px]">{t("block3")}</p>
         </div>
+        <div className="w-full border-t border-white pb-[8px] md:pb-0" />
+        <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
+          <span className="font-bold">{t("block3.program")}</span>
+        </p>
+        <SpeakersMap speakers={speakers4 as any} />
+
+        <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
+          <span className="font-bold">{t("block4.program")}</span>
+        </p>
+        <SpeakersMap speakers={speakers2 as any} />
       </div>
     </div>
   );

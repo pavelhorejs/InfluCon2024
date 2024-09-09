@@ -116,7 +116,7 @@ export default function MainStage() {
 
   return (
     <div>
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4 lg:min-w-[900px]">
         <SmallBlock time="9:00 - 10:00" topic={t("welcome.cofee")} />
         <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px]">
           <div className="flex items-center gap-x-[32px]">
