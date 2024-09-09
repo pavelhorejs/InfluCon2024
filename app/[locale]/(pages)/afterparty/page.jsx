@@ -11,8 +11,7 @@ const Page = () => {
   return (
     <>
       <Revealx delay={0.2}>
-        {" "}
-        <div className="max-w-6xl mx-auto mt-32 lg:mt-40 pb-20 px-3 relative">
+        <div className="relative mx-auto mt-32 max-w-6xl px-3 pb-20 lg:mt-40">
           <div className="relative">
             <Image className="blur-sm" src={Afterparty} alt="Afterparty" />
             <div className="absolute inset-0 flex flex-col items-center justify-center">

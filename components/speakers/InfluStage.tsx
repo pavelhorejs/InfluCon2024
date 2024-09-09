@@ -122,7 +122,7 @@ export default function MainStage() {
         </p>
         <SpeakersMap speakers={speakers1 as any} />
 
-        <p className="mt-[4px] text-[24px]">
+        <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
           <span className="font-bold">{t("workshop.program")}</span>
         </p>
         <SpeakersMap speakers={speakers3 as any} />

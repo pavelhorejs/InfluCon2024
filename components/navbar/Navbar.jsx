@@ -149,7 +149,7 @@ const Navbar = () => {
                 <a href="/speakers"> {t("NavItem1")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <Link href="/program"> {t("NavItem2")}</Link>
+                <a href="/program"> {t("NavItem2")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
                 <a href="https://goout.net/cs/listky/influcon-2024/xdxy/">
