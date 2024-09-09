@@ -87,7 +87,7 @@ export default function Home() {
         height={800}
       />
       <Faq />
-      <Wroteaboutus />
+      {/* <Wroteaboutus /> */}
       <Image
         src="/blur_green.png"
         alt="Decorative green blur"
