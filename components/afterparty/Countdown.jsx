@@ -16,10 +16,10 @@ const Countdown = ({ timeTillDate }) => {
       if (countdown > 0) {
         const days = Math.floor(countdown / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
-          (countdown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          (countdown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
         );
         const minutes = Math.floor(
-          (countdown % (1000 * 60 * 60)) / (1000 * 60)
+          (countdown % (1000 * 60 * 60)) / (1000 * 60),
         );
         const seconds = Math.floor((countdown % (1000 * 60)) / 1000);
 
@@ -42,7 +42,7 @@ const Countdown = ({ timeTillDate }) => {
 
   return (
     <div>
-      <h1 className="text-center pb-2 lg:pb-0">{t("countdown")}</h1>
+      <h1 className="pb-2 text-center lg:pb-0">{t("countdown")}</h1>
       <div className="countdown-wrapper">
         <div className="countdown-item">
           {days} <span>{t("dni")}</span>

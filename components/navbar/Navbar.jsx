@@ -114,7 +114,7 @@ const Navbar = () => {
                   Q&A
                 </Link>
                 <Link className={Styles.navigaceText} href="/afterparty">
-                  Afterparty
+                  Ultimate influparty
                 </Link>
                 <Link className={Styles.navigaceText} href="/contact">
                   {t("NavItem5")}
@@ -159,7 +159,7 @@ const Navbar = () => {
               </motion.li>
 
               <motion.li variants={listItemVariants}>
-                <a href="/afterparty">Afterparty</a>
+                <a href="/afterparty">Ultimate influparty</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
                 <a href="/#faq">Q&A</a>

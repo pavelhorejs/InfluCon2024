@@ -55,7 +55,7 @@ const Footer = () => {
             <span className={styles.navigaceText}>{t("FooterProgram")}</span>
           </Link>
           <Link href="/afterparty">
-            <span className={styles.navigaceText}>Afterparty</span>
+            <span className={styles.navigaceText}>Ultimate influparty</span>
           </Link>
           <Link href="/#blog">
             <span className={styles.navigaceText}>{t("FooterBlog")}</span>
