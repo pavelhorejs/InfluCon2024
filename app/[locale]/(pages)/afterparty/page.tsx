@@ -91,7 +91,11 @@ const Page = () => {
           <p className="mx-auto max-w-[600px] text-center">
             {t("afterparty.program4")}{" "}
             <a
-              href="https://goout.net/cs/listky/influcon-2024/xdxy/"
+              href={
+                i18n.language === "cs"
+                  ? "https://goout.net/cs/listky/influcon-2024/xdxy/"
+                  : "https://goout.net/en/listky/influcon-2024/xdxy/"
+              }
               className="underline hover:text-[#22FFAF]"
             >
               {t("afterparty.program6")}
