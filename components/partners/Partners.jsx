@@ -9,29 +9,29 @@ const Partners = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="max-w-7xl mx-auto px-2">
+      <div className="mx-auto max-w-7xl px-2">
         <Revealx delay={0.5}>
           {" "}
-          <h2 className="pb-[32px] lg:pb-[48px] text-center">
+          <h2 className="pb-[32px] text-center lg:pb-[48px]">
             {t("komercniParneri")}
           </h2>
         </Revealx>
-        <div className="grid grid-cols-4 max-w-3xl mx-auto gap-y-5 lg:gap-y-20 gap-x-10 lg:gap-x-20">
-          <div className="flex justify-center md:justify-center items-center">
+        <div className="mx-auto grid max-w-3xl grid-cols-5 gap-x-10 gap-y-5 lg:gap-x-20 lg:gap-y-20">
+          <div className="flex items-center justify-center md:justify-center">
             <Revealx delay={0.5}>
               <Link href="https://www.woo.cz/">
                 <Image width={130} height={130} src="/woo.svg" alt="woo logo" />
               </Link>
             </Revealx>
           </div>
-          <div className="flex justify-center md:justify-center items-center">
+          <div className="flex items-center justify-center md:justify-center">
             <Revealx delay={0.5}>
               <Link href="https://www.heroesofonline.cz">
                 <Image width={130} height={130} src="/hoo.svg" alt="hoo logo" />
               </Link>
             </Revealx>
           </div>
-          <div className="flex justify-center md:justify-center items-center">
+          <div className="flex items-center justify-center md:justify-center">
             <Revealx delay={0.5}>
               <Link href="https://www.loreal.com/cs-cz/czech-republic/">
                 <Image
@@ -43,7 +43,7 @@ const Partners = () => {
               </Link>
             </Revealx>
           </div>
-          <div className="flex justify-center md:justify-center items-center">
+          <div className="flex items-center justify-center md:justify-center">
             <Revealx delay={0.5}>
               <Link href="https://www.oxotea.cz/">
                 <Image
@@ -55,17 +55,29 @@ const Partners = () => {
               </Link>
             </Revealx>
           </div>
+          <div className="flex items-center justify-center md:justify-center">
+            <Revealx delay={0.5}>
+              <Link href="https://www.vonage.com/">
+                <Image
+                  width={170}
+                  height={170}
+                  src="/vonage.svg"
+                  alt="vonage logo"
+                />
+              </Link>
+            </Revealx>
+          </div>
         </div>
       </div>
-      <div className="max-w-3xl mx-auto px-2 mt-[100px]">
+      <div className="mx-auto mt-[100px] max-w-3xl px-2">
         <Revealx delay={0.5}>
           {" "}
-          <h2 className="pb-[32px] lg:pb-[48px] text-center">
+          <h2 className="pb-[32px] text-center lg:pb-[48px]">
             {t("partnershdl")}
           </h2>
         </Revealx>
-        <div className="grid grid-cols-4 gap-y-5 lg:gap-y-20 gap-x-5 lg:gap-x-20">
-          <div className="flex justify-center md:justify-center items-center">
+        <div className="grid grid-cols-4 gap-x-5 gap-y-5 lg:gap-x-20 lg:gap-y-20">
+          <div className="flex items-center justify-center md:justify-center">
             {" "}
             <Revealx delay={0.5}>
               {" "}
@@ -74,7 +86,7 @@ const Partners = () => {
               </Link>
             </Revealx>
           </div>
-          <div className="flex justify-center md:justify-center items-center">
+          <div className="flex items-center justify-center md:justify-center">
             <Revealx delay={0.5}>
               {" "}
               <Link href="https://fajnradio.cz/">
@@ -82,7 +94,7 @@ const Partners = () => {
               </Link>
             </Revealx>
           </div>
-          <div className="flex justify-center md:justify-center items-center">
+          <div className="flex items-center justify-center md:justify-center">
             {" "}
             <Revealx delay={0.5}>
               <Link href="https://www.mam.cz/">
@@ -91,7 +103,7 @@ const Partners = () => {
               </Link>
             </Revealx>
           </div>
-          <div className="flex justify-center md:justify-center items-center">
+          <div className="flex items-center justify-center md:justify-center">
             {" "}
             <Revealx delay={0.5}>
               <Link href="https://www.newsfeed.cz/">
@@ -101,13 +113,13 @@ const Partners = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-3xl mx-auto px-2 mt-[100px]">
+      <div className="mx-auto mt-[100px] max-w-3xl px-2">
         <Revealx delay={0.5}>
           {" "}
-          <h2 className="text-center -mb-[30px]">{t("zastita")}</h2>
+          <h2 className="-mb-[30px] text-center">{t("zastita")}</h2>
         </Revealx>
-        <div className="grid grid-cols-2 gap-y-5 lg:gap-y-20 gap-x-1 lg:gap-x-20">
-          <div className="flex justify-center md:justify-end items-center">
+        <div className="grid grid-cols-2 gap-x-1 gap-y-5 lg:gap-x-20 lg:gap-y-20">
+          <div className="flex items-center justify-center md:justify-end">
             {" "}
             <Revealx delay={0.5}>
               <Link href="https://www.aka.cz/">
@@ -115,7 +127,7 @@ const Partners = () => {
               </Link>
             </Revealx>
           </div>
-          <div className="flex justify-center md:justify-start items-center">
+          <div className="flex items-center justify-center md:justify-start">
             {" "}
             <Revealx delay={0.5}>
               {" "}
@@ -129,13 +141,13 @@ const Partners = () => {
       <div className="mx-auto mt-[40px]">
         <Revealx delay={0.5}>
           {" "}
-          <h2 className="pb-[32px] lg:pb-[48px] text-center">
+          <h2 className="pb-[32px] text-center lg:pb-[48px]">
             {t("spolupracujeme")}
           </h2>
         </Revealx>
-        <div className="grid grid-cols-2 gap-y-5 lg:gap-y-20 gap-x-1 lg:gap-x-20">
+        <div className="grid grid-cols-2 gap-x-1 gap-y-5 lg:gap-x-20 lg:gap-y-20">
           {" "}
-          <div className="flex justify-center md:justify-end items-center">
+          <div className="flex items-center justify-center md:justify-end">
             {" "}
             <Revealx delay={0.5}>
               <Link href="https://www.webtop100.cz/">
@@ -143,7 +155,7 @@ const Partners = () => {
               </Link>
             </Revealx>
           </div>
-          <div className="flex justify-center md:justify-start items-center">
+          <div className="flex items-center justify-center md:justify-start">
             {" "}
             <Revealx delay={0.5}>
               {" "}

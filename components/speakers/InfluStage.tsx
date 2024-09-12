@@ -107,7 +107,10 @@ export default function MainStage() {
     },
   ];
   return (
-    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4">
+    <div
+      className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4"
+      id="influ"
+    >
       <SmallBlock time="9:00 - 10:00" topic={t("welcome.cofee")} />
 
       <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px] lg:min-w-[900px]">
@@ -147,6 +150,12 @@ export default function MainStage() {
         </p>
         <SpeakersMap speakers={speakers2 as any} />
       </div>
+      <SmallBlock time="15:10" topic="Networking" />
+      <SmallBlock
+        time="20:00"
+        topic="Afterparty"
+        bg="bg-[#F00065] text-white"
+      />
     </div>
   );
 }

@@ -159,6 +159,12 @@ export default function MainStage() {
           </p>
           <SpeakersMap speakers={speakers4 as any} />
         </div>
+        <SmallBlock time="15:10" topic="Networking" />
+        <SmallBlock
+          time="20:00"
+          topic="Afterparty"
+          bg="bg-[#F00065] text-white"
+        />
       </div>
     </div>
   );

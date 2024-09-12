@@ -3,12 +3,13 @@ import { useTranslation } from "react-i18next";
 import Revealx from "@/components/reveals/Revealx";
 import Image from "next/image";
 import Afterparty from "/public/afterparty.webp";
-import Countdown from "@/components/afterparty/Countdown";
+import Form from "@/components/form/Form";
+
 import Link from "next/link";
 
 const Page = () => {
   const { t, i18n } = useTranslation();
-  const timeTillDate = "10/07/2024 20:00";
+
   return (
     <>
       <Revealx delay={0.2}>
@@ -27,7 +28,6 @@ const Page = () => {
                 height={200}
                 alt="Afterparty"
               />
-              {/* <Countdown timeTillDate={timeTillDate} /> */}
             </div>
           </div>
           <h2 className="pb-[16px] text-center">{t("afterparty.program")}</h2>
@@ -81,13 +81,12 @@ const Page = () => {
           </div>
           <p className="mx-auto max-w-[600px] pb-[16px] text-center">
             {t("afterparty.program3")}{" "}
-            <a
-              href="mailto:info@woo.cz"
-              className="underline hover:text-[#22FFAF]"
-            >
-              info@woo.cz.
-            </a>
           </p>
+          <div className="mx-auto max-w-[500px] pb-[32px]">
+            <Revealx delay={0.6}>
+              <Form />
+            </Revealx>
+          </div>
           <p className="mx-auto max-w-[600px] text-center">
             {t("afterparty.program4")}{" "}
             <a
