@@ -2,7 +2,6 @@
 import Revealx from "../reveals/Revealx";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
-import SmallBlock from "@/components/speakers/SmallBlock";
 
 const Agenda = () => {
   const { t } = useTranslation();
@@ -28,7 +27,7 @@ const Agenda = () => {
         </Revealx>
         <Revealx delay={0.4}>
           {" "}
-          <Link href="/program#influ">
+          <Link href="/program?stage=influ">
             {" "}
             <div className="redGlow redCard2 min-w-[380px] bg-[#F00065] p-[64px] hover:bg-[#D6005A]">
               <h2 className="text-center text-4xl font-bold">

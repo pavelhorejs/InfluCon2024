@@ -5,6 +5,123 @@ import Revealx from "../reveals/Revealx";
 import Image from "next/image";
 import Link from "next/link";
 
+const partners = [
+  {
+    href: "https://www.woo.cz/",
+    src: "/woo.svg",
+    width: 130,
+    height: 130,
+    alt: "woo logo",
+  },
+  {
+    href: "https://www.heroesofonline.cz",
+    src: "/hoo.svg",
+    width: 130,
+    height: 130,
+    alt: "hoo logo",
+  },
+  {
+    href: "https://www.loreal.com/cs-cz/czech-republic/",
+    src: "/Loreal.svg",
+    width: 130,
+    height: 130,
+    alt: "loreal logo",
+  },
+  {
+    href: "https://www.oxotea.cz/",
+    src: "/OXO_bila.png",
+    width: 130,
+    height: 130,
+    alt: "oxo logo",
+  },
+  {
+    href: "https://www.vonage.com/",
+    src: "/vonage.svg",
+    width: 170,
+    height: 170,
+    alt: "vonage logo",
+  },
+  {
+    href: "https://www.vonage.com/",
+    src: "/clovek.svg",
+    width: 170,
+    height: 170,
+    alt: "vonage logo",
+  },
+  {
+    href: "https://www.vonage.com/",
+    src: "/trendyol.svg",
+    width: 170,
+    height: 170,
+    alt: "vonage logo",
+  },
+];
+
+const partnersHdl = [
+  {
+    href: "https://tv.nova.cz/",
+    src: "/nova.png",
+    width: 130,
+    height: 130,
+    alt: "Nova TV logo",
+  },
+  {
+    href: "https://fajnradio.cz/",
+    src: "/fajn.svg",
+    width: 85,
+    height: 85,
+    alt: "Fajn Radio logo",
+  },
+  {
+    href: "https://www.mam.cz/",
+    src: "/mam.png",
+    width: 130,
+    height: 130,
+    alt: "MAM logo",
+  },
+  {
+    href: "https://www.newsfeed.cz/",
+    src: "/newsfeed.svg",
+    width: 130,
+    height: 130,
+    alt: "Newsfeed logo",
+  },
+];
+
+const partnersZastita = [
+  {
+    href: "https://www.aka.cz/",
+    src: "/aka.svg",
+    width: 200,
+    height: 150,
+    alt: "AKA logo",
+  },
+  {
+    href: "https://ferovyinfluencer.cz/",
+    src: "/ferfluencer.png",
+    width: 200,
+    height: 150,
+    alt: "Ferovy Influencer logo",
+  },
+];
+
+const partnersSpolupraca = [
+  {
+    href: "https://www.webtop100.cz/",
+    src: "/webtop.png",
+    width: 150,
+    height: 150,
+    alt: "Webtop 100 logo",
+  },
+  {
+    href: "#", // Add the correct URL if available
+    src: "/mikeon.png",
+    width: 150,
+    height: 150,
+    alt: "Mikeon logo",
+  },
+];
+
 const Partners = () => {
   const { t } = useTranslation();
   return (
@@ -16,57 +133,24 @@ const Partners = () => {
             {t("komercniParneri")}
           </h2>
         </Revealx>
-        <div className="mx-auto grid max-w-3xl grid-cols-5 gap-x-10 gap-y-5 lg:gap-x-20 lg:gap-y-20">
-          <div className="flex items-center justify-center md:justify-center">
-            <Revealx delay={0.5}>
-              <Link href="https://www.woo.cz/">
-                <Image width={130} height={130} src="/woo.svg" alt="woo logo" />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-center">
-            <Revealx delay={0.5}>
-              <Link href="https://www.heroesofonline.cz">
-                <Image width={130} height={130} src="/hoo.svg" alt="hoo logo" />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-center">
-            <Revealx delay={0.5}>
-              <Link href="https://www.loreal.com/cs-cz/czech-republic/">
-                <Image
-                  width={130}
-                  height={130}
-                  src="/Loreal.svg"
-                  alt="loreal logo"
-                />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-center">
-            <Revealx delay={0.5}>
-              <Link href="https://www.oxotea.cz/">
-                <Image
-                  width={130}
-                  height={130}
-                  src="/OXO_bila.png"
-                  alt="loreal logo"
-                />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-center">
-            <Revealx delay={0.5}>
-              <Link href="https://www.vonage.com/">
-                <Image
-                  width={170}
-                  height={170}
-                  src="/vonage.svg"
-                  alt="vonage logo"
-                />
-              </Link>
-            </Revealx>
-          </div>
+        <div className="mx-auto grid max-w-3xl grid-cols-4 gap-x-10 gap-y-5 lg:gap-x-20 lg:gap-y-[32px]">
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center md:justify-center"
+            >
+              <Revealx delay={0.5}>
+                <Link href={partner.href}>
+                  <Image
+                    width={partner.width}
+                    height={partner.height}
+                    src={partner.src}
+                    alt={partner.alt}
+                  />
+                </Link>
+              </Revealx>
+            </div>
+          ))}
         </div>
       </div>
       <div className="mx-auto mt-[100px] max-w-3xl px-2">
@@ -77,40 +161,23 @@ const Partners = () => {
           </h2>
         </Revealx>
         <div className="grid grid-cols-4 gap-x-5 gap-y-5 lg:gap-x-20 lg:gap-y-20">
-          <div className="flex items-center justify-center md:justify-center">
-            {" "}
-            <Revealx delay={0.5}>
-              {" "}
-              <Link href="https://tv.nova.cz/">
-                <Image width={130} height={130} src="/nova.png" alt="" />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-center">
-            <Revealx delay={0.5}>
-              {" "}
-              <Link href="https://fajnradio.cz/">
-                <Image width={85} height={850} src="/fajn.svg" alt="" />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-center">
-            {" "}
-            <Revealx delay={0.5}>
-              <Link href="https://www.mam.cz/">
-                {" "}
-                <Image width={130} height={130} src="/mam.png" alt="" />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-center">
-            {" "}
-            <Revealx delay={0.5}>
-              <Link href="https://www.newsfeed.cz/">
-                <Image width={130} height={130} src="/newsfeed.svg" alt="" />
-              </Link>
-            </Revealx>
-          </div>
+          {partnersHdl.map((partner, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center md:justify-center"
+            >
+              <Revealx delay={0.5}>
+                <Link href={partner.href}>
+                  <Image
+                    width={partner.width}
+                    height={partner.height}
+                    src={partner.src}
+                    alt={partner.alt}
+                  />
+                </Link>
+              </Revealx>
+            </div>
+          ))}
         </div>
       </div>
       <div className="mx-auto mt-[100px] max-w-3xl px-2">
@@ -119,23 +186,25 @@ const Partners = () => {
           <h2 className="-mb-[30px] text-center">{t("zastita")}</h2>
         </Revealx>
         <div className="grid grid-cols-2 gap-x-1 gap-y-5 lg:gap-x-20 lg:gap-y-20">
-          <div className="flex items-center justify-center md:justify-end">
-            {" "}
-            <Revealx delay={0.5}>
-              <Link href="https://www.aka.cz/">
-                <Image width={200} height={150} src="/aka.svg" alt="" />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-start">
-            {" "}
-            <Revealx delay={0.5}>
-              {" "}
-              <Link href="https://ferovyinfluencer.cz/">
-                <Image width={200} height={150} src="/ferfluencer.png" alt="" />
-              </Link>
-            </Revealx>
-          </div>
+          {partnersZastita.map((partner, index) => (
+            <div
+              key={index}
+              className={`flex items-center justify-center ${
+                index === 0 ? "md:justify-end" : "md:justify-start"
+              }`}
+            >
+              <Revealx delay={0.5}>
+                <Link href={partner.href}>
+                  <Image
+                    width={partner.width}
+                    height={partner.height}
+                    src={partner.src}
+                    alt={partner.alt}
+                  />
+                </Link>
+              </Revealx>
+            </div>
+          ))}
         </div>
       </div>
       <div className="mx-auto mt-[40px]">
@@ -146,22 +215,25 @@ const Partners = () => {
           </h2>
         </Revealx>
         <div className="grid grid-cols-2 gap-x-1 gap-y-5 lg:gap-x-20 lg:gap-y-20">
-          {" "}
-          <div className="flex items-center justify-center md:justify-end">
-            {" "}
-            <Revealx delay={0.5}>
-              <Link href="https://www.webtop100.cz/">
-                <Image width={150} height={150} src="/webtop.png" alt="" />
-              </Link>
-            </Revealx>
-          </div>
-          <div className="flex items-center justify-center md:justify-start">
-            {" "}
-            <Revealx delay={0.5}>
-              {" "}
-              <Image width={150} height={150} src="/mikeon.png" alt="" />
-            </Revealx>
-          </div>
+          {partnersSpolupraca.map((partner, index) => (
+            <div
+              key={index}
+              className={`flex items-center justify-center ${
+                index === 0 ? "md:justify-end" : "md:justify-start"
+              }`}
+            >
+              <Revealx delay={0.5}>
+                <Link href={partner.href}>
+                  <Image
+                    width={partner.width}
+                    height={partner.height}
+                    src={partner.src}
+                    alt={partner.alt}
+                  />
+                </Link>
+              </Revealx>
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -1,10 +1,19 @@
 "use client";
-import { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import MainStage from "@/components/speakers/MainStage";
 import InfluStage from "@/components/speakers/InfluStage";
 
 const Page = () => {
   const [selectedOption, setSelectedOption] = useState("mainStage");
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const stage = searchParams.get("stage");
+    if (stage === "influ") {
+      setSelectedOption("empty");
+    }
+  }, [searchParams]);
 
   const handleOptionChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
