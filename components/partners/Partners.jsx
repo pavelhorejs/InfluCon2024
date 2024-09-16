@@ -37,7 +37,7 @@ const partners = [
   {
     href: "https://www.vonage.com/",
     src: "/vonage.svg",
-    width: 170,
+    width: 190,
     height: 170,
     alt: "vonage logo",
   },

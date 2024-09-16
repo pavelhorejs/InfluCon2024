@@ -81,12 +81,6 @@ const Speakers = () => {
                 <Dostal />
               </div>
             </div>
-            <Revealx delay={0.2}>
-              {" "}
-              <h2 className="font-3xl pb-5 pt-14 text-center text-black">
-                {t("moreSoon")}
-              </h2>
-            </Revealx>
           </div>
         </div>
       </div>
