@@ -42,14 +42,14 @@ const partners = [
     alt: "vonage logo",
   },
   {
-    href: "https://www.vonage.com/",
+    href: "https://www.clovekvtisni.cz/",
     src: "/clovek.svg",
     width: 170,
     height: 170,
     alt: "vonage logo",
   },
   {
-    href: "https://www.vonage.com/",
+    href: "https://www.trendyol.com/",
     src: "/trendyol.svg",
     width: 170,
     height: 170,
