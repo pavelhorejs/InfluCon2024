@@ -12,7 +12,7 @@ const Tickets = () => {
       <Revealx delay={0.2}>
         <h2 className="pb-[48px] text-center">{t("Tickets")}</h2>
       </Revealx>
-      <div className="grid grid-cols-1 items-center">
+      <div className="flex justify-center">
         <Revealx delay={0.3}>
           <div className="flex justify-center md:justify-end">
             <div className={styles.ticket}>
