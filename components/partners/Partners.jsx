@@ -147,7 +147,11 @@ const Partners = () => {
               className="flex items-center justify-center md:justify-center"
             >
               <Revealx delay={0.5}>
-                <Link href={partner.href}>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={partner.href}
+                >
                   <Image
                     width={partner.width}
                     height={partner.height}
@@ -174,7 +178,11 @@ const Partners = () => {
               className="flex items-center justify-center md:justify-center"
             >
               <Revealx delay={0.5}>
-                <Link href={partner.href}>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={partner.href}
+                >
                   <Image
                     width={partner.width}
                     height={partner.height}
@@ -201,7 +209,11 @@ const Partners = () => {
               }`}
             >
               <Revealx delay={0.5}>
-                <Link href={partner.href}>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={partner.href}
+                >
                   <Image
                     width={partner.width}
                     height={partner.height}
@@ -230,7 +242,11 @@ const Partners = () => {
               }`}
             >
               <Revealx delay={0.5}>
-                <Link href={partner.href}>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={partner.href}
+                >
                   <Image
                     width={partner.width}
                     height={partner.height}
