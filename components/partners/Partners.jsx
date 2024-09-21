@@ -55,6 +55,13 @@ const partners = [
     height: 170,
     alt: "vonage logo",
   },
+  {
+    href: "https://www.buzzsneakers.cz/",
+    src: "/buzz_bila.png",
+    width: 170,
+    height: 170,
+    alt: "vonage logo",
+  },
 ];
 
 const partnersHdl = [
