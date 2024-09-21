@@ -64,12 +64,7 @@ const Footer = () => {
             <span className={styles.navigaceText}>{t("FooterKontakt")}</span>
           </a>
         </nav>
-        <nav className={styles.menuSection}>
-          <h6>{t("FooterLiveStream")}</h6>
-          <a href="https://goout.net/cs/listky/influcon-2024/xdxy/">
-            <span className={styles.navigaceText}>{t("FooterKoupit")}</span>
-          </a>
-        </nav>
+
         <nav className={styles.menuSection}>
           <h6>{t("FooterOstatni")}</h6>
           <Link href="/terms">
