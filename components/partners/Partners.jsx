@@ -93,6 +93,34 @@ const partnersHdl = [
     height: 130,
     alt: "Newsfeed logo",
   },
+  {
+    href: "https://www.antiyoutuber.cz/",
+    src: "/antiyoutuber.png",
+    width: 130,
+    height: 130,
+    alt: "Newsfeed logo",
+  },
+  {
+    href: "https://www.expres.cz/",
+    src: "/expres.png",
+    width: 130,
+    height: 130,
+    alt: "Newsfeed logo",
+  },
+  {
+    href: "https://www.idnes.cz/",
+    src: "/idnes.png",
+    width: 130,
+    height: 130,
+    alt: "Newsfeed logo",
+  },
+  {
+    href: "https://ocko.tv/",
+    src: "/ocko.png",
+    width: 130,
+    height: 130,
+    alt: "Newsfeed logo",
+  },
 ];
 
 const partnersZastita = [
@@ -121,9 +149,16 @@ const partnersSpolupraca = [
     alt: "Webtop 100 logo",
   },
   {
-    href: "#", // Add the correct URL if available
+    href: "#",
     src: "/mikeon.png",
-    width: 150,
+    width: 140,
+    height: 150,
+    alt: "Mikeon logo",
+  },
+  {
+    href: "https://cz.cans.com/",
+    src: "/cans.png",
+    width: 130,
     height: 150,
     alt: "Mikeon logo",
   },
@@ -171,7 +206,7 @@ const Partners = () => {
             {t("partnershdl")}
           </h2>
         </Revealx>
-        <div className="grid grid-cols-4 gap-x-5 gap-y-5 lg:gap-x-20 lg:gap-y-20">
+        <div className="mx-auto grid max-w-3xl grid-cols-4 gap-x-10 gap-y-5 lg:gap-x-20 lg:gap-y-[32px]">
           {partnersHdl.map((partner, index) => (
             <div
               key={index}
@@ -233,14 +268,9 @@ const Partners = () => {
             {t("spolupracujeme")}
           </h2>
         </Revealx>
-        <div className="grid grid-cols-2 gap-x-1 gap-y-5 lg:gap-x-20 lg:gap-y-20">
+        <div className="flex justify-center gap-x-1 gap-y-5 lg:gap-x-20 lg:gap-y-20">
           {partnersSpolupraca.map((partner, index) => (
-            <div
-              key={index}
-              className={`flex items-center justify-center ${
-                index === 0 ? "md:justify-end" : "md:justify-start"
-              }`}
-            >
+            <div key={index} className={`flex items-center justify-center`}>
               <Revealx delay={0.5}>
                 <Link
                   target="_blank"
