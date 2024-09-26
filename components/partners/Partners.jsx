@@ -62,6 +62,13 @@ const partners = [
     height: 170,
     alt: "buzz logo",
   },
+  {
+    href: "https://ecomail.cz/",
+    src: "/ecomail.png",
+    width: 170,
+    height: 170,
+    alt: "ecomail logo",
+  },
 ];
 
 const partnersHdl = [
@@ -160,7 +167,35 @@ const partnersSpolupraca = [
     src: "/cans.png",
     width: 130,
     height: 150,
-    alt: "Mikeon logo",
+    alt: "Cans logo",
+  },
+  {
+    href: "https://www.fotospin.cz/",
+    src: "/fotospin.png",
+    width: 120,
+    height: 150,
+    alt: "Fotospin logo",
+  },
+  {
+    href: "https://www.tullamoredew.com/cs-cz/",
+    src: "/tula.png",
+    width: 120,
+    height: 150,
+    alt: "Tullamore Dew logo",
+  },
+  {
+    href: "https://www.merchyou.com/cz",
+    src: "/merch.svg",
+    width: 120,
+    height: 150,
+    alt: "Zullamore Dew logo",
+  },
+  {
+    href: "https://www.roxy.cz/club/",
+    src: "/roxy.svg",
+    width: 120,
+    height: 150,
+    alt: "Roxy club logo",
   },
 ];
 
@@ -268,7 +303,7 @@ const Partners = () => {
             {t("spolupracujeme")}
           </h2>
         </Revealx>
-        <div className="flex justify-center gap-x-1 gap-y-5 lg:gap-x-20 lg:gap-y-20">
+        <div className="mx-auto grid max-w-3xl grid-cols-4 gap-x-10 gap-y-5 lg:gap-x-20 lg:gap-y-[32px]">
           {partnersSpolupraca.map((partner, index) => (
             <div key={index} className={`flex items-center justify-center`}>
               <Revealx delay={0.5}>
