@@ -28,13 +28,6 @@ const partners = [
     alt: "loreal logo",
   },
   {
-    href: "https://www.oxotea.cz/",
-    src: "/OXO_bila.png",
-    width: 130,
-    height: 130,
-    alt: "oxo logo",
-  },
-  {
     href: "https://www.vonage.com/",
     src: "/vonage.svg",
     width: 190,
@@ -178,7 +171,7 @@ const partnersSpolupraca = [
   },
   {
     href: "https://www.tullamoredew.com/cs-cz/",
-    src: "/tula.png",
+    src: "/tulla.png",
     width: 120,
     height: 150,
     alt: "Tullamore Dew logo",
@@ -196,6 +189,13 @@ const partnersSpolupraca = [
     width: 120,
     height: 150,
     alt: "Roxy club logo",
+  },
+  {
+    href: "https://www.prazdroj.cz/",
+    src: "/pp.svg",
+    width: 120,
+    height: 150,
+    alt: "Plzensky Prazdroj logo",
   },
 ];
 

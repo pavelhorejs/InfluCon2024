@@ -13,8 +13,8 @@ import Vesely from "/public/vesely.webp";
 
 import Bubenicek from "/public/bubenicek.webp";
 import Fryc from "/public/fryc.webp";
-import Vojtech from "/public/vojtech.webp";
-
+import Bartova from "/public/bartova.png";
+import SD from "/public/sd.jpg";
 import Jacova from "/public/jacova.webp";
 import Panel from "/public/panel.webp";
 import { useTranslation } from "react-i18next";
@@ -53,11 +53,11 @@ export default function MainStage() {
       image: Niko,
     },
     {
-      name: "Daniel Vojtěch",
-      position: "CONTENT CREATOR",
-      topic: t("vojtech.tema"),
-      description: t("vojtech"),
-      image: Vojtech,
+      name: "Markéta Bartová",
+      position: t("bartova.pozice"),
+      topic: t("bartova.tema"),
+      description: t("bartova"),
+      image: Bartova,
     },
   ];
   const speakers3 = [
@@ -104,6 +104,13 @@ export default function MainStage() {
       topic: t("bubenicek.tema"),
       description: t("bubenicek"),
       image: Bubenicek,
+    },
+    {
+      name: "Kristýna Sýkorová & Ivan Dzido",
+      position: t("sd.pozice"),
+      topic: t("sd.tema"),
+      description: t("sd"),
+      image: SD,
     },
   ];
   return (
