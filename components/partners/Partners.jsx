@@ -177,7 +177,7 @@ const partnersSpolupraca = [
     alt: "Tullamore Dew logo",
   },
   {
-    href: "https://www.merchyou.com/cz",
+    href: "https://www.merch4u.cz/en",
     src: "/merch.svg",
     width: 120,
     height: 150,
