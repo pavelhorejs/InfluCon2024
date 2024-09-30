@@ -34,7 +34,7 @@ const Page = () => {
           <p className="mx-auto max-w-[600px] pb-[40px] text-center">
             {t("afterparty.program2")}
           </p>
-          <h2 className="pb-[16px] text-center">Line up</h2>
+          {/* <h2 className="pb-[16px] text-center">Line up</h2>
           <div className="redGlow redCard mb-[40px] grid grid-cols-1 justify-items-center gap-y-[16px] bg-[#F00065] px-9 py-9 pb-[40px] hover:bg-[#D6005A] lg:grid-cols-4">
             <div className="redItem1"></div>
             <div className="redItem2"></div>
@@ -78,7 +78,7 @@ const Page = () => {
                 <p>DJ Teekay</p>
               </div>
             </div>
-          </div>
+          </div> */}
           <p className="mx-auto max-w-[600px] pb-[16px] text-center">
             {t("afterparty.program3")}{" "}
           </p>
