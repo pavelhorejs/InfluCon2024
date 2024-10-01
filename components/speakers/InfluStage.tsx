@@ -76,7 +76,7 @@ export default function MainStage() {
       image: Jacova,
     },
     {
-      name: "Martin Fryč & Tereza Law & Anna Kadeřávková",
+      name: "Adam Kajumi & Niko Bolkvadze & Tereza Law & Martin Fryč",
       position: t("panel.position"),
       topic: t("panel.tema"),
       description: t("panel"),
