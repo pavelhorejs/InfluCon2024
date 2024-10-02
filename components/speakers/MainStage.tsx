@@ -99,18 +99,18 @@ export default function MainStage() {
   ];
   const speakers4 = [
     {
-      name: "Josef Dostál & Jan Koukal",
-      position: t("kanista"),
-      topic: t("topic.dk"),
-      description: t("description.dk"),
-      image: DK,
-    },
-    {
       name: "Anna Kadeřávková",
       position: t("anna.profese"),
       topic: t("topic.anna"),
       description: t("description.anna"),
       image: Anna,
+    },
+    {
+      name: "Josef Dostál & Jan Koukal",
+      position: t("kanista"),
+      topic: t("topic.dk"),
+      description: t("description.dk"),
+      image: DK,
     },
   ];
 

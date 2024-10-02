@@ -88,6 +88,13 @@ const Page = () => {
       height: 130,
       alt: "loreal logo",
     },
+    {
+      href: "https://www.roxy.cz/club/",
+      src: "/roxy.svg",
+      width: 130,
+      height: 130,
+      alt: "loreal logo",
+    },
   ];
 
   return (
@@ -115,21 +122,21 @@ const Page = () => {
             {t("afterparty.program2")}
           </p>
           <h2 className="pb-[16px] text-center">INFLUCON STAGE</h2>
-          <div className="redGlow redCard mb-[40px] grid grid-cols-1 justify-items-center gap-y-[16px] bg-[#F00065] px-9 py-9 pb-[40px] hover:bg-[#D6005A] lg:grid-cols-4">
+          <div className="redGlow redCard mb-[40px] grid grid-cols-1 justify-items-center gap-y-[16px] bg-[#F00065] px-9 py-9 pb-[40px] hover:bg-[#D6005A] lg:grid-cols-5">
             <div className="redItem1"></div>
             <div className="redItem2"></div>
             <div className="flex flex-col items-center gap-[4px]">
-              <h3 className="pb-5 text-4xl font-bold">20:00 - 21:45</h3>
+              <h3 className="pb-5 text-3xl font-bold">20:00 - 21:45</h3>
               <div className="flex items-center gap-[8px]">
                 {" "}
                 <Link href="https://www.instagram.com/jameswing/">
                   <Image src="/ig_white.svg" width={20} height={20} alt="" />
                 </Link>
-                <p>James Wing</p>
+                <p className="">Gadjo.cz & James Wing</p>
               </div>
             </div>
             <div className="flex flex-col items-center gap-[4px]">
-              <h3 className="pb-5 text-4xl font-bold">22:00 - 23:30</h3>
+              <h3 className="pb-5 text-3xl font-bold">22:00 - 23:30</h3>
               <div className="flex items-center gap-[8px]">
                 {" "}
                 <Link href="https://www.instagram.com/malalatadjs/?hl=cs">
@@ -139,7 +146,7 @@ const Page = () => {
               </div>
             </div>
             <div className="flex flex-col items-center gap-[4px]">
-              <h3 className="pb-5 text-4xl font-bold">23:45 - 2:00</h3>
+              <h3 className="pb-5 text-3xl font-bold">23:45 - 1:00</h3>
               <div className="flex items-center gap-[8px]">
                 {" "}
                 <Link href="https://www.instagram.com/soulkatemusic/">
@@ -149,7 +156,17 @@ const Page = () => {
               </div>
             </div>
             <div className="flex flex-col items-center gap-[4px]">
-              <h3 className="pb-5 text-4xl font-bold">2:00 - 3:00</h3>
+              <h3 className="pb-5 text-3xl font-bold">1:00 - 2:00</h3>
+              <div className="flex items-center gap-[8px]">
+                {" "}
+                <Link href="https://www.instagram.com/soulkatemusic/">
+                  <Image src="/ig_white.svg" width={20} height={20} alt="" />
+                </Link>
+                <p>Barbara</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-[4px]">
+              <h3 className="pb-5 text-3xl font-bold">2:00 - 3:00</h3>
               <div className="flex items-center gap-[8px]">
                 {" "}
                 <Link href="https://www.instagram.com/_pollarys_/">
