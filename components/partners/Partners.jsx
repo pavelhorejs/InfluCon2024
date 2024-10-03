@@ -184,8 +184,8 @@ const partnersSpolupraca = [
     alt: "Zullamore Dew logo",
   },
   {
-    href: "https://www.roxy.cz/club/",
-    src: "/roxy.svg",
+    href: "https://www.oxclubprague.com/",
+    src: "/ox.svg",
     width: 120,
     height: 150,
     alt: "Roxy club logo",

@@ -89,8 +89,8 @@ const Page = () => {
       alt: "loreal logo",
     },
     {
-      href: "https://www.roxy.cz/club/",
-      src: "/roxy.svg",
+      href: "https://www.oxclubprague.com/",
+      src: "/ox.svg",
       width: 130,
       height: 130,
       alt: "loreal logo",
@@ -109,9 +109,9 @@ const Page = () => {
               </h2>
 
               <Image
-                className="w-[200px] lg:w-[500px]"
-                src="/roxy.svg"
-                width={350}
+                className="w-[150px] lg:w-[400px]"
+                src="/ox.svg"
+                width={250}
                 height={200}
                 alt="Afterparty"
               />

@@ -38,9 +38,9 @@ const Footer = () => {
           </p>
           <h6 className="mt-4">{t("adresaafter")}</h6>
           <p>
-            ROXY <br />
-            Dlouhá 333 <br />
-            110 00 Praha 1 - Staré město
+            OX CLUB <br />
+            Francouzská 75/4 <br />
+            120 00 Praha 2 - Vinohrady
           </p>
         </nav>
         <nav className={styles.menuSection}>
