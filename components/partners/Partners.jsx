@@ -197,6 +197,13 @@ const partnersSpolupraca = [
     height: 150,
     alt: "Plzensky Prazdroj logo",
   },
+  {
+    href: "https://www.infinit.cz/",
+    src: "/infinit.svg",
+    width: 120,
+    height: 150,
+    alt: "Infinit logo",
+  },
 ];
 
 const Partners = () => {
