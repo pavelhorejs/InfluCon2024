@@ -58,7 +58,7 @@ export default function MainStage() {
       image: Lukas,
     },
     {
-      name: "Victoria Pierce & Eve Van Elst",
+      name: "Victoria Pierce & Eva Van Elst",
       position:
         "C&A - INFLUENCER MARKETING MANAGER & LEAD BRAND AND FASHION PR EUROPE",
       topic: t("topic.viktorie"),
