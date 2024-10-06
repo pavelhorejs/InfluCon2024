@@ -142,7 +142,7 @@ export default function MainStage() {
 
       <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px]">
         <div className="flex items-center gap-x-[32px]">
-          <p className="text-[16px] font-bold md:text-[24px]">13:10 - 15:10</p>
+          <p className="text-[16px] font-bold md:text-[24px]">13:10 - 15:20</p>
           <p className="text-[24px]">|</p>
           <p className="text-[16px] md:text-[24px]">{t("block3")}</p>
         </div>
@@ -157,7 +157,7 @@ export default function MainStage() {
         </p>
         <SpeakersMap speakers={speakers2 as any} />
       </div>
-      <SmallBlock time="15:10" topic="Networking" />
+      <SmallBlock time="15:20" topic="Networking" />
       <SmallBlock
         time="20:00"
         topic="Afterparty"

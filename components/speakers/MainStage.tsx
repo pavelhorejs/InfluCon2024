@@ -113,6 +113,15 @@ export default function MainStage() {
       image: DK,
     },
   ];
+  const speakers5 = [
+    {
+      name: "panellast.name",
+      position: t("panellast.position"),
+      topic: t("panellast.topic"),
+      description: t("panellast.description"),
+      image: Anna,
+    },
+  ];
 
   return (
     <div>
@@ -140,10 +149,10 @@ export default function MainStage() {
 
         <SmallBlock time="12:10 - 13:10" topic={t("lunch")} />
 
-        <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[64px] md:pt-[16px]">
+        <div className="w-full bg-[#F00065] px-[16px] py-[12px] md:px-[40px] md:pb-[48px] md:pt-[16px]">
           <div className="flex items-center gap-x-[32px]">
             <p className="text-[16px] font-bold md:text-[24px]">
-              13:10 - 15:10
+              13:10 - 15:20
             </p>
             <p>|</p>
             <p className="text-[16px] md:text-[24px]">{t("block3")}</p>
@@ -157,9 +166,24 @@ export default function MainStage() {
           <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
             {t("block4")}
           </p>
+
           <SpeakersMap speakers={speakers4 as any} />
+          <div className="mt-[40px] bg-black bg-opacity-20 px-[16px] py-[16px]">
+            <p className="mt-[4px] text-[16px] font-bold md:text-[24px]">
+              {t("block5")}
+            </p>
+            <p className="text-[19px]">14:35 - 15:20</p>
+            <p>
+              <span className="font-bold">{t("panellast.moderator")}:</span>{" "}
+              Tigran Hovakimyan a Petr Srna{" "}
+            </p>
+            <p>
+              <span className="font-bold"> {t("panellast.guests")}:</span> Hana
+              Kloučková, Anna Kadeřávková, Jan Los{" "}
+            </p>
+          </div>
         </div>
-        <SmallBlock time="15:10" topic="Networking" />
+        <SmallBlock time="15:20" topic="Networking" />
         <SmallBlock
           time="20:00"
           topic="Afterparty"
