@@ -55,7 +55,7 @@ const Flipcard = () => {
         <div className="flex items-center justify-between">
           {" "}
           <p className={style.name2}>
-            Victoria Pierce{" "}
+            Victoria Pearce{" "}
             <span className="pl-3 text-base font-normal">C&A</span>
           </p>
           <Link href="https://www.linkedin.com/in/victoria-pearce-6a60911a3/">
