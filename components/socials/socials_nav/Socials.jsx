@@ -4,11 +4,13 @@ import Link from "next/link";
 
 const Socials = () => {
   return (
-    <div className="flex gap-6 z-50">
+    <div className="z-50 flex gap-6">
       <Revealhide delay={1.3}>
         <Link
           href="https://www.instagram.com/influconcz/"
           aria-label="Instagram icon"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           <motion.img
@@ -26,6 +28,8 @@ const Socials = () => {
         <Link
           href="https://www.facebook.com/profile.php?id=61560266676251"
           aria-label="Facebook icon"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           <motion.img
@@ -43,6 +47,8 @@ const Socials = () => {
         <Link
           href="https://www.linkedin.com/showcase/104046570"
           aria-label="LinkedIn icon"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           <motion.img

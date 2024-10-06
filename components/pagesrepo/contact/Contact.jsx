@@ -7,31 +7,31 @@ import Link from "next/link";
 const Contact = () => {
   const { t } = useTranslation();
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-y-10 max-w-7xl mx-auto">
+    <section className="mx-auto grid max-w-7xl grid-cols-1 gap-y-10 md:grid-cols-2">
       <div className="mx-2">
         <Revealx delay={0.2}>
           {" "}
-          <h2 className="pb-[24px] mt-10 lg:mt-0">{t("ContactHeadline")}</h2>
+          <h2 className="mt-10 pb-[24px] lg:mt-0">{t("ContactHeadline")}</h2>
         </Revealx>
         <Revealx delay={0.4}>
           <p className="max-w-md pb-[16px]">{t("ContactText")}</p>
         </Revealx>
         <Revealx delay={0.6}>
-          <p className="text-lg font-bold pb-1 ">Email</p>
+          <p className="pb-1 text-lg font-bold">Email</p>
           <Link className="hover:text-[#F00065]" href="mailto:info@woo.cz">
             info@woo.cz
           </Link>
         </Revealx>
         <Revealx delay={0.8}>
           {" "}
-          <p className="text-lg font-bold pb-2 mt-[16px]">{t("socials")}</p>
+          <p className="mt-[16px] pb-2 text-lg font-bold">{t("socials")}</p>
         </Revealx>
-        <div className="pb-[24px] ">
+        <div className="pb-[24px]">
           <Socials />
         </div>
         <Revealx delay={0.8}>
           <div>
-            <p className="font-bold text-lg pb-[8px]">{t("zodpovednosti")}</p>
+            <p className="pb-[8px] text-lg font-bold">{t("zodpovednosti")}</p>
             <div className="pb-[8px]">
               {" "}
               <Link href="https://www.linkedin.com/in/petrsrna/">

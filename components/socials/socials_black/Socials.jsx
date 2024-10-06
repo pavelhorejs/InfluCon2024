@@ -11,6 +11,8 @@ const Socials = () => {
         <Link
           href="https://www.instagram.com/influconcz/"
           aria-label="Instagram icon"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Revealx delay="1">
             <motion.img
@@ -26,6 +28,8 @@ const Socials = () => {
         <Link
           href="https://www.facebook.com/profile.php?id=61560266676251"
           aria-label="Facebook icon"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Revealx delay="1.2">
             <motion.img
@@ -41,6 +45,8 @@ const Socials = () => {
         <Link
           href="https://www.linkedin.com/showcase/104046570"
           aria-label="LinkedIn icon"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Revealx delay="1.4">
             <motion.img

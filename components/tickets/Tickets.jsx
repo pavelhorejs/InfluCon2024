@@ -56,6 +56,8 @@ const Tickets = () => {
               <div className="mt-4">
                 {" "}
                 <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href={
                     i18n.language === "cs"
                       ? "https://goout.net/cs/listky/influcon-2024/xdxy/"
