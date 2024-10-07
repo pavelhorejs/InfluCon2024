@@ -23,15 +23,14 @@ const Hero = () => {
         priority={true}
       />
 
-      <div className="md:hidden justify-end mt-5 md:mt-10 lg:mt-28">
+      <div className="mt-5 justify-end md:mt-10 md:hidden lg:mt-28">
         <div className="flex gap-[64px]">
           <div className={Styles.greenCard2}>
             <div className={Styles.blackItemMobile}></div>
             <div className={Styles.greenItem1Mobile}></div>
             <div className={Styles.greenItem2Mobile}></div>
             <p className={Styles.mainText2}>07.10.2024</p>
-            <p className="text-black font-bold">{t("place")}</p>
-            <Dayscounter />
+            <p className="font-bold text-black">{t("place")}</p>
           </div>
         </div>
       </div>
@@ -45,7 +44,7 @@ const Hero = () => {
               <h1>{t("heroHeadline")}</h1>
             </div>
           </Revealx>
-          <div className="flex gap-[8px] lg:gap-[24px] mt-[8px] lg:mt-[24px]">
+          <div className="mt-[8px] flex gap-[8px] lg:mt-[24px] lg:gap-[24px]">
             {" "}
             <Revealx delay={0.2}>
               {" "}
@@ -90,11 +89,11 @@ const Hero = () => {
         </div>
         <Revealx delay={0.6}>
           {" "}
-          <div className="hidden md:flex justify-end mt-5 md:mt-10 lg:mt-28">
-            <div className="flex gap-[64px]  ">
+          <div className="mt-5 hidden justify-end md:mt-10 md:flex lg:mt-28">
+            <div className="flex gap-[64px]">
               <Revealx delay={1.3}>
                 {" "}
-                <img src="/arow.svg" className="mt-32 " alt="arrow vector" />
+                <img src="/arow.svg" className="mt-32" alt="arrow vector" />
               </Revealx>
               <div className={Styles.greenCard}>
                 <div className={Styles.blackItem}></div>
