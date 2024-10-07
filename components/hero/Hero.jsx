@@ -105,11 +105,7 @@ const Hero = () => {
                   2024
                 </p>
                 <p className={Styles.offText}>{t("place")}</p>
-                <div className="mt-10">
-                  <Dayscounter />
-                </div>
               </div>
-            </div>
           </div>
         </Revealx>
       </div>
