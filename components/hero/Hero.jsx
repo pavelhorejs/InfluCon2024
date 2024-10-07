@@ -98,7 +98,7 @@ const Hero = () => {
               <div className={Styles.greenCard}>
                 <div className={Styles.blackItem}></div>
                 <div className={Styles.greenItem1}></div>
-                <div className={Styles.greenItem2}></div>
+                {/* <div className={Styles.greenItem2}></div> */}
                 <p className={Styles.mainText}>
                   07 <br />
                   10 <br />
