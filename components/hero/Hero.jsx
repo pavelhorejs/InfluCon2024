@@ -106,6 +106,7 @@ const Hero = () => {
                 </p>
                 <p className={Styles.offText}>{t("place")}</p>
               </div>
+            </div>
           </div>
         </Revealx>
       </div>
