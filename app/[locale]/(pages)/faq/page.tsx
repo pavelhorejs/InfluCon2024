@@ -1,15 +1,15 @@
 "use client";
-import FaqComponent from "/components/faq/Faq2";
+import FaqComponent from "@/components/faq/Faq2";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Revealx from "/components/reveals/Revealx";
+import Revealx from "@/components/reveals/Revealx";
 
-const Page = () => {
+export default function Page() {
   const { t, i18n } = useTranslation();
   return (
     <>
-      <div className="max-w-6xl mx-auto mt-32 lg:mt-40 md:mt-480 pb-14 px-3">
+      <div className="md:mt-480 mx-auto mt-32 max-w-6xl px-3 pb-14 lg:mt-40">
         <Revealx delay={0.2}>
           {" "}
           <h2 className="pb-[24px] text-center">
@@ -37,5 +37,4 @@ const Page = () => {
       </div>
     </>
   );
-};
-export default Page;
+}

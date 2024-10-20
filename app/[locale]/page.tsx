@@ -75,22 +75,8 @@ export default function Home() {
 
       <Organizer />
       <Blog />
-      <Image
-        src="/blur_red.png"
-        alt="Decorative red blur"
-        className="pointer-events-none absolute left-[-150px] top-[7700px] -translate-x-1/2"
-        width={800}
-        height={800}
-      />
       <Faq />
       <Wroteaboutus />
-      <Image
-        src="/blur_green.png"
-        alt="Decorative green blur"
-        className="pointer-events-none absolute right-[-150px] top-[8500px] translate-x-1/2"
-        width={800}
-        height={800}
-      />
       <Subscribe />
     </div>
   );

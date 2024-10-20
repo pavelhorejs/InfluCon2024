@@ -9,8 +9,6 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-export const Page = () => {
+export default function Page() {
   return <SpeakersPage />;
-};
-
-export default Page;
+}
