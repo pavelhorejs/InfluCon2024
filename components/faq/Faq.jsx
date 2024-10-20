@@ -44,73 +44,69 @@ const faqs_cs = [
   },
 ];
 
-export default function FaqComponent() {
+export const Faq = () => {
   const { t, i18n } = useTranslation();
   const faqs = i18n.language === "cs" ? faqs_cs : faqs_en;
 
   return (
-    <section id="faq">
-      <div className="mx-auto max-w-7xl px-2">
-        {" "}
-        <div className="mx-auto max-w-4xl divide-y divide-gray-200/10">
-          <Revealx delay={0.3}>
-            <h2 className="pb-[32px] lg:pb-[48px] text-center">
-              {t("Faq")} <br className="md:hidden" /> {t("Faq2")}
-            </h2>
-          </Revealx>{" "}
-          <Revealx delay={0.4}>
-            <dl className="space-y-6 divide-y divide-gray-500/10">
-              {faqs.map((faq, index) => (
-                <Disclosure as="div" key={index} className="pt-6">
-                  {({ open }) => (
-                    <>
-                      <dt>
-                        <Disclosure.Button className="flex w-full items-start font-bold justify-between text-left text-[#34AF83]">
-                          <span className="leading-7 text-white">
-                            {faq.question}
-                          </span>
-                          <span className="ml-6 flex h-7 items-center">
-                            {open ? (
-                              <MinusSmallIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            ) : (
-                              <PlusSmallIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            )}
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-base leading-7 text-gray-300">
-                          {faq.answer}
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-              ))}
-            </dl>
+    <section className="mx-auto max-w-7xl px-2 py-[64px]" id="faq">
+      <div className="mx-auto max-w-4xl divide-y divide-gray-200/10">
+        <Revealx delay={0.3}>
+          <h2 className="pb-[32px] text-center lg:pb-[48px]">
+            {t("Faq")} <br className="md:hidden" /> {t("Faq2")}
+          </h2>
+        </Revealx>{" "}
+        <Revealx delay={0.4}>
+          <dl className="space-y-6 divide-y divide-gray-500/10">
+            {faqs.map((faq, index) => (
+              <Disclosure as="div" key={index} className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left font-bold text-[#34AF83]">
+                        <span className="leading-7 text-white">
+                          {faq.question}
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusSmallIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <PlusSmallIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-gray-300">
+                        {faq.answer}
+                      </p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            ))}
+          </dl>
+        </Revealx>
+      </div>
+      <div className="mt-10 flex justify-center">
+        <Link href="/faq">
+          <Revealx dealy={0.6}>
+            <motion.button
+              whileHover={{ scale: 0.97 }}
+              transition={{ type: "spring" }}
+              className="buttonGreen"
+            >
+              {t("FaqButton")}
+            </motion.button>
           </Revealx>
-        </div>
-        <div className="mt-10 flex justify-center">
-          <Link href="/faq">
-            <Revealx dealy={0.6}>
-              {" "}
-              <motion.button
-                whileHover={{ scale: 0.97 }}
-                transition={{ type: "spring" }}
-                className="buttonGreen"
-              >
-                {t("FaqButton")}
-              </motion.button>
-            </Revealx>
-          </Link>
-        </div>
+        </Link>
       </div>
     </section>
   );
-}
+};

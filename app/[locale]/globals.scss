@@ -64,17 +64,8 @@ p, ul, ol {
 .noOverflow {
   overflow-x: hidden;
 }
-// SECTION DIVIDER //
-section{
-margin-top: 210px;
-margin-bottom: 210px;
-}
-@media screen and (max-width: 768px) {
-  section {
-    margin-top: 135px;
-    margin-bottom: 135px;
-  }
-}
+
+
 // HIGH INDEX //
 .maxIndex{
   z-index: 1000;

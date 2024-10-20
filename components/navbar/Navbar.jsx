@@ -40,8 +40,8 @@ const Navbar = () => {
     closed: {
       opacity: 0,
       transition: {
-        staggerChildren: 0.1, // non-zero duration
-        duration: 0.55, // non-zero duration
+        staggerChildren: 0.1,
+        duration: 0.55,
       },
     },
   };
@@ -59,7 +59,7 @@ const Navbar = () => {
       y: 100,
       opacity: 0,
       transition: {
-        duration: 0.35, // non-zero duration
+        duration: 0.35,
       },
     },
   };
@@ -104,17 +104,11 @@ const Navbar = () => {
                 <Link className={Styles.navigaceText} href="/speakers">
                   {t("NavItem1")}
                 </Link>
-                <a className={Styles.navigaceText} href="/program">
-                  {t("NavItem2")}
-                </a>
-                <Link className={Styles.navigaceText} href="/#tickets">
+                <Link className={Styles.navigaceText} href="/#subscriber">
                   {t("NavItem3")}
                 </Link>
                 <Link className={Styles.navigaceText} href="/#faq">
                   Q&A
-                </Link>
-                <Link className={Styles.navigaceText} href="/afterparty">
-                  Ultimate influparty
                 </Link>
                 <Link className={Styles.navigaceText} href="/contact">
                   {t("NavItem5")}
@@ -125,7 +119,6 @@ const Navbar = () => {
           )}
           {isMobile && (
             <div className="flex gap-5">
-              {" "}
               <LanguageChanger />
               <div
                 className={Styles.burgerMenuContainer}
@@ -149,17 +142,9 @@ const Navbar = () => {
                 <a href="/speakers"> {t("NavItem1")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <a href="/program"> {t("NavItem2")}</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
                 <a href="https://goout.net/cs/listky/influcon-2024/xdxy/">
-                  {" "}
                   {t("NavItem3")}
                 </a>
-              </motion.li>
-
-              <motion.li variants={listItemVariants}>
-                <a href="/afterparty">Ultimate influparty</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
                 <a href="/#faq">Q&A</a>
@@ -174,15 +159,22 @@ const Navbar = () => {
 
             <div className="absolute bottom-5">
               <div className="flex gap-4">
-                <Link href="https://www.instagram.com/world_of_online/">
-                  {" "}
+                <Link
+                  target="blank"
+                  href="https://www.instagram.com/world_of_online/"
+                >
                   <img src="/ig_white.svg" alt="instagram icon" />
                 </Link>
-                <Link href="https://www.facebook.com/worldofonlineagency">
+                <Link
+                  target="blank"
+                  href="https://www.facebook.com/worldofonlineagency"
+                >
                   <img src="/fb_white.svg" alt="facebook icon" />
                 </Link>
-                <Link href="https://www.linkedin.com/company/worldofonline/">
-                  {" "}
+                <Link
+                  target="blank"
+                  href="https://www.linkedin.com/company/worldofonline/"
+                >
                   <img src="/in_white.svg" alt="linked in icon" />
                 </Link>
               </div>

@@ -11,7 +11,7 @@ import imageKampane from "/public/kampane.webp";
 import imageKampaneMobile from "/public/Kampane_mobile.jpg";
 import { useState, useEffect } from "react";
 
-const Blog = () => {
+export const Blog = () => {
   const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
 
@@ -29,12 +29,15 @@ const Blog = () => {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto px-2" id="blog">
+    <section
+      className="mx-auto max-w-7xl px-2 py-[64px] lg:py-[128px]"
+      id="blog"
+    >
       <Revealx delay={0.2}>
         {" "}
-        <h2 className="pb-[32px] lg:pb-[48px] text-center">Blog</h2>
+        <h2 className="pb-[32px] text-center lg:pb-[48px]">Blog</h2>
       </Revealx>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+      <div className="grid grid-cols-1 gap-[24px] md:grid-cols-3">
         {" "}
         <Link href="/blog/trendy_im">
           {" "}
@@ -97,4 +100,3 @@ const Blog = () => {
     </section>
   );
 };
-export default Blog;

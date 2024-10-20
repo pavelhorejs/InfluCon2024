@@ -40,7 +40,7 @@ export const Wroteaboutus = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="mx-auto max-w-7xl px-2">
+    <section className="mx-auto max-w-7xl px-2 py-[64px] lg:py-[128px]">
       <h2 className="pb-[40px] text-center">{t("napsalionas")}</h2>
       <div className="mx-auto grid grid-cols-1 gap-[16px] md:grid-cols-3">
         {DATA.map((item, index) => (

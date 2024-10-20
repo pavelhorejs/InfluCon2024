@@ -33,11 +33,11 @@ const faqs_en = [
     answer:
       "You can bet the food and drinks will be there. An assortment of options including vegetarian, vegan and gluten free will be available during coffee breaks and lunch break.",
   },
-  {
-    question: "Is it possible to find accommodations in a Clarion hotel?",
-    answer:
-      "Yes it is. Clarion hotel offers more than 500 rooms, so if you are not from Prague, you can book a spot directly at a place of the conference.",
-  },
+  // {
+  //   question: "Is it possible to find accommodations in a Clarion hotel?",
+  //   answer:
+  //     "Yes it is. Clarion hotel offers more than 500 rooms, so if you are not from Prague, you can book a spot directly at a place of the conference.",
+  // },
   {
     question: "What is included in the ticket price?",
     answer:
@@ -59,11 +59,11 @@ const faqs_en = [
     answer:
       "Yes, your ticket can used by someone else. Please, notify us about the change of the attendee’s name until 23.9.2024. You can do it using contact form or via e-mail - just send us a note to info@woo.cz",
   },
-  {
-    question: "How can I view the recording after the event ends?",
-    answer:
-      "The recording of the entire event will be available after the event ends upon logging into your user account. The recording will be accessible to those who have purchased either a standard ticket or a live stream.",
-  },
+  // {
+  //   question: "How can I view the recording after the event ends?",
+  //   answer:
+  //     "The recording of the entire event will be available after the event ends upon logging into your user account. The recording will be accessible to those who have purchased either a standard ticket or a live stream.",
+  // },
   {
     question: "Is it possible to buy a ticket on an invoice?",
     answer:
@@ -98,11 +98,11 @@ const faqs_cs = [
     answer:
       "S tím můžete rozhodně počítat. Během coffee breaků i oběda vás čeká občerstvení včetně veganských a bezlepkových variant.",
   },
-  {
-    question: "Je možné se ubytovat v hotelu Clarion?",
-    answer:
-      "Ano, určitě to je možné. Hotel Clarion nabízí více než 500 pokojů, takže pokud nejste z Prahy, můžete bydlet přímo v místě konference.",
-  },
+  // {
+  //   question: "Je možné se ubytovat v hotelu Clarion?",
+  //   answer:
+  //     "Ano, určitě to je možné. Hotel Clarion nabízí více než 500 pokojů, takže pokud nejste z Prahy, můžete bydlet přímo v místě konference.",
+  // },
   {
     question: "Co je v ceně vstupenky?",
     answer:
@@ -123,11 +123,11 @@ const faqs_cs = [
     answer:
       "Ano, vaši vstupenku může využít někdo jiný. Změnu účastníka je ale nutné nahlásit nejpozději do 23.9.2024. Můžete to udělat pomocí kontaktního formuláře nebo mailem na adrese info@woo.cz.",
   },
-  {
-    question: "Jak si mohu po skončení akce zhlédnout záznam?",
-    answer:
-      "Záznam z celé akce bude po ukončení dostupný po přihlášení do uživatelského účtu. Záznam uvidí ti, kteří si zakoupili jak klasickou vstupenku, tak živý přenos.",
-  },
+  // {
+  //   question: "Jak si mohu po skončení akce zhlédnout záznam?",
+  //   answer:
+  //     "Záznam z celé akce bude po ukončení dostupný po přihlášení do uživatelského účtu. Záznam uvidí ti, kteří si zakoupili jak klasickou vstupenku, tak živý přenos.",
+  // },
   {
     question: "Je možné koupit vstupenku na fakturu?",
     answer:
@@ -149,7 +149,7 @@ export default function FaqComponent() {
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="flex w-full items-start font-bold justify-between text-left text-[#34AF83] ">
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left font-bold text-[#34AF83]">
                         <span className="leading-7 text-white">
                           {faq.question}
                         </span>

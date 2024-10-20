@@ -7,7 +7,7 @@ import Link from "next/link";
 const Contact = () => {
   const { t } = useTranslation();
   return (
-    <section className="mx-auto grid max-w-7xl grid-cols-1 gap-y-10 md:grid-cols-2">
+    <section className="mx-auto grid max-w-7xl grid-cols-1 gap-y-10 py-[128px] md:grid-cols-2 lg:py-[184px]">
       <div className="mx-2">
         <Revealx delay={0.2}>
           {" "}

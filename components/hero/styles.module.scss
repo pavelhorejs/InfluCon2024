@@ -90,16 +90,17 @@ box-shadow: 0 0 20px 1px rgba(240, 0, 101, 0.2);
 }
 .greenCard{
     display: block;
-position: relative;
-background-color: $main-green;
-padding: 0 20px;
-padding-top: 40px;
-padding-bottom: 10px;
+    position: relative;
+    background-color: $main-green;
+    padding: 0 20px;
+    padding-top: 40px;
+    padding-bottom: 10px;
 .mainText{
     font-size: 89px;
     line-height: 1.1;
     color: black;
     font-weight: 800;
+    margin-top: 35px;
 }
 .offText{
 color: black;

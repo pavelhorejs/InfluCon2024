@@ -33,7 +33,7 @@
     "**/*.tsx",
     "components/**/*.jsx",
     "app/api/webhook/**/*.jsx"
-, "app/appwrite.ks", "app/api/webhook/route.js"  ],
+, "app/appwrite.ks", "app/api/webhook/route.js", "app/[locale]/(pages)/speakers/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

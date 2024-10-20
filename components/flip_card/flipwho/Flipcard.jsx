@@ -33,24 +33,25 @@ const Flipcard = () => {
             <Image
               width={300}
               height={300}
-              src="/who.webp"
+              src="/who.png"
               alt="Front Image"
               style={contentStyle}
             />
           </div>
         }
         backComponent={
-          <div className="bg-[#F00065] px-5 pt-5" style={contentStyle}>
-            <div>
-              {" "}
-              <p className="">{t("soon")}</p>
-            </div>
-          </div>
+          <Image
+            width={300}
+            height={300}
+            src="/who.png"
+            alt="Front Image"
+            style={contentStyle}
+          />
         }
       />
 
-      <div className="flex flex-col justify-between max-w-[300px]">
-        <div className="flex justify-between items-center"> </div>
+      <div className="flex max-w-[300px] flex-col justify-between">
+        <div className="flex items-center justify-between"> </div>
       </div>
     </div>
   );

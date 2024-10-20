@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <nav className={styles.menuSection}>
-          <h6>{t("adresakonference")}</h6>
+          {/* <h6>{t("adresakonference")}</h6>
           <p>
             Clarion Congress Hotel Prague <br />
             Freyova 945/33 <br />
@@ -41,7 +41,7 @@ const Footer = () => {
             OX CLUB <br />
             Francouzská 75/4 <br />
             120 00 Praha 2 - Vinohrady
-          </p>
+          </p> */}
         </nav>
         <nav className={styles.menuSection}>
           <h6>{t("FooterObecne")}</h6>
