@@ -142,16 +142,12 @@ const Navbar = () => {
                 <a href="/speakers"> {t("NavItem1")}</a>
               </motion.li>
               <motion.li variants={listItemVariants}>
-                <a href="https://goout.net/cs/listky/influcon-2024/xdxy/">
-                  {t("NavItem3")}
-                </a>
+                <Link href="/#subscriber">{t("NavItem3")}</Link>
               </motion.li>
               <motion.li variants={listItemVariants}>
                 <a href="/#faq">Q&A</a>
               </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/dashboard"> {t("NavItem4")}</a>
-              </motion.li>
+
               <motion.li variants={listItemVariants}>
                 <a href="/contact"> {t("NavItem5")}</a>
               </motion.li>
