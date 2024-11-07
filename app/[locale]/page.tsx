@@ -23,9 +23,7 @@ export default function Home() {
         width={700}
         height={800}
       />
-
       <About />
-
       <Image
         src="/blur_green.png"
         alt="Decorative green blur"

@@ -8,6 +8,7 @@ import styles from "/components/form/form.module.scss";
 import Link from "next/link";
 import Revealx from "/components/reveals/Revealx";
 import { useTranslation } from "react-i18next";
+
 const Dashboard = () => {
   const { t } = useTranslation();
   const [loggedInUser, setLoggedInUser] = useState(null);
@@ -33,11 +34,11 @@ const Dashboard = () => {
     } catch (error) {
       if (
         error.message.includes(
-          "Password must be between 8 and 256 characters long"
+          "Password must be between 8 and 256 characters long",
         )
       ) {
         alert(
-          "Invalid password: Password must be between 8 and 256 characters long."
+          "Invalid password: Password must be between 8 and 256 characters long.",
         );
       } else {
         alert("Login failed: " + error.message);
@@ -54,8 +55,8 @@ const Dashboard = () => {
   if (loggedInUser) {
     return (
       <>
-        <section className="max-w-7xl mx-auto px-2">
-          <div className="flex justify-between bg-[#100D0D] py-3 px-3">
+        <section className="mx-auto max-w-7xl px-2">
+          <div className="flex justify-between bg-[#100D0D] px-3 py-3">
             <p>
               {t("Dashboard")} {loggedInUser.name}
             </p>
@@ -75,10 +76,10 @@ const Dashboard = () => {
     );
   }
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="flex justify-center items-center min-h-[90vh]  ">
+    <div className="mx-auto max-w-7xl">
+      <div className="flex min-h-[90vh] items-center justify-center">
         <div></div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col items-center justify-center">
           <Revealx delay={0.2}>
             {" "}
             <h2 className="pb-[24px] text-center"> {t("LoginHeadline")}</h2>
@@ -128,7 +129,7 @@ const Dashboard = () => {
               </span>
             </p>
             <Link href="/password_recovery" className={styles.link}>
-              <p className="text-sm text-center underline">
+              <p className="text-center text-sm underline">
                 {t("forgottenpasswdhedlin")}
               </p>
             </Link>

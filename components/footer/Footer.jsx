@@ -23,7 +23,6 @@ const Footer = () => {
           <div className="mt-[24px] flex flex-col justify-center md:justify-start">
             <p className="pb-3">{t("socials")}</p>
             <div className="flex w-full justify-center md:justify-start">
-              {" "}
               <Socials />
             </div>
           </div>

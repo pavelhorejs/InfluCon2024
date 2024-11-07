@@ -38,6 +38,7 @@
 "aboutButton3":"Influencers",
 "aboutButton4":"Agencies",
 "programComponent":"Jak vypadal program 2024",
+"programComponent2":"Záznam programu 2024",
 "programBlock1":"Registrace, káva & networking",
 "programBlock2":"1. blok - Data, podvědomí a budoucnost",
 "programBlock2_1":"2. blok -  Velké značky sdílí zkušenosti",
@@ -466,5 +467,7 @@
 
 "block5": "Panelová diskuze - Autenticita v influencer marketingu",
 "panellast.moderator": "Moderátor",
-"panellast.guests": "Hosté"
+"panellast.guests": "Hosté",
+"logout": "Odhlásit",
+"zadejtemail": "Zadejte svůj email"
 }

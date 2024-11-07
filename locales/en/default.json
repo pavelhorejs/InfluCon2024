@@ -38,6 +38,7 @@
 "aboutButton3":"Influencers",
 "aboutButton4":"Agencies",
 "programComponent":"What the 2024 program looked like",
+"programComponent2":"Recordings of the 2024 program",
 "programBlock1": "Registration, coffee & networking",
 "programBlock2": "1st block - Data, subconscious, and future",
 "programBlock2_1": "2nd block - Big brands share experiences",
@@ -465,7 +466,9 @@
 
 "block5": "Panel discussion - Authenticity in influencer marketing",
 "panellast.moderator": "Moderator",
-"panellast.guests": "Guests"
+"panellast.guests": "Guests",
+"logout": "Logout",
+"zadejtemail": "Enter your email"
 
 
 }
