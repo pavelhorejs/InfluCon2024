@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const ALLOWED_EMAILS = [
   "kcimoradska@gmail.com",
+  "klara@bfcompany.cz",
   "veronika@salonpro.cz",
   "kamila.salatova@testuj.to",
   "mazankova@know.cz",
