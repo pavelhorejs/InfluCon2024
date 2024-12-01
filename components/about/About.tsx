@@ -33,7 +33,7 @@ export const About = () => {
               muted
               loop
               playsInline
-              controls={false}
+              controls={true}
             ></video>
           </LazyLoad>
         </div>
