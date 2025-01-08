@@ -87,7 +87,7 @@ export const Hero = () => {
                 <div className={Styles.greenItem1}></div>
                 <div className={Styles.greenItem2}></div>
                 <p className={Styles.mainText}>
-                  10 <br />
+                  1.10. <br />
                   2025
                 </p>
                 <p className={Styles.offText}>{t("place")}</p>
