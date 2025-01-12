@@ -1,6 +1,6 @@
 import "./globals.scss";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import { Footer } from "@/components/footer/Footer";
 import Sticky from "@/components/sticky_ticket/Sticky";
 import { Montserrat } from "next/font/google";
 import TranslationProvider from "@/components/TranslationProvider";

@@ -29,7 +29,7 @@ export const Hero = () => {
             <div className={Styles.greenItem1Mobile}></div>
             <div className={Styles.greenItem2Mobile}></div>
             <p className={Styles.mainText2}>07.10.2024</p>
-            <p className="font-bold text-black">{t("place")}</p>
+            <p className="font-bold text-black">{t("homepage.Hero.place")}</p>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export const Hero = () => {
           <div className={Styles.redCard}>
             <div className={Styles.redItem1}></div>
             <div className={Styles.redItem2}></div>
-            <h1>{t("heroHeadline")}</h1>
+            <h1>{t("homepage.Hero.heroHeadline")}</h1>
           </div>
 
           <div className="mt-[8px] flex gap-[8px] lg:mt-[24px] lg:gap-[24px]">
@@ -48,7 +48,7 @@ export const Hero = () => {
                 transition={{ type: "spring" }}
                 className="buttonGreen"
               >
-                {t("Button1")}
+                {t("homepage.Hero.Button1")}
               </motion.button>
             </Link>
 
@@ -58,12 +58,12 @@ export const Hero = () => {
                 transition={{ type: "spring" }}
                 className="buttonGreen"
               >
-                {t("Button2")}
+                {t("homepage.Hero.Button2")}
               </motion.button>
             </a>
           </div>
           <div className="mt-[48px]">
-            <p>{t("socials")}</p>
+            <p>{t("homepage.Hero.socials")}</p>
 
             <div className="mt-2">
               <Socials />
@@ -83,7 +83,7 @@ export const Hero = () => {
                 1.10. <br />
                 2025
               </p>
-              <p className={Styles.offText}>{t("place")}</p>
+              <p className={Styles.offText}>{t("homepage.Hero.place")}</p>
             </div>
           </div>
         </div>

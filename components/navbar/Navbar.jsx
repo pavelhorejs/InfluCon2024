@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import LanguageChanger from "/components/LanguageChanger";
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("");
   const [isMobile, setIsMobile] = useState(false);
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
 
@@ -102,16 +102,16 @@ const Navbar = () => {
                 className={`flex gap-5 ${isMobile ? Styles.mobileMenu : ""}`}
               >
                 <Link className={Styles.navigaceText} href="/speakers">
-                  {t("NavItem1")}
+                  {t("Navigation.NavItem1")}
                 </Link>
                 <Link className={Styles.navigaceText} href="/#subscriber">
-                  {t("NavItem3")}
+                  {t("Navigation.NavItem3")}
                 </Link>
                 <Link className={Styles.navigaceText} href="/#faq">
                   Q&A
                 </Link>
                 <Link className={Styles.navigaceText} href="/contact">
-                  {t("NavItem5")}
+                  {t("Navigation.NavItem5")}
                 </Link>
               </div>
               <LanguageChanger />

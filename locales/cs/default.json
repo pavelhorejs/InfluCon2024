@@ -1,33 +1,46 @@
 {
-"NavItem1":"Speakeři",
-"NavItem2":"Program",
-"NavItem3":"Vstupenky",
-"NavItem4":"Live stream",
-"NavItem5":"Kontakt",
-"FooterObecne":"Obecné",
-"FooterSpeakers":"Speakeři",
-"FooterVstupenky":"Vstupenky",
-"FooterProgram":"Program",
-"FooterBlog":"Blog",
-"FooterKontakt":"Kontakt",
-"FooterLiveStream":"Live Stream",
-"FooterKoupit":"Koupit",
-"FooterPrihlaseni":"Přihlášení",
-"FooterOstatni":"Ostatní",
-"FooterCookies":"Cookies",
-"FooterGdpr":"GDPR",
-"FooterTerms":"Obchodní podmínky",
-"Organiser":"Pořadatel",
-"heroHeadline":"Zjistěte, jak influencer marketing posouvá značky. Včetně té vaší.",
-"place":"Hotel Clarion, Praha",
-"countDown":"Začíná za",
-"countDown2":"dní",
-"Button1":"Dejte mi vědět, až budou v prodeji lístky",
-"Button2":"Chci být partner",
-"Button3":"Koupit lístek",
-"Button4":"Chci být partner",
-"Back":"Zpět",
 "socials":"Sledujte nás online",
+
+"Navigation": {
+  "NavItem1":"Speakeři",
+  "NavItem2":"Program",
+  "NavItem3":"Vstupenky",
+  "NavItem4":"Live stream",
+  "NavItem5":"Kontakt"
+},
+"Footer": {
+  "FooterObecne":"Obecné",
+  "FooterSpeakers":"Speakeři",
+  "FooterVstupenky":"Vstupenky",
+  "FooterProgram":"Program",
+  "FooterBlog":"Blog",
+  "FooterKontakt":"Kontakt",
+  "FooterLiveStream":"Live Stream",
+  "FooterKoupit":"Koupit",
+  "FooterPrihlaseni":"Přihlášení",
+  "FooterOstatni":"Ostatní",
+  "FooterCookies":"Cookies",
+  "FooterGdpr":"GDPR",
+  "FooterTerms":"Obchodní podmínky",
+  "Organiser":"Pořadatel"
+},
+"homepage":{
+  "Hero": {
+    "heroHeadline":"Zjistěte, jak influencer marketing posouvá značky. Včetně té vaší.",
+    "place":"Hotel Clarion, Praha",
+    "countDown":"Začíná za",
+    "countDown2":"dní",
+    "Button1":"Dejte mi vědět, až budou v prodeji lístky",
+    "Button2":"Chci být partner",
+    "Button3":"Koupit lístek",
+    "Button4":"Chci být partner",
+    "Back":"Zpět"
+  
+  },
+  
+
+
+
 "speakerComponent":"Letošní speakeři",
 "viceButton":"Více",
 "aboutHeadline":"Co je InfluCon?",
@@ -469,4 +482,4 @@
 "panellast.guests": "Hosté",
 "logout": "Odhlásit",
 "zadejtemail": "Zadejte svůj email"
-}
+}}

@@ -2,9 +2,7 @@ $main-green: #22FFAF;
 $mangolia: #F7F5FF;
 $silver: #C4C4C4;
 
-.bgBlue {
-    background-color: $main-green;
-}
+
 .container {
     display: grid;
     grid-template-columns: 45% 25% 15% 15%;
@@ -27,11 +25,7 @@ $silver: #C4C4C4;
     text-align: center;
 }
   }
-.menuSection {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 .navigaceText {
     color: black;
   }
