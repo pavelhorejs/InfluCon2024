@@ -35,7 +35,7 @@ export default function Map({
                     width={300}
                     height={300}
                     className="absolute left-0 top-0 z-10 h-full w-full object-cover opacity-45"
-                    layout="responsive"
+                  
                   />
                   <Image
                     src={speaker.image}
@@ -43,7 +43,7 @@ export default function Map({
                     width={300}
                     height={300}
                     className="h-full w-full object-cover"
-                    layout="responsive"
+                  
                   />
                 </div>
               </Link>

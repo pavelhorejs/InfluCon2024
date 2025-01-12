@@ -1,26 +1,33 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Revealx from "../reveals/Revealx";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
+import NetImage from "@/public/net.png";
 
 export const Cooperation = () => {
   const { t } = useTranslation();
   return (
-    <section
-      className="mx-auto flex max-w-6xl flex-col items-center justify-center px-2 pb-[64px] lg:pb-[128px]"
-      id="partnership"
-    >
-      <Revealx delay={0.3}>
-        <h2 className="pb-[24px] text-center">{t("CooperationComponent")}</h2>
-      </Revealx>
-      <Revealx delay={0.4}>
+    <section className="relative bg-[#181818]">
+      <Image
+        src={NetImage}
+        alt="Net"
+        className="object-cover opacity-50"
+        fill
+      />
+      <section
+        className="mx-auto flex max-w-6xl flex-col items-center justify-center px-2 pb-[64px] lg:py-[90px]"
+        id="partnership"
+      >
+        <h2 className="pb-[24px] text-center lg:max-w-[690px]">
+          {t("CooperationComponent")}
+        </h2>
+
         <p className="max-w-lg pb-[24px] text-center">
           {t("CooperationComponent2")}
         </p>
-      </Revealx>
-      <div className="flex justify-center">
-        <Revealx delay={0.6}>
+
+        <div className="flex justify-center">
           <div className="">
             <Link href="/contact">
               <motion.button
@@ -32,8 +39,8 @@ export const Cooperation = () => {
               </motion.button>
             </Link>
           </div>
-        </Revealx>
-      </div>
+        </div>
+      </section>
     </section>
   );
 };

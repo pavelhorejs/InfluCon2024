@@ -47,7 +47,7 @@ const Footer = () => {
           <Link href="/speakers">
             <span className={styles.navigaceText}>{t("FooterSpeakers")}</span>
           </Link>
-          <Link href="/#tickets">
+          <Link href="/#subscriber">
             <span className={styles.navigaceText}>{t("FooterVstupenky")}</span>
           </Link>
           <Link href="/#blog">
@@ -73,7 +73,7 @@ const Footer = () => {
       </div>
       <div>
         <p className="pb-1 text-center text-sm text-gray-600">
-          Copyright © 2024 InfluCon
+          Copyright © {new Date().getFullYear()} InfluCon
         </p>
       </div>
     </footer>

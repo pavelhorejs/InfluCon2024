@@ -13,7 +13,12 @@ const i18nNamespaces = ["default"];
 const montserrat = Montserrat({ subsets: ["latin"] });
 import opengraphImage from "/public/opengraph-image.jpg";
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const locale = await params.locale;
   const metadata = locale === "cs" ? metadataCs : metadataEn;
 
   return {
@@ -38,8 +43,10 @@ export async function generateMetadata({ params: { locale } }) {
 export default async function RootLayout({ children, params: { locale } }) {
   const { resources } = await initTranslations(locale, i18nNamespaces);
   const consent = getCookie("localConsent");
+  const currentLocale = await locale;
+
   return (
-    <html lang={locale}>
+    <html lang={currentLocale}>
       <head>
         <meta
           name="image"

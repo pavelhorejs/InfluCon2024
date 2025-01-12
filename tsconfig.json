@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,7 +16,7 @@
     "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -23,8 +27,14 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ],
+      "@payload-config": [
+        "./payload.config.ts"
+      ]
+    },
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
@@ -32,8 +42,11 @@
     "**/*.ts",
     "**/*.tsx",
     "components/**/*.jsx",
-    "app/api/webhook/**/*.jsx"
-, "app/appwrite.ks", "app/api/webhook/route.js", "app/[locale]/(pages)/speakers/page.tsx"  ],
+    "app/api/webhook/**/*.jsx",
+    "app/appwrite.ks",
+    "app/api/webhook/route.js",
+    "app/[locale]/(pages)/speakers/page.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

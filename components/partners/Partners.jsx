@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import Revealx from "../reveals/Revealx";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -211,72 +210,62 @@ const Partners = () => {
   return (
     <>
       <div className="mx-auto max-w-7xl px-2">
-        <Revealx delay={0.5}>
-          {" "}
-          <h2 className="pb-[32px] text-center lg:pb-[48px]">
-            {t("komercniParneri")}
-          </h2>
-        </Revealx>
+        <h2 className="pb-[32px] text-center lg:pb-[48px]">
+          {t("komercniParneri")}
+        </h2>
+
         <div className="mx-auto grid max-w-3xl grid-cols-4 gap-x-10 gap-y-5 lg:gap-x-20 lg:gap-y-[32px]">
           {partners.map((partner, index) => (
             <div
               key={index}
               className="flex items-center justify-center md:justify-center"
             >
-              <Revealx delay={0.5}>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={partner.href}
-                >
-                  <Image
-                    width={partner.width}
-                    height={partner.height}
-                    src={partner.src}
-                    alt={partner.alt}
-                  />
-                </Link>
-              </Revealx>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href={partner.href}
+              >
+                <Image
+                  width={partner.width}
+                  height={partner.height}
+                  src={partner.src}
+                  alt={partner.alt}
+                />
+              </Link>
             </div>
           ))}
         </div>
       </div>
       <div className="mx-auto mt-[100px] max-w-3xl px-2">
-        <Revealx delay={0.5}>
-          {" "}
-          <h2 className="pb-[32px] text-center lg:pb-[48px]">
-            {t("partnershdl")}
-          </h2>
-        </Revealx>
+        <h2 className="pb-[32px] text-center lg:pb-[48px]">
+          {t("partnershdl")}
+        </h2>
+
         <div className="mx-auto grid max-w-3xl grid-cols-4 gap-x-10 gap-y-5 lg:gap-x-20 lg:gap-y-[32px]">
           {partnersHdl.map((partner, index) => (
             <div
               key={index}
               className="flex items-center justify-center md:justify-center"
             >
-              <Revealx delay={0.5}>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={partner.href}
-                >
-                  <Image
-                    width={partner.width}
-                    height={partner.height}
-                    src={partner.src}
-                    alt={partner.alt}
-                  />
-                </Link>
-              </Revealx>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href={partner.href}
+              >
+                <Image
+                  width={partner.width}
+                  height={partner.height}
+                  src={partner.src}
+                  alt={partner.alt}
+                />
+              </Link>
             </div>
           ))}
         </div>
       </div>
       <div className="mx-auto mt-[100px] max-w-3xl px-2">
-        <Revealx delay={0.5}>
-          {" "}
-          <h2 className="-mb-[30px] text-center">{t("zastita")}</h2>
-        </Revealx>
+        <h2 className="-mb-[30px] text-center">{t("zastita")}</h2>
+
         <div className="grid grid-cols-2 gap-x-1 gap-y-5 lg:gap-x-20 lg:gap-y-20">
           {partnersZastita.map((partner, index) => (
             <div
@@ -285,48 +274,42 @@ const Partners = () => {
                 index === 0 ? "md:justify-end" : "md:justify-start"
               }`}
             >
-              <Revealx delay={0.5}>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={partner.href}
-                >
-                  <Image
-                    width={partner.width}
-                    height={partner.height}
-                    src={partner.src}
-                    alt={partner.alt}
-                  />
-                </Link>
-              </Revealx>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href={partner.href}
+              >
+                <Image
+                  width={partner.width}
+                  height={partner.height}
+                  src={partner.src}
+                  alt={partner.alt}
+                />
+              </Link>
             </div>
           ))}
         </div>
       </div>
       <div className="mx-auto mt-[40px]">
-        <Revealx delay={0.5}>
-          {" "}
-          <h2 className="pb-[32px] text-center lg:pb-[48px]">
-            {t("spolupracujeme")}
-          </h2>
-        </Revealx>
+        <h2 className="pb-[32px] text-center lg:pb-[48px]">
+          {t("spolupracujeme")}
+        </h2>
+
         <div className="mx-auto grid max-w-3xl grid-cols-4 gap-x-10 gap-y-5 lg:gap-x-20 lg:gap-y-[32px]">
           {partnersSpolupraca.map((partner, index) => (
             <div key={index} className={`flex items-center justify-center`}>
-              <Revealx delay={0.5}>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={partner.href}
-                >
-                  <Image
-                    width={partner.width}
-                    height={partner.height}
-                    src={partner.src}
-                    alt={partner.alt}
-                  />
-                </Link>
-              </Revealx>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href={partner.href}
+              >
+                <Image
+                  width={partner.width}
+                  height={partner.height}
+                  src={partner.src}
+                  alt={partner.alt}
+                />
+              </Link>
             </div>
           ))}
         </div>

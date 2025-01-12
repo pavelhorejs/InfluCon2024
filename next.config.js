@@ -2,11 +2,11 @@
 
 module.exports = {
   i18n: {
-    locales: ['cs', 'en'],
-    defaultLocale: 'cs',
+    locales: ["cs", "en"],
+    defaultLocale: "cs",
     localeDetection: false,
   },
   trailingSlash: true,
-}
-const nextConfig = {}
-module.exports = nextConfig
+};
+const nextConfig = {};
+module.exports = nextConfig;

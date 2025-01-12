@@ -31,7 +31,6 @@ export default function SpeakersMap({
                 width={300}
                 height={300}
                 className="h-full w-full object-cover"
-                layout="responsive"
               />
             </div>
             <div className="flex-grow">

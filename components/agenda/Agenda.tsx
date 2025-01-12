@@ -1,5 +1,5 @@
 "use client";
-import Revealx from "../reveals/Revealx";
+
 import { useTranslation } from "react-i18next";
 import { useState, ChangeEvent } from "react";
 import MainStage from "@/components/speakers/MainStage";
@@ -15,15 +15,14 @@ export const Agenda = () => {
   const { t } = useTranslation();
   return (
     <section
-      className="mx-auto flex max-w-7xl flex-col items-center px-2 py-[64px] lg:py-[124px]"
+      className="mx-auto flex max-w-7xl flex-col items-center px-2 pt-[64px] lg:pb-[100px]"
       id="agenda"
     >
-      <Revealx delay={0.2}>
-        <h2 className="mb-[16px] text-center">{t("programComponent")}</h2>
-      </Revealx>
-      <Revealx delay={0.2}>
-        <p className="pb-[32px] text-center">{t("tojeoc")}</p>
-      </Revealx>
+      <h2 className="mb-[16px] text-center lg:max-w-[600px]">
+        {t("programComponent")}
+      </h2>
+
+      <p className="pb-[32px] text-center lg:pb-[48px]">{t("tojeoc")}</p>
 
       <div className="mb-[32px] inline-flex" role="group">
         <label
@@ -40,7 +39,7 @@ export const Agenda = () => {
             onChange={handleOptionChange}
             className="hidden"
           />
-          Hlavní Stage
+          {t("hlstage")}
         </label>
         <label
           className={`px-4 py-2 text-sm font-medium ${

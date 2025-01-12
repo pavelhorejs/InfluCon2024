@@ -5,7 +5,7 @@ import { Agenda } from "@/components/agenda/Agenda";
 import { Cooperation } from "@/components/partner_program/Program";
 import { Organizer } from "@/components/organizer/Organizer";
 import { Blog } from "@/components/blog/Blog";
-import { Faq } from "@/components/faq/Faq";
+// import { Faq } from "@/components/faq/Faq";
 import { Subscribe } from "@/components/subscribe/Subscribe";
 import { Wroteaboutus } from "../../components/wroteaboutus/Wroteaboutus";
 import Image from "next/image";
@@ -70,10 +70,9 @@ export default function Home() {
         height={800}
       />
       <Cooperation />
-
       <Organizer />
       <Blog />
-      <Faq />
+      {/* <Faq /> */}
       <Wroteaboutus />
       <Subscribe />
     </div>

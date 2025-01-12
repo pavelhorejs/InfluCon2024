@@ -1,7 +1,7 @@
 "use client";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
-import Revealx from "../reveals/Revealx";
+
 import { useState } from "react";
 import Button from "../buttons/button/Button";
 import { useTranslation } from "react-i18next";

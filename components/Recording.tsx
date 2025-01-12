@@ -1,5 +1,4 @@
 "use client";
-import Revealx from "./reveals/Revealx";
 import { useTranslation } from "react-i18next";
 import { useState, ChangeEvent } from "react";
 import MainStageRecording from "@/components/recording/MainStageRecording";
@@ -18,10 +17,6 @@ export const Recording = () => {
       className="mx-auto flex max-w-7xl flex-col items-center px-2 py-[64px] lg:py-[60px]"
       id="agenda"
     >
-      <Revealx delay={0.2}>
-        <h2 className="mb-[16px] text-center">{t("programComponent2")}</h2>
-      </Revealx>
-
       <div className="mb-[32px] inline-flex" role="group">
         <label
           className={`px-4 py-2 text-sm font-medium ${

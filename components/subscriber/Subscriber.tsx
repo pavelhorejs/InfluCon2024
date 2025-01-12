@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import toast, { Toaster } from "react-hot-toast";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { databases } from "@/app/appwrite";
-import { Permission, Role } from "appwrite";
+
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
@@ -32,30 +31,13 @@ export const Subscriber = () => {
     },
   });
 
-  const onSubmit = async (data) => {
-    try {
-      const response = await databases.createDocument(
-        process.env.NEXT_PUBLIC_APPWRITE_DATABSE_ID,
-        process.env.NEXT_PUBLIC_APPWRITE_SUBSCRIBER_COLLECTION_ID,
-        "unique()",
-        data,
-        [Permission.read(Role.any()), Permission.write(Role.any())],
-      );
-      console.log("Document created:", response);
-      notify();
-      // form.current.reset();
-    } catch (error) {
-      console.error("Error creating document:", error);
-    }
-  };
-
   return (
     <div className={styles.sub}>
       <div className={styles.wrapper}>
         <h3 className="text-2xl">{t("SubsribeHDL")}</h3>
         <p className="">{t("SubsribeHDL2")}</p>
 
-        <form onSubmit={handleSubmit(onSubmit)} noValidate>
+        <form noValidate>
           {errors.Email && (
             <p className="error d text-xs text-red-600">
               {errors.Email.message}

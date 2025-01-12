@@ -10,5 +10,5 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 export default function Page() {
-  return <SpeakersPage />;
+  // return <SpeakersPage />;
 }

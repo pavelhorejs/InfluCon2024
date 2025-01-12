@@ -1,6 +1,6 @@
 "use client";
 import { useTranslation } from "react-i18next";
-import Revealx from "@/components/reveals/Revealx";
+
 import Image from "next/image";
 import Afterparty from "/public/afterparty.webp";
 import Form from "@/components/form/Form";
@@ -99,7 +99,7 @@ const Page = () => {
 
   return (
     <>
-      {/* <Revealx delay={0.2}>
+      {/* 
         <div className="relative mx-auto mt-32 max-w-6xl px-3 pb-20 lg:mt-40">
           <div className="relative pb-[40px]">
             <Image className="blur-sm" src={Afterparty} alt="Afterparty" />
@@ -210,7 +210,7 @@ const Page = () => {
                 key={index}
                 className="flex items-center justify-center md:justify-center"
               >
-                <Revealx delay={0.5}>
+            
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
@@ -223,7 +223,7 @@ const Page = () => {
                       alt={partner.alt}
                     />
                   </Link>
-                </Revealx>
+               
               </div>
             ))}
           </div>
@@ -231,9 +231,9 @@ const Page = () => {
             {t("afterparty.program3")}{" "}
           </p>
           <div className="mx-auto max-w-[500px] pb-[32px]">
-            <Revealx delay={0.6}>
+        
               <Form />
-            </Revealx>
+        
           </div>
           <p className="mx-auto max-w-[600px] text-center">
             {t("afterparty.program4")}{" "}
@@ -249,7 +249,7 @@ const Page = () => {
             </a>
           </p>
         </div>
-      </Revealx> */}
+ */}
     </>
   );
 };
