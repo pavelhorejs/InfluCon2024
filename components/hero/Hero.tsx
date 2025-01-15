@@ -29,7 +29,7 @@ export const Hero = () => {
             <div className={Styles.blackItemMobile}></div>
             <div className={Styles.greenItem1Mobile}></div>
             <div className={Styles.greenItem2Mobile}></div>
-            <p className={Styles.mainText2}>07.10.2024</p>
+            <p className={Styles.mainText2}>1.10.2025</p>
             <p className="font-bold text-black">{t("place")}</p>
           </div>
         </div>
